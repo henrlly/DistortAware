@@ -1,0 +1,108 @@
+{
+  "n_false_pos": 10,
+  "n_false_neg": 569,
+  "worst_false_positives": [
+    {
+      "key": "wildfake/real/imagenet_00038",
+      "score": 0.9864511489868164
+    },
+    {
+      "key": "wildfake/real/coco_00100",
+      "score": 0.9778589606285095
+    },
+    {
+      "key": "wildfake/real/celebahq_00103",
+      "score": 0.9602406024932861
+    },
+    {
+      "key": "wildfake/real/celebahq_00092",
+      "score": 0.9512256979942322
+    },
+    {
+      "key": "wildfake/real/imagenet_00012",
+      "score": 0.9029406905174255
+    },
+    {
+      "key": "wildfake/real/celebahq_00058",
+      "score": 0.6746047735214233
+    },
+    {
+      "key": "wildfake/real/coco_00119",
+      "score": 0.6741235852241516
+    },
+    {
+      "key": "wildfake/real/afhq_00028",
+      "score": 0.6073110699653625
+    },
+    {
+      "key": "wildfake/real/imagenet_00147",
+      "score": 0.5973700284957886
+    },
+    {
+      "key": "wildfake/real/imagenet_00135",
+      "score": 0.5588023662567139
+    }
+  ],
+  "worst_false_negatives": [
+    {
+      "key": "wildfake/fake/VQDM_00138",
+      "score": 0.001114057144150138
+    },
+    {
+      "key": "wildfake/fake/DDIM_00097",
+      "score": 0.0011380737414583564
+    },
+    {
+      "key": "wildfake/fake/VQDM_00089",
+      "score": 0.0011415245244279504
+    },
+    {
+      "key": "wildfake/fake/ADM_00063",
+      "score": 0.0011415245244279504
+    },
+    {
+      "key": "wildfake/fake/DDIM_00122",
+      "score": 0.0011459554079920053
+    },
+    {
+      "key": "wildfake/fake/DDPM_00011",
+      "score": 0.0011459554079920053
+    },
+    {
+      "key": "wildfake/fake/ADM_00145",
+      "score": 0.0011459554079920053
+    },
+    {
+      "key": "wildfake/fake/DDPM_00117",
+      "score": 0.0011472472688183188
+    },
+    {
+      "key": "wildfake/fake/DDPM_00048",
+      "score": 0.0011569488560780883
+    },
+    {
+      "key": "wildfake/fake/DDPM_00091",
+      "score": 0.0011589496862143278
+    },
+    {
+      "key": "wildfake/fake/DDPM_00086",
+      "score": 0.0011610795045271516
+    },
+    {
+      "key": "wildfake/fake/ADM_00126",
+      "score": 0.0011633466929197311
+    },
+    {
+      "key": "wildfake/fake/ADM_00068",
+      "score": 0.0011657600989565253
+    },
+    {
+      "key": "wildfake/fake/ADM_00042",
+      "score": 0.0011657600989565253
+    },
+    {
+      "key": "wildfake/fake/VQDM_00061",
+      "score": 0.0011683291522786021
+    }
+  ]
+}

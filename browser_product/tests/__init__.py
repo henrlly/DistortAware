@@ -1,0 +1,1 @@
+"""Browser product contract tests."""

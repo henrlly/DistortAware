@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PrismGuard settings</title>
+    <link rel="stylesheet" href="options.css">
+    <script defer src="../lib/shared.js"></script>
+    <script defer src="options.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">PrismGuard</p>
+        <h1>Local detector settings</h1>
+        <p>Connect the extension to the authenticated PrismGuard-compatible service running on this computer.</p>
+      </header>
+
+      <form id="settings-form">
+        <section>
+          <h2>Detector</h2>
+          <label>
+            Active detector
+            <select id="detector-mode" name="detectorMode">
+              <option value="original_patchhead">Original PatchHead</option>
+              <option value="prismguard">PrismGuard pure DINO</option>
+              <option value="demo_fixture">Wiring demo fixture — no accuracy claim</option>
+            </select>
+          </label>
+          <div class="grid">
+            <label>
+              Original PatchHead URL
+              <input id="original-service-url" name="originalServiceUrl" type="url" spellcheck="false" required>
+            </label>
+            <label>
+              Original bearer token
+              <input id="original-api-token" name="originalApiToken" type="password" autocomplete="off" spellcheck="false">
+            </label>
+            <label>
+              PrismGuard URL
+              <input id="prismguard-service-url" name="prismguardServiceUrl" type="url" spellcheck="false" required>
+            </label>
+            <label>
+              PrismGuard bearer token
+              <input id="prismguard-api-token" name="prismguardApiToken" type="password" autocomplete="off" spellcheck="false">
+            </label>
+            <label>
+              Demo fixture URL
+              <input id="demo-service-url" name="demoServiceUrl" type="url" spellcheck="false" required>
+            </label>
+            <label>
+              Demo fixture token
+              <input id="demo-api-token" name="demoApiToken" type="password" autocomplete="off" spellcheck="false">
+            </label>
+          </div>
+          <small>All endpoints must use plain HTTP loopback. The active selection is verified against the service's model contract before it is accepted.</small>
+          <button id="test-button" class="secondary" type="button">Test connection</button>
+          <p id="connection-status" class="status" aria-live="polite"></p>
+        </section>
+
+        <section>
+          <h2>Scan scope</h2>
+          <div class="grid">
+            <label>
+              Where to scan
+              <select id="scan-scope" name="scanScope">
+                <option value="page">Whole page (auto-scroll)</option>
+                <option value="visible">Current viewport only</option>
+              </select>
+            </label>
+            <label>
+              Maximum images per scan
+              <input id="max-images" name="maxImages" type="number" min="1" max="60" step="1">
+            </label>
+            <label>
+              Minimum side (CSS px)
+              <input id="min-dimension" name="minDimension" type="number" min="48" max="320" step="1">
+            </label>
+            <label>
+              Minimum visible area (px²)
+              <input id="min-area" name="minArea" type="number" min="2304" max="250000" step="1">
+            </label>
+          </div>
+          <small>Whole-page mode temporarily scrolls through the page to capture lazy-loaded rendered images, then returns to your original position. Infinite feeds stop at the image limit or a 40-viewport safety cap.</small>
+          <label class="checkbox">
+            <input id="include-artifacts" name="includeArtifacts" type="checkbox">
+            <span>
+              Request residual artifact explanations
+              <small>The compact RGB/high-pass U-Net adds a weak class signal and evidence-mask summary. It is explanation-only and never changes the detector verdict.</small>
+            </span>
+          </label>
+          <label class="checkbox">
+            <input id="include-physics" name="includePhysics" type="checkbox">
+            <span>
+              Request physics explanations
+              <small>This is slower and only works if the service was started with <code>--physics-profile heuristic</code> or <code>learned</code>. It never changes the detector verdict.</small>
+            </span>
+          </label>
+        </section>
+
+        <div class="save-row">
+          <button class="primary" type="submit">Save settings</button>
+          <span id="save-status" aria-live="polite"></span>
+        </div>
+      </form>
+
+      <aside>
+        <strong>Privacy boundary</strong>
+        The extension sends only rendered viewport crops to your loopback service. It does not send page URLs, cookies, captions, or source-image URLs, and it performs no cloud API calls. Whole-page mode scrolls locally; it does not fetch image URLs.
+      </aside>
+    </main>
+  </body>
+</html>

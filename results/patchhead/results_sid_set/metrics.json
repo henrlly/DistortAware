@@ -1,0 +1,25 @@
+{
+  "clean_acc": 1.0,
+  "clean_auc": 1.0,
+  "mean_transformed_acc": 0.993095238095238,
+  "min_transformed_acc": 0.9833333333333333,
+  "worst_transform": "resize0.25",
+  "threshold": 0.5,
+  "per_transform": {
+    "clean": 1.0,
+    "jpeg90": 1.0,
+    "jpeg70": 0.9966666666666667,
+    "jpeg50": 1.0,
+    "jpeg30": 0.99,
+    "blur0.5": 1.0,
+    "blur1.0": 0.99,
+    "blur2.0": 0.9866666666666667,
+    "resize0.5": 0.9933333333333333,
+    "resize0.25": 0.9833333333333333,
+    "noise0.02": 0.9933333333333333,
+    "noise0.05": 0.9866666666666667,
+    "noise0.10": 0.9833333333333333,
+    "jitter": 1.0,
+    "crop80": 1.0
+  }
+}

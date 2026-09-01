@@ -1,0 +1,42 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f6f7fb;
+  color: #172033;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { width: min(760px, calc(100% - 32px)); margin: 42px auto; }
+.eyebrow { margin: 0 0 4px; color: #6654d9; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin: 0; font-size: 30px; letter-spacing: -.03em; }
+header > p:last-child { max-width: 620px; margin: 10px 0 24px; color: #667085; line-height: 1.55; }
+form { display: grid; gap: 14px; }
+section, aside { padding: 22px; border: 1px solid #e0e2eb; border-radius: 15px; background: white; box-shadow: 0 8px 30px rgba(42, 39, 77, .05); }
+h2 { margin: 0 0 16px; font-size: 17px; }
+label { display: grid; gap: 6px; margin-top: 14px; font-size: 12px; font-weight: 750; }
+input[type="url"], input[type="password"], input[type="number"], select { width: 100%; padding: 10px 11px; border: 1px solid #cfd3df; border-radius: 9px; background: #fbfcff; color: #1f2937; font: inherit; font-weight: 500; }
+input:focus { border-color: #7766dc; outline: 3px solid rgba(119, 102, 220, .13); }
+small { color: #737b8c; font-size: 10px; font-weight: 500; line-height: 1.45; }
+code { padding: 1px 3px; border-radius: 4px; background: #f0eff8; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.checkbox { display: grid; grid-template-columns: auto 1fr; align-items: start; gap: 9px; margin-top: 20px; }
+.checkbox input { margin-top: 2px; accent-color: #6654d9; }
+.checkbox span, .checkbox small { display: block; }
+.checkbox small { margin-top: 3px; }
+button { padding: 10px 14px; border: 0; border-radius: 9px; cursor: pointer; font: inherit; font-size: 12px; font-weight: 800; }
+button:disabled { cursor: progress; opacity: .6; }
+.primary { background: #6654d9; color: white; }
+.secondary { margin-top: 14px; background: #eceaf8; color: #5145a5; }
+.status { min-height: 17px; margin: 9px 0 0; color: #667085; font-size: 11px; }
+.status.success, #save-status.success { color: #177a43; }
+.status.error, #save-status.error { color: #b42323; }
+.save-row { display: flex; align-items: center; gap: 12px; }
+#save-status { font-size: 11px; }
+aside { margin-top: 18px; color: #5f6676; font-size: 11px; line-height: 1.55; }
+aside strong { display: block; margin-bottom: 3px; color: #30384a; }
+
+@media (max-width: 620px) {
+  main { margin-top: 20px; }
+  .grid { grid-template-columns: 1fr; }
+}

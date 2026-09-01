@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AIGC Signal Inspector demo wall</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #111522; color: #f5f7ff; font-family: ui-sans-serif, system-ui, sans-serif; }
+      header { max-width: 1120px; margin: 0 auto; padding: 38px 24px 18px; }
+      h1 { margin: 0; font-size: clamp(28px, 5vw, 52px); letter-spacing: -.04em; }
+      header p { max-width: 720px; color: #aab1c4; line-height: 1.6; }
+      .wall { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; max-width: 1120px; margin: 0 auto; padding: 18px 24px 70px; }
+      figure, .background-card { position: relative; min-height: 360px; margin: 0; overflow: hidden; border: 1px solid #30384f; border-radius: 18px; background: #1a2030; }
+      img { display: block; width: 100%; height: 320px; object-fit: cover; }
+      figcaption, .background-card span { display: block; padding: 12px 15px; color: #c6ccdc; font-size: 13px; }
+      .background-card { background-image: url("../../physics/examples/demo_images/automatic_inconsistent.png"); background-position: center; background-size: cover; }
+      .background-card span { position: absolute; right: 12px; bottom: 12px; border-radius: 8px; background: rgba(10, 12, 20, .82); }
+      .decoration { width: 32px; height: 32px; margin: 0 24px; opacity: .7; }
+      @media (max-width: 720px) { .wall { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Rendered-image scan demo</h1>
+      <p>This page uses tracked synthetic geometry fixtures to exercise image discovery, viewport capture, local inference, badges, and optional physics output. It is a wiring demo—not an accuracy benchmark or a real-versus-AIGC ground-truth set.</p>
+    </header>
+    <img class="decoration" src="../../physics/examples/demo_images/no_geometry.png" alt="Tiny decorative image that should be filtered">
+    <main class="wall">
+      <figure>
+        <img src="../../physics/examples/demo_images/automatic_consistent.png" alt="Automatic consistent geometry fixture">
+        <figcaption>Automatic geometry fixture A</figcaption>
+      </figure>
+      <figure>
+        <img src="../../physics/examples/demo_images/perspective_inconsistent.png" alt="Perspective inconsistency fixture">
+        <figcaption>Perspective fixture B</figcaption>
+      </figure>
+      <figure>
+        <img src="../../physics/examples/demo_images/annotated_consistent.png" alt="Annotated consistent fixture">
+        <figcaption>Reviewed-annotation fixture C</figcaption>
+      </figure>
+      <div class="background-card" role="img" aria-label="CSS background geometry fixture">
+        <span>CSS background fixture D</span>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+data/
+cache/
+checkpoints/
+logs_*.txt
+__pycache__/
+*.pyc
+.DS_Store
+preds.json
+nohup.out
+.venv/
+dist/
+slurm/job_*.out
+slurm/job_*.err
+*.out
+*.err

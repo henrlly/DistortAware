@@ -1,0 +1,128 @@
+{
+  "n_false_pos": 117,
+  "n_false_neg": 24,
+  "worst_false_positives": [
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/coco_00100.npz",
+      "score": 0.99994957447052
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/coco_00025.npz",
+      "score": 0.9999145269393921
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/imagenet_00121.npz",
+      "score": 0.9998306035995483
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/imagenet_00143.npz",
+      "score": 0.9996553659439087
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/imagenet_00141.npz",
+      "score": 0.99955153465271
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/imagenet_00120.npz",
+      "score": 0.9992642998695374
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/coco_00078.npz",
+      "score": 0.9990487098693848
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/imagenet_00045.npz",
+      "score": 0.9986528158187866
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/coco_00119.npz",
+      "score": 0.9984641075134277
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/imagenet_00147.npz",
+      "score": 0.9978464841842651
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/imagenet_00139.npz",
+      "score": 0.996721625328064
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/imagenet_00148.npz",
+      "score": 0.9963423609733582
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/coco_00066.npz",
+      "score": 0.9962141513824463
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/imagenet_00105.npz",
+      "score": 0.995780348777771
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/real/imagenet_00130.npz",
+      "score": 0.9937347769737244
+    }
+  ],
+  "worst_false_negatives": [
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00116.npz",
+      "score": 0.000962297257501632
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/ADM_00136.npz",
+      "score": 0.0024403659626841545
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00051.npz",
+      "score": 0.033754825592041016
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00113.npz",
+      "score": 0.0370822511613369
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00146.npz",
+      "score": 0.056075569242239
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00016.npz",
+      "score": 0.10941971838474274
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00033.npz",
+      "score": 0.10982273519039154
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00147.npz",
+      "score": 0.13551576435565948
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/ADM_00124.npz",
+      "score": 0.139630988240242
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00013.npz",
+      "score": 0.13985322415828705
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00127.npz",
+      "score": 0.1435573697090149
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00029.npz",
+      "score": 0.15846340358257294
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/DDPM_00086.npz",
+      "score": 0.19156403839588165
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/VQDM_00008.npz",
+      "score": 0.19211426377296448
+    },
+    {
+      "path": "cache/feat_sana16_r512s7/test/clean/fake/ADM_00123.npz",
+      "score": 0.21402660012245178
+    }
+  ]
+}

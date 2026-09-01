@@ -1,0 +1,128 @@
+{
+  "n_false_pos": 85,
+  "n_false_neg": 69,
+  "worst_false_positives": [
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00130.npz",
+      "score": 0.9996414184570312
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/coco_00119.npz",
+      "score": 0.9995980262756348
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00022.npz",
+      "score": 0.9976860284805298
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00028.npz",
+      "score": 0.9969526529312134
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00121.npz",
+      "score": 0.9961509704589844
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00050.npz",
+      "score": 0.9955641031265259
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/coco_00078.npz",
+      "score": 0.9954673051834106
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00011.npz",
+      "score": 0.9945261478424072
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00038.npz",
+      "score": 0.993970513343811
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00019.npz",
+      "score": 0.992814838886261
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00005.npz",
+      "score": 0.992327094078064
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/afhq_00099.npz",
+      "score": 0.9913582801818848
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00065.npz",
+      "score": 0.9904202222824097
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/imagenet_00123.npz",
+      "score": 0.9892984628677368
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/real/coco_00100.npz",
+      "score": 0.9888624548912048
+    }
+  ],
+  "worst_false_negatives": [
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/DDPM_00086.npz",
+      "score": 0.005905940663069487
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/VQDM_00113.npz",
+      "score": 0.006302431225776672
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/VQDM_00107.npz",
+      "score": 0.012602072209119797
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/VQDM_00116.npz",
+      "score": 0.013833041302859783
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/VQDM_00017.npz",
+      "score": 0.01766645908355713
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/ADM_00025.npz",
+      "score": 0.020331138744950294
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/VQDM_00146.npz",
+      "score": 0.020445264875888824
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/VQDM_00089.npz",
+      "score": 0.02892632596194744
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/VQDM_00019.npz",
+      "score": 0.030460096895694733
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/VQDM_00095.npz",
+      "score": 0.03134651109576225
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/ADM_00071.npz",
+      "score": 0.03182605281472206
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/ADM_00069.npz",
+      "score": 0.032630231231451035
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/DDPM_00108.npz",
+      "score": 0.034365214407444
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/DDPM_00133.npz",
+      "score": 0.03514576703310013
+    },
+    {
+      "path": "cache/feat_wildfake_sd15_r256s10/test/clean/fake/VQDM_00033.npz",
+      "score": 0.03998358175158501
+    }
+  ]
+}

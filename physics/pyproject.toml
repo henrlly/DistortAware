@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "techjam-physics-engine"
+version = "0.6.1"
+description = "Applicability-aware geometric consistency evidence for AI-image forensics"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3",
+  "opencv-python-headless>=4.9,<5",
+  "Pillow>=10,<13",
+]
+
+[project.optional-dependencies]
+sid = [
+  "huggingface-hub>=0.30,<2",
+  "pyarrow>=18,<24",
+]
+eval = [
+  "pyarrow>=18,<24",
+]
+dino = [
+  "timm>=1.0,<2",
+  "torch>=2.4,<3",
+]
+auto = [
+  "huggingface-hub>=0.30,<2",
+  "timm>=1.0,<2",
+  "torch>=2.4,<3",
+  "torchvision>=0.19,<1",
+  "transformers>=4.48,<6",
+]
+
+[project.scripts]
+physics-engine = "physics_engine.cli:main"
+physics-battle-test = "physics_engine.robustness:main"
+physics-merge = "physics_engine.integration:main"
+physics-dino-export = "physics_engine.dino_export:main"
+physics-dino-merge = "physics_engine.dino_integration:main"
+physics-dino-render = "physics_engine.dino_render:main"
+physics-sid-pilot = "physics_engine.sid_pilot:main"
+physics-review-agreement = "physics_engine.reviewer_agreement:main"
+physics-mask-eval = "physics_engine.mask_eval:main"
+physics-checkpoint-eval = "physics_engine.checkpoint_eval:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

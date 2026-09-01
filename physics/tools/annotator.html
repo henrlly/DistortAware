@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechJam Physics Annotation Tool</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1220;
+      --panel: #111c2f;
+      --panel-2: #16243a;
+      --text: #e7eef8;
+      --muted: #9eb0c7;
+      --border: #2a3a52;
+      --shadow: #34d399;
+      --reflection: #60a5fa;
+      --pending: #fbbf24;
+      --danger: #fb7185;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top left, #142442 0, var(--bg) 45%);
+      color: var(--text);
+      font: 15px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    header {
+      padding: 24px clamp(18px, 4vw, 44px) 12px;
+      max-width: 1600px;
+      margin: auto;
+    }
+
+    h1 { margin: 0 0 6px; font-size: clamp(22px, 3vw, 34px); }
+    h2 { margin: 0 0 14px; font-size: 17px; }
+    p { margin: 5px 0; }
+    .muted { color: var(--muted); }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+      gap: 18px;
+      max-width: 1600px;
+      margin: auto;
+      padding: 14px clamp(18px, 4vw, 44px) 36px;
+    }
+
+    .panel {
+      background: color-mix(in srgb, var(--panel) 94%, transparent);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 18px 50px rgb(0 0 0 / 20%);
+    }
+
+    .controls { padding: 18px; }
+    .stage { min-width: 0; overflow: hidden; }
+
+    label {
+      display: block;
+      margin: 14px 0 6px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    input, select, button, textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel-2);
+      color: var(--text);
+      padding: 9px 10px;
+      font: inherit;
+    }
+
+    input[type="file"] { padding: 8px; }
+    input[type="range"] { padding: 4px 0; accent-color: var(--reflection); }
+
+    button {
+      cursor: pointer;
+      font-weight: 700;
+      transition: transform 100ms ease, border-color 100ms ease;
+    }
+
+    button:hover { border-color: #6683a8; }
+    button:active { transform: translateY(1px); }
+    button.primary { background: #205ea8; border-color: #3b82d0; }
+    button.danger { color: #fecdd3; }
+    button.small { width: auto; padding: 4px 8px; font-size: 12px; }
+
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+
+    .status {
+      margin-top: 14px;
+      padding: 10px 12px;
+      min-height: 42px;
+      background: #0d1728;
+      border-left: 3px solid var(--pending);
+      border-radius: 6px;
+      color: #d9e6f5;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+
+    .canvas-wrap {
+      display: grid;
+      place-items: center;
+      min-height: 460px;
+      max-height: 72vh;
+      padding: 16px;
+      overflow: auto;
+      background:
+        linear-gradient(45deg, #111b2b 25%, transparent 25%),
+        linear-gradient(-45deg, #111b2b 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #111b2b 75%),
+        linear-gradient(-45deg, transparent 75%, #111b2b 75%), #0c1524;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+      background-size: 16px 16px;
+    }
+
+    canvas {
+      display: block;
+      max-width: 100%;
+      max-height: calc(72vh - 32px);
+      cursor: crosshair;
+      box-shadow: 0 6px 24px rgb(0 0 0 / 45%);
+    }
+
+    .lower {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.9fr) minmax(300px, 1.1fr);
+      border-top: 1px solid var(--border);
+    }
+
+    .lower > section { padding: 16px; min-width: 0; }
+    .lower > section + section { border-left: 1px solid var(--border); }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { text-align: left; padding: 7px 5px; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); }
+
+    textarea {
+      min-height: 250px;
+      resize: vertical;
+      font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      white-space: pre;
+    }
+
+    .warning {
+      margin-top: 14px;
+      padding: 11px;
+      border: 1px solid #5e4d1d;
+      border-radius: 8px;
+      background: #241e0e;
+      color: #f8dda0;
+      font-size: 13px;
+    }
+
+    @media (max-width: 940px) {
+      main { grid-template-columns: 1fr; }
+      .lower { grid-template-columns: 1fr; }
+      .lower > section + section { border-left: 0; border-top: 1px solid var(--border); }
+      .canvas-wrap { min-height: 300px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Physics evidence annotator</h1>
+    <p class="muted">Record independent cue-applicability decisions and reviewed point correspondences. Everything stays in this browser tab.</p>
+  </header>
+
+  <main>
+    <aside class="panel controls">
+      <h2>1. Load an image</h2>
+      <label for="image-input">Image file</label>
+      <input id="image-input" type="file" accept="image/*">
+
+      <label for="image-key">Image key in exported JSON</label>
+      <input id="image-key" type="text" placeholder="scene.png">
+
+      <label for="reviewer-id">Reviewer ID</label>
+      <input id="reviewer-id" type="text" placeholder="reviewer-a" required>
+
+      <label for="import-input">Optional existing annotation JSON</label>
+      <input id="import-input" type="file" accept="application/json,.json">
+
+      <h2 style="margin-top: 24px">2. Add reviewed pairs</h2>
+      <label for="cue">Evidence cue</label>
+      <select id="cue">
+        <option value="cast_shadow">Cast shadow</option>
+        <option value="reflection">Planar reflection</option>
+        <option value="perspective_region">Perspective structural region</option>
+      </select>
+
+      <label for="cue-applicability">Applicability decision</label>
+      <select id="cue-applicability">
+        <option value="unreviewed">Unreviewed</option>
+        <option value="applicable">Applicable</option>
+        <option value="not_applicable">Not applicable</option>
+        <option value="uncertain">Uncertain</option>
+      </select>
+
+      <label for="confidence">Reviewer confidence: <span id="confidence-value">1.00</span></label>
+      <input id="confidence" type="range" min="0.05" max="1" step="0.05" value="1">
+
+      <div id="status" class="status">Load an image to begin.</div>
+
+      <div class="row">
+        <button id="undo" type="button">Undo</button>
+        <button id="clear-cue" class="danger" type="button">Clear cue</button>
+      </div>
+      <button id="clear-all" class="danger" type="button" style="margin-top: 8px">Clear all pairs</button>
+
+      <h2 style="margin-top: 24px">3. Export</h2>
+      <div class="row">
+        <button id="copy" type="button">Copy JSON</button>
+        <button id="download" class="primary" type="button">Download JSON</button>
+      </div>
+
+      <div class="warning">
+        Review independently without seeing another reviewer's annotations. These clicks are evidence, not ground truth that an image is real or synthetic. Use at least three comparable pairs per applicable cue; multiple lights, curved mirrors, and uneven ground can invalidate the test.
+      </div>
+    </aside>
+
+    <section class="panel stage">
+      <div class="legend">
+        <span><span class="dot" style="background: var(--shadow)"></span>cast-shadow vector</span>
+        <span><span class="dot" style="background: var(--reflection)"></span>reflection connector</span>
+        <span><span class="dot" style="background: #f472b6"></span>perspective region</span>
+        <span><span class="dot" style="background: var(--pending)"></span>pending first point</span>
+      </div>
+      <div id="canvas-wrap" class="canvas-wrap">
+        <canvas id="canvas" width="960" height="540" aria-label="Image annotation canvas"></canvas>
+      </div>
+      <div class="lower">
+        <section>
+          <h2>Reviewed pairs</h2>
+          <table>
+            <thead><tr><th>#</th><th>Cue</th><th>Confidence</th><th></th></tr></thead>
+            <tbody id="pair-list"></tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Schema-compatible JSON</h2>
+          <textarea id="json-preview" readonly spellcheck="false"></textarea>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    "use strict";
+
+    const canvas = document.querySelector("#canvas");
+    const context = canvas.getContext("2d");
+    const imageInput = document.querySelector("#image-input");
+    const importInput = document.querySelector("#import-input");
+    const imageKeyInput = document.querySelector("#image-key");
+    const reviewerIdInput = document.querySelector("#reviewer-id");
+    const cueSelect = document.querySelector("#cue");
+    const cueApplicabilitySelect = document.querySelector("#cue-applicability");
+    const confidenceInput = document.querySelector("#confidence");
+    const confidenceValue = document.querySelector("#confidence-value");
+    const status = document.querySelector("#status");
+    const pairList = document.querySelector("#pair-list");
+    const jsonPreview = document.querySelector("#json-preview");
+
+    const colors = {
+      cast_shadow: "#34d399",
+      reflection: "#60a5fa",
+      perspective_region: "#f472b6",
+      pending: "#fbbf24",
+    };
+
+    const state = {
+      image: null,
+      imageName: "",
+      pending: null,
+      pairs: { cast_shadow: [], reflection: [], perspective_region: [] },
+      applicability: { cast_shadow: "unreviewed", reflection: "unreviewed" },
+    };
+
+    function cueLabel(cue) {
+      if (cue === "cast_shadow") return "shadow";
+      if (cue === "reflection") return "reflection";
+      return "perspective region";
+    }
+
+    function firstPointLabel(cue) {
+      if (cue === "cast_shadow") return "object-ground contact";
+      if (cue === "reflection") return "visible object point";
+      return "top-left corner of the structural region";
+    }
+
+    function secondPointLabel(cue) {
+      if (cue === "cast_shadow") return "corresponding shadow tip";
+      if (cue === "reflection") return "matching reflected point";
+      return "bottom-right corner of the structural region";
+    }
+
+    function updateStatus(message) {
+      if (message) {
+        status.textContent = message;
+        return;
+      }
+      if (!state.image) {
+        status.textContent = "Load an image to begin.";
+      } else if (!state.pending) {
+        status.textContent = `Click the ${firstPointLabel(cueSelect.value)}.`;
+      } else {
+        status.textContent = `Now click the ${secondPointLabel(state.pending.cue)}.`;
+      }
+    }
+
+    function canvasPoint(event) {
+      const bounds = canvas.getBoundingClientRect();
+      return {
+        x: Math.max(0, Math.min(1, (event.clientX - bounds.left) / bounds.width)),
+        y: Math.max(0, Math.min(1, (event.clientY - bounds.top) / bounds.height)),
+      };
+    }
+
+    function pixelPoint(point) {
+      return { x: point.x * canvas.width, y: point.y * canvas.height };
+    }
+
+    function drawPoint(point, color, filled = true) {
+      const pixel = pixelPoint(point);
+      context.beginPath();
+      context.arc(pixel.x, pixel.y, 6, 0, Math.PI * 2);
+      context.fillStyle = color;
+      context.strokeStyle = "#07111f";
+      context.lineWidth = 2;
+      if (filled) context.fill();
+      context.stroke();
+    }
+
+    function drawArrow(first, second, color) {
+      const start = pixelPoint(first);
+      const end = pixelPoint(second);
+      const angle = Math.atan2(end.y - start.y, end.x - start.x);
+      context.strokeStyle = color;
+      context.lineWidth = Math.max(3, canvas.width / 360);
+      context.beginPath();
+      context.moveTo(start.x, start.y);
+      context.lineTo(end.x, end.y);
+      context.stroke();
+      context.beginPath();
+      context.moveTo(end.x, end.y);
+      context.lineTo(end.x - 14 * Math.cos(angle - Math.PI / 6), end.y - 14 * Math.sin(angle - Math.PI / 6));
+      context.moveTo(end.x, end.y);
+      context.lineTo(end.x - 14 * Math.cos(angle + Math.PI / 6), end.y - 14 * Math.sin(angle + Math.PI / 6));
+      context.stroke();
+      drawPoint(first, color, true);
+      drawPoint(second, color, false);
+    }
+
+    function drawRegion(first, second, color) {
+      const start = pixelPoint(first);
+      const end = pixelPoint(second);
+      const left = Math.min(start.x, end.x);
+      const top = Math.min(start.y, end.y);
+      const width = Math.abs(end.x - start.x);
+      const height = Math.abs(end.y - start.y);
+      context.fillStyle = `${color}22`;
+      context.strokeStyle = color;
+      context.lineWidth = Math.max(3, canvas.width / 360);
+      context.fillRect(left, top, width, height);
+      context.strokeRect(left, top, width, height);
+      drawPoint(first, color, true);
+      drawPoint(second, color, false);
+    }
+
+    function draw() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      if (state.image) {
+        context.drawImage(state.image, 0, 0, canvas.width, canvas.height);
+      } else {
+        context.fillStyle = "#0c1524";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        context.fillStyle = "#9eb0c7";
+        context.textAlign = "center";
+        context.font = "20px system-ui";
+        context.fillText("Load an image", canvas.width / 2, canvas.height / 2);
+      }
+
+      for (const cue of ["cast_shadow", "reflection", "perspective_region"]) {
+        state.pairs[cue].forEach((pair, index) => {
+          if (cue === "perspective_region") {
+            drawRegion(pair.first, pair.second, colors[cue]);
+          } else {
+            drawArrow(pair.first, pair.second, colors[cue]);
+          }
+          const first = pixelPoint(pair.first);
+          context.fillStyle = colors[cue];
+          context.font = `bold ${Math.max(13, canvas.width / 70)}px system-ui`;
+          context.textAlign = "left";
+          context.fillText(String(index + 1), first.x + 9, first.y - 9);
+        });
+      }
+      if (state.pending) drawPoint(state.pending.point, colors.pending, true);
+    }
+
+    function round(value) {
+      return Number(value.toFixed(6));
+    }
+
+    function pairPayload(cue, pair) {
+      const confidence = round(pair.confidence);
+      if (cue === "perspective_region") {
+        return {
+          xyxy: [
+            round(Math.min(pair.first.x, pair.second.x)),
+            round(Math.min(pair.first.y, pair.second.y)),
+            round(Math.max(pair.first.x, pair.second.x)),
+            round(Math.max(pair.first.y, pair.second.y)),
+          ],
+          confidence,
+        };
+      }
+      if (cue === "cast_shadow") {
+        return {
+          object_contact: [round(pair.first.x), round(pair.first.y)],
+          shadow_tip: [round(pair.second.x), round(pair.second.y)],
+          confidence,
+        };
+      }
+      return {
+        object_point: [round(pair.first.x), round(pair.first.y)],
+        reflection_point: [round(pair.second.x), round(pair.second.y)],
+        confidence,
+      };
+    }
+
+    function exportPayload() {
+      const key = imageKeyInput.value.trim() || state.imageName || "image.png";
+      return {
+        schema_version: "0.1.0",
+        coordinate_space: "normalized",
+        annotation_protocol: "independent_review_v1",
+        reviewer: {
+          id: reviewerIdInput.value.trim() || null,
+        },
+        images: {
+          [key]: {
+            perspective: {
+              regions: state.pairs.perspective_region.map(pair => pairPayload("perspective_region", pair)),
+            },
+            cast_shadow: {
+              applicability: state.applicability.cast_shadow,
+              pairs: state.pairs.cast_shadow.map(pair => pairPayload("cast_shadow", pair)),
+            },
+            reflection: {
+              applicability: state.applicability.reflection,
+              pairs: state.pairs.reflection.map(pair => pairPayload("reflection", pair)),
+            },
+          },
+        },
+      };
+    }
+
+    function refreshPairList() {
+      pairList.replaceChildren();
+      for (const cue of ["cast_shadow", "reflection", "perspective_region"]) {
+        state.pairs[cue].forEach((pair, index) => {
+          const row = document.createElement("tr");
+          const number = document.createElement("td");
+          number.textContent = String(index + 1);
+          const label = document.createElement("td");
+          label.textContent = cueLabel(cue);
+          label.style.color = colors[cue];
+          const confidence = document.createElement("td");
+          confidence.textContent = pair.confidence.toFixed(2);
+          const action = document.createElement("td");
+          const remove = document.createElement("button");
+          remove.type = "button";
+          remove.className = "small danger";
+          remove.textContent = "Remove";
+          remove.addEventListener("click", () => {
+            state.pairs[cue].splice(index, 1);
+            refresh();
+          });
+          action.append(remove);
+          row.append(number, label, confidence, action);
+          pairList.append(row);
+        });
+      }
+      if (!pairList.children.length) {
+        const row = document.createElement("tr");
+        const cell = document.createElement("td");
+        cell.colSpan = 4;
+        cell.className = "muted";
+        cell.textContent = "No completed pairs yet.";
+        row.append(cell);
+        pairList.append(row);
+      }
+    }
+
+    function refresh() {
+      const isRegion = cueSelect.value === "perspective_region";
+      cueApplicabilitySelect.disabled = isRegion;
+      cueApplicabilitySelect.value = isRegion ? "unreviewed" : state.applicability[cueSelect.value];
+      draw();
+      refreshPairList();
+      jsonPreview.value = JSON.stringify(exportPayload(), null, 2);
+      updateStatus();
+    }
+
+    function normalizedImportedPoint(value, coordinateSpace) {
+      if (!Array.isArray(value) || value.length !== 2) throw new Error("Invalid point array");
+      let x = Number(value[0]);
+      let y = Number(value[1]);
+      if (coordinateSpace === "pixels") {
+        if (!state.image) throw new Error("Load the corresponding image before importing pixel coordinates");
+        x /= canvas.width;
+        y /= canvas.height;
+      }
+      if (![x, y].every(Number.isFinite) || x < 0 || x > 1 || y < 0 || y > 1) {
+        throw new Error("Imported points must lie within the image");
+      }
+      return { x, y };
+    }
+
+    function importEntry(payload) {
+      if (!payload || typeof payload !== "object" || !payload.images) {
+        throw new Error("Expected an annotation object containing `images`");
+      }
+      const key = imageKeyInput.value.trim() || state.imageName;
+      const entryKey = payload.images[key]
+        ? key
+        : Object.keys(payload.images).find(candidate => candidate.split("/").pop() === state.imageName)
+          || Object.keys(payload.images)[0];
+      if (!entryKey) throw new Error("No image annotation was found in the JSON file");
+      const entry = payload.images[entryKey];
+      const coordinateSpace = entry.coordinate_space || payload.coordinate_space || "normalized";
+      if (!["normalized", "pixels"].includes(coordinateSpace)) throw new Error("Unknown coordinate space");
+
+      const shadowPairs = entry.cast_shadow?.pairs || [];
+      const reflectionPairs = entry.reflection?.pairs || [];
+      const perspectiveRegions = entry.perspective?.regions || [];
+      state.pairs.cast_shadow = shadowPairs.map(pair => ({
+        first: normalizedImportedPoint(pair.object_contact, coordinateSpace),
+        second: normalizedImportedPoint(pair.shadow_tip, coordinateSpace),
+        confidence: Number(pair.confidence ?? 1),
+      }));
+      state.pairs.reflection = reflectionPairs.map(pair => ({
+        first: normalizedImportedPoint(pair.object_point, coordinateSpace),
+        second: normalizedImportedPoint(pair.reflection_point, coordinateSpace),
+        confidence: Number(pair.confidence ?? 1),
+      }));
+      state.pairs.perspective_region = perspectiveRegions.map(region => ({
+        first: normalizedImportedPoint(region.xyxy?.slice(0, 2), coordinateSpace),
+        second: normalizedImportedPoint(region.xyxy?.slice(2, 4), coordinateSpace),
+        confidence: Number(region.confidence ?? 1),
+      }));
+      state.applicability.cast_shadow = entry.cast_shadow?.applicability
+        || (shadowPairs.length ? "applicable" : "unreviewed");
+      state.applicability.reflection = entry.reflection?.applicability
+        || (reflectionPairs.length ? "applicable" : "unreviewed");
+      reviewerIdInput.value = payload.reviewer?.id || reviewerIdInput.value;
+      imageKeyInput.value = entryKey;
+      state.pending = null;
+      refresh();
+      updateStatus(`Imported ${shadowPairs.length} shadow, ${reflectionPairs.length} reflection, and ${perspectiveRegions.length} perspective-region annotation(s).`);
+    }
+
+    imageInput.addEventListener("change", () => {
+      const file = imageInput.files?.[0];
+      if (!file) return;
+      const image = new Image();
+      const objectUrl = URL.createObjectURL(file);
+      image.addEventListener("load", () => {
+        state.image = image;
+        state.imageName = file.name;
+        state.pending = null;
+        state.pairs = { cast_shadow: [], reflection: [], perspective_region: [] };
+        state.applicability = { cast_shadow: "unreviewed", reflection: "unreviewed" };
+        canvas.width = image.naturalWidth;
+        canvas.height = image.naturalHeight;
+        imageKeyInput.value = file.name;
+        URL.revokeObjectURL(objectUrl);
+        refresh();
+      });
+      image.addEventListener("error", () => {
+        URL.revokeObjectURL(objectUrl);
+        updateStatus("The selected image could not be decoded.");
+      });
+      image.src = objectUrl;
+    });
+
+    importInput.addEventListener("change", async () => {
+      const file = importInput.files?.[0];
+      if (!file) return;
+      try {
+        importEntry(JSON.parse(await file.text()));
+      } catch (error) {
+        updateStatus(`Import failed: ${error.message}`);
+      } finally {
+        importInput.value = "";
+      }
+    });
+
+    canvas.addEventListener("click", event => {
+      if (!state.image) return;
+      const point = canvasPoint(event);
+      const cue = cueSelect.value;
+      if (!state.pending) {
+        state.pending = { cue, point };
+      } else if (state.pending.cue !== cue) {
+        state.pending = { cue, point };
+      } else {
+        state.pairs[cue].push({
+          first: state.pending.point,
+          second: point,
+          confidence: Number(confidenceInput.value),
+        });
+        if (cue !== "perspective_region") state.applicability[cue] = "applicable";
+        state.pending = null;
+      }
+      refresh();
+    });
+
+    cueSelect.addEventListener("change", () => {
+      state.pending = null;
+      refresh();
+    });
+
+    cueApplicabilitySelect.addEventListener("change", () => {
+      if (cueSelect.value === "perspective_region") return;
+      state.applicability[cueSelect.value] = cueApplicabilitySelect.value;
+      state.pending = null;
+      refresh();
+    });
+
+    confidenceInput.addEventListener("input", () => {
+      confidenceValue.textContent = Number(confidenceInput.value).toFixed(2);
+    });
+
+    imageKeyInput.addEventListener("input", () => {
+      jsonPreview.value = JSON.stringify(exportPayload(), null, 2);
+    });
+
+    reviewerIdInput.addEventListener("input", () => {
+      jsonPreview.value = JSON.stringify(exportPayload(), null, 2);
+    });
+
+    document.querySelector("#undo").addEventListener("click", () => {
+      if (state.pending) {
+        state.pending = null;
+      } else {
+        state.pairs[cueSelect.value].pop();
+      }
+      refresh();
+    });
+
+    document.querySelector("#clear-cue").addEventListener("click", () => {
+      const cue = cueSelect.value;
+      const hasReview = state.pairs[cue].length
+        || (cue !== "perspective_region" && state.applicability[cue] !== "unreviewed");
+      if (hasReview && window.confirm(`Clear the ${cueLabel(cue)} review?`)) {
+        state.pairs[cue] = [];
+        if (cue !== "perspective_region") state.applicability[cue] = "unreviewed";
+        state.pending = null;
+        refresh();
+      }
+    });
+
+    document.querySelector("#clear-all").addEventListener("click", () => {
+      const count = state.pairs.cast_shadow.length + state.pairs.reflection.length;
+      const regionCount = state.pairs.perspective_region.length;
+      const hasDecision = Object.values(state.applicability).some(value => value !== "unreviewed");
+      if ((count || regionCount || hasDecision) && window.confirm("Clear every review decision and annotation for this image?")) {
+        state.pairs = { cast_shadow: [], reflection: [], perspective_region: [] };
+        state.applicability = { cast_shadow: "unreviewed", reflection: "unreviewed" };
+        state.pending = null;
+        refresh();
+      }
+    });
+
+    document.querySelector("#copy").addEventListener("click", async () => {
+      if (!reviewerIdInput.value.trim()) {
+        updateStatus("Enter a reviewer ID before exporting annotations.");
+        reviewerIdInput.focus();
+        return;
+      }
+      const text = jsonPreview.value;
+      try {
+        await navigator.clipboard.writeText(text);
+        updateStatus("Annotation JSON copied to the clipboard.");
+      } catch (_) {
+        jsonPreview.focus();
+        jsonPreview.select();
+        document.execCommand("copy");
+        updateStatus("Annotation JSON selected and copied.");
+      }
+    });
+
+    document.querySelector("#download").addEventListener("click", () => {
+      if (!reviewerIdInput.value.trim()) {
+        updateStatus("Enter a reviewer ID before exporting annotations.");
+        reviewerIdInput.focus();
+        return;
+      }
+      const blob = new Blob([`${jsonPreview.value}\n`], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      const stem = (imageKeyInput.value.trim() || "physics-annotations").replace(/\.[^.]+$/, "");
+      const reviewer = (reviewerIdInput.value.trim() || "reviewer").replace(/[^A-Za-z0-9_.-]+/g, "-");
+      link.href = url;
+      link.download = `${stem}.${reviewer}.physics.json`;
+      link.click();
+      URL.revokeObjectURL(url);
+      updateStatus("Annotation JSON downloaded.");
+    });
+
+    refresh();
+  </script>
+</body>
+</html>

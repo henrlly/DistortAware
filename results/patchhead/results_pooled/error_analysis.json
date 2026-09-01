@@ -1,0 +1,32 @@
+{
+  "n_false_pos": 5,
+  "n_false_neg": 1,
+  "worst_false_positives": [
+    {
+      "key": "wildfake/real/imagenet_00038",
+      "score": 0.999201238155365
+    },
+    {
+      "key": "wildfake/real/coco_00119",
+      "score": 0.998859703540802
+    },
+    {
+      "key": "wildfake/real/imagenet_00047",
+      "score": 0.9906339049339294
+    },
+    {
+      "key": "wildfake/real/coco_00100",
+      "score": 0.9555912017822266
+    },
+    {
+      "key": "wildfake/real/imagenet_00081",
+      "score": 0.8587096333503723
+    }
+  ],
+  "worst_false_negatives": [
+    {
+      "key": "sid_set/fake/sid_fake_00070",
+      "score": 0.7369059324264526
+    }
+  ]
+}

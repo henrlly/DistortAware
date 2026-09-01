@@ -1,0 +1,128 @@
+{
+  "n_false_pos": 106,
+  "n_false_neg": 47,
+  "worst_false_positives": [
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00065.npz",
+      "score": 0.999932587146759
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00123.npz",
+      "score": 0.9998626112937927
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00147.npz",
+      "score": 0.9998620748519897
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00038.npz",
+      "score": 0.9998071789741516
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00121.npz",
+      "score": 0.998895525932312
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00022.npz",
+      "score": 0.998585045337677
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00126.npz",
+      "score": 0.9985746741294861
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/coco_00128.npz",
+      "score": 0.9983222484588623
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00120.npz",
+      "score": 0.9981956481933594
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00037.npz",
+      "score": 0.9977996349334717
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/coco_00038.npz",
+      "score": 0.9963635206222534
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00135.npz",
+      "score": 0.995851993560791
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00048.npz",
+      "score": 0.9951134920120239
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00072.npz",
+      "score": 0.9941508173942566
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/real/imagenet_00137.npz",
+      "score": 0.9940743446350098
+    }
+  ],
+  "worst_false_negatives": [
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/VQDM_00017.npz",
+      "score": 0.0017880459781736135
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/ADM_00136.npz",
+      "score": 0.0018919832073152065
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/ADM_00032.npz",
+      "score": 0.002332939999178052
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/VQDM_00033.npz",
+      "score": 0.0039087217301130295
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/VQDM_00014.npz",
+      "score": 0.006942644715309143
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/VQDM_00113.npz",
+      "score": 0.009076730348169804
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/VQDM_00095.npz",
+      "score": 0.016777297481894493
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/VQDM_00109.npz",
+      "score": 0.02045610547065735
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/ADM_00135.npz",
+      "score": 0.02388545125722885
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/DDPM_00086.npz",
+      "score": 0.03325776755809784
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/VQDM_00147.npz",
+      "score": 0.03810122236609459
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/VQDM_00128.npz",
+      "score": 0.03867923840880394
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/VQDM_00111.npz",
+      "score": 0.04721168428659439
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/VQDM_00019.npz",
+      "score": 0.05523372441530228
+    },
+    {
+      "path": "cache/feat_sd15_r256s10/test/clean/fake/ADM_00074.npz",
+      "score": 0.07086092978715897
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "coordinate_space": "pixels",
+  "images": {
+    "annotated_consistent.png": {
+      "cast_shadow": {
+        "pairs": [
+          {"object_contact": [150, 400], "shadow_tip": [255, 465], "confidence": 1.0},
+          {"object_contact": [300, 390], "shadow_tip": [405, 455], "confidence": 1.0},
+          {"object_contact": [430, 410], "shadow_tip": [535, 475], "confidence": 1.0},
+          {"object_contact": [610, 405], "shadow_tip": [715, 470], "confidence": 1.0}
+        ]
+      },
+      "reflection": {
+        "pairs": [
+          {"object_point": [590, 135], "reflection_point": [830, 135], "confidence": 1.0},
+          {"object_point": [575, 195], "reflection_point": [845, 195], "confidence": 1.0},
+          {"object_point": [565, 255], "reflection_point": [855, 255], "confidence": 1.0},
+          {"object_point": [550, 320], "reflection_point": [870, 320], "confidence": 1.0}
+        ]
+      }
+    },
+    "annotated_inconsistent.png": {
+      "cast_shadow": {
+        "pairs": [
+          {"object_contact": [150, 400], "shadow_tip": [255, 465], "confidence": 1.0},
+          {"object_contact": [300, 390], "shadow_tip": [215, 475], "confidence": 1.0},
+          {"object_contact": [430, 410], "shadow_tip": [535, 475], "confidence": 1.0},
+          {"object_contact": [610, 405], "shadow_tip": [670, 315], "confidence": 1.0}
+        ]
+      },
+      "reflection": {
+        "pairs": [
+          {"object_point": [590, 135], "reflection_point": [830, 135], "confidence": 1.0},
+          {"object_point": [575, 195], "reflection_point": [815, 285], "confidence": 1.0},
+          {"object_point": [565, 255], "reflection_point": [855, 255], "confidence": 1.0},
+          {"object_point": [550, 320], "reflection_point": [760, 105], "confidence": 1.0}
+        ]
+      }
+    }
+  }
+}

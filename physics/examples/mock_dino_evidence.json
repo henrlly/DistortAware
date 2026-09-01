@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "input_root": "examples/demo_images",
+  "detector": {
+    "family": "dino_patchhead",
+    "arch": "patchhead-dinov3-vitl16",
+    "mock": true,
+    "warning": "Synthetic patch values for integration testing only; not model output."
+  },
+  "images": [
+    {
+      "image_path": "annotated_inconsistent.png",
+      "aigc_score": 0.91,
+      "is_aigc": true,
+      "patch_evidence": {
+        "grid_shape": [8, 8],
+        "coordinate_space": "normalized_full_frame",
+        "value_kind": "synthetic_integration_fixture",
+        "values": [
+          [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.9, 0.1],
+          [0.1, 0.1, 0.1, 0.1, 0.9, 0.9, 0.9, 0.9],
+          [0.1, 0.1, 0.1, 0.1, 0.9, 0.9, 0.9, 0.9],
+          [0.1, 0.1, 0.1, 0.1, 0.9, 0.9, 0.9, 0.9],
+          [0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.1],
+          [0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.1, 0.1],
+          [0.1, 0.9, 0.9, 0.1, 0.9, 0.1, 0.1, 0.1],
+          [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+        ]
+      }
+    }
+  ]
+}

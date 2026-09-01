@@ -1,0 +1,25 @@
+.DS_Store
+.venv/
+.cache/
+.pytest_cache/
+build/
+dist/
+outputs/
+data/
+checkpoints/
+*.egg-info/
+__pycache__/
+*.py[cod]
+tests/.tmp/
+
+# Runtime model artifacts belong in an external cache or release store.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Local logs and environment files must never enter the collaboration branch.
+*.log
+.env
+.env.*

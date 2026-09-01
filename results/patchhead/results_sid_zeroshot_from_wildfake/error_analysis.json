@@ -1,0 +1,120 @@
+{
+  "n_false_pos": 13,
+  "n_false_neg": 145,
+  "worst_false_positives": [
+    {
+      "key": "sid_set/real/sid_real_00019",
+      "score": 0.9995061159133911
+    },
+    {
+      "key": "sid_set/real/sid_real_00048",
+      "score": 0.9987056851387024
+    },
+    {
+      "key": "sid_set/real/sid_real_00016",
+      "score": 0.9980740547180176
+    },
+    {
+      "key": "sid_set/real/sid_real_00134",
+      "score": 0.9972888231277466
+    },
+    {
+      "key": "sid_set/real/sid_real_00093",
+      "score": 0.9965390563011169
+    },
+    {
+      "key": "sid_set/real/sid_real_00061",
+      "score": 0.9961916208267212
+    },
+    {
+      "key": "sid_set/real/sid_real_00030",
+      "score": 0.9952854514122009
+    },
+    {
+      "key": "sid_set/real/sid_real_00108",
+      "score": 0.9934938549995422
+    },
+    {
+      "key": "sid_set/real/sid_real_00074",
+      "score": 0.9904434680938721
+    },
+    {
+      "key": "sid_set/real/sid_real_00044",
+      "score": 0.9802109599113464
+    },
+    {
+      "key": "sid_set/real/sid_real_00036",
+      "score": 0.9339675903320312
+    },
+    {
+      "key": "sid_set/real/sid_real_00022",
+      "score": 0.8272783160209656
+    },
+    {
+      "key": "sid_set/real/sid_real_00135",
+      "score": 0.78727126121521
+    }
+  ],
+  "worst_false_negatives": [
+    {
+      "key": "sid_set/fake/sid_fake_00080",
+      "score": 0.00031046077492646873
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00139",
+      "score": 0.0003288410371169448
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00047",
+      "score": 0.0003300246607977897
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00026",
+      "score": 0.0003368695033714175
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00061",
+      "score": 0.00034407363273203373
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00093",
+      "score": 0.0003444253816269338
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00102",
+      "score": 0.00035177034442313015
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00036",
+      "score": 0.0003617582260631025
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00103",
+      "score": 0.00037486705696210265
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00148",
+      "score": 0.00037486705696210265
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00101",
+      "score": 0.0003757567028515041
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00118",
+      "score": 0.0003790814953390509
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00039",
+      "score": 0.0003819018602371216
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00109",
+      "score": 0.0003830780915450305
+    },
+    {
+      "key": "sid_set/fake/sid_fake_00098",
+      "score": 0.00038344220956787467
+    }
+  ]
+}

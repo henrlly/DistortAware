@@ -1,0 +1,67 @@
+{
+  "n_false_pos": 18,
+  "n_false_neg": 0,
+  "worst_false_positives": [
+    {
+      "key": "wildfake/real/imagenet_00038",
+      "score": 0.9996834993362427
+    },
+    {
+      "key": "wildfake/real/coco_00119",
+      "score": 0.9995566010475159
+    },
+    {
+      "key": "wildfake/real/imagenet_00037",
+      "score": 0.9982861876487732
+    },
+    {
+      "key": "wildfake/real/imagenet_00055",
+      "score": 0.9937307834625244
+    },
+    {
+      "key": "wildfake/real/imagenet_00058",
+      "score": 0.9742056131362915
+    },
+    {
+      "key": "wildfake/real/imagenet_00045",
+      "score": 0.9690095782279968
+    },
+    {
+      "key": "wildfake/real/imagenet_00047",
+      "score": 0.9681598544120789
+    },
+    {
+      "key": "wildfake/real/coco_00121",
+      "score": 0.9572938680648804
+    },
+    {
+      "key": "wildfake/real/imagenet_00133",
+      "score": 0.9347033500671387
+    },
+    {
+      "key": "wildfake/real/imagenet_00063",
+      "score": 0.931201696395874
+    },
+    {
+      "key": "wildfake/real/imagenet_00108",
+      "score": 0.8873002529144287
+    },
+    {
+      "key": "wildfake/real/imagenet_00105",
+      "score": 0.8685858845710754
+    },
+    {
+      "key": "wildfake/real/coco_00129",
+      "score": 0.8598079681396484
+    },
+    {
+      "key": "wildfake/real/imagenet_00084",
+      "score": 0.8379859924316406
+    },
+    {
+      "key": "wildfake/real/imagenet_00046",
+      "score": 0.836823046207428
+    }
+  ],
+  "worst_false_negatives": []
+}

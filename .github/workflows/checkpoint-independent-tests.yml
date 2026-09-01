@@ -1,0 +1,44 @@
+name: Checkpoint-independent tests
+
+on:
+  pull_request:
+    paths:
+      - "infer.py"
+      - "patchhead/**"
+      - "physics/**"
+      - "browser_product/**"
+      - "browser_extension/**"
+      - "README.md"
+      - "scripts/checkpoint_independent_tests.sh"
+      - ".github/workflows/checkpoint-independent-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install checkpoint-independent dependencies
+        run: python -m pip install './physics[sid]'
+      - name: Run contracts and physics suite
+        run: bash scripts/checkpoint_independent_tests.sh
+      - name: Run browser service contracts
+        run: python -m unittest discover -s browser_product/tests -v
+      - name: Run browser extension contracts
+        run: |
+          node --test browser_extension/tests/*.test.cjs
+          node --check browser_extension/lib/shared.js
+          node --check browser_extension/content.js
+          node --check browser_extension/service_worker.js
+          node --check browser_extension/popup/popup.js
+          node --check browser_extension/options/options.js

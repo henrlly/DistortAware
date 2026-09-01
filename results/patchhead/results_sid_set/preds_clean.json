@@ -1,0 +1,1507 @@
+{
+  "threshold": 0.5,
+  "ds": "sid_set",
+  "arch": "patchhead-dinov3-vitl16",
+  "preds": {
+    "sid_set/fake/sid_fake_00099": {
+      "label": 1,
+      "score": 0.9986979961395264,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00054": {
+      "label": 1,
+      "score": 0.9986979961395264,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00003": {
+      "label": 1,
+      "score": 0.9987125396728516,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00034": {
+      "label": 1,
+      "score": 0.9986845254898071,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00061": {
+      "label": 0,
+      "score": 0.0038707242347300053,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00103": {
+      "label": 1,
+      "score": 0.9986979961395264,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00133": {
+      "label": 0,
+      "score": 0.004695916548371315,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00126": {
+      "label": 0,
+      "score": 0.001229390618391335,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00057": {
+      "label": 1,
+      "score": 0.9986892938613892,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00088": {
+      "label": 1,
+      "score": 0.9986554384231567,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00101": {
+      "label": 1,
+      "score": 0.998753547668457,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00149": {
+      "label": 1,
+      "score": 0.9986793994903564,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00028": {
+      "label": 0,
+      "score": 0.011451385915279388,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00142": {
+      "label": 0,
+      "score": 0.0034663674887269735,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00090": {
+      "label": 0,
+      "score": 0.0012240865034982562,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00007": {
+      "label": 0,
+      "score": 0.0012632948346436024,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00001": {
+      "label": 0,
+      "score": 0.0035953386686742306,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00013": {
+      "label": 1,
+      "score": 0.9987125396728516,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00038": {
+      "label": 0,
+      "score": 0.018262086436152458,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00069": {
+      "label": 0,
+      "score": 0.0017854429315775633,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00142": {
+      "label": 1,
+      "score": 0.998753547668457,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00080": {
+      "label": 1,
+      "score": 0.9987504482269287,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00143": {
+      "label": 1,
+      "score": 0.998753547668457,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00127": {
+      "label": 1,
+      "score": 0.9987224340438843,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00112": {
+      "label": 1,
+      "score": 0.998661994934082,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00046": {
+      "label": 1,
+      "score": 0.9987504482269287,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00079": {
+      "label": 1,
+      "score": 0.9985345602035522,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00034": {
+      "label": 0,
+      "score": 0.0019734639208763838,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00116": {
+      "label": 1,
+      "score": 0.9987591505050659,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00149": {
+      "label": 0,
+      "score": 0.0013457303866744041,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00144": {
+      "label": 0,
+      "score": 0.001527123968116939,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00078": {
+      "label": 1,
+      "score": 0.9987156391143799,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00063": {
+      "label": 1,
+      "score": 0.9987471103668213,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00137": {
+      "label": 1,
+      "score": 0.9987057447433472,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00017": {
+      "label": 0,
+      "score": 0.0019053108990192413,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00068": {
+      "label": 1,
+      "score": 0.9986681938171387,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00125": {
+      "label": 0,
+      "score": 0.005486988462507725,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00136": {
+      "label": 0,
+      "score": 0.004867776297032833,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00066": {
+      "label": 0,
+      "score": 0.0012571335537359118,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00143": {
+      "label": 0,
+      "score": 0.0013509929412975907,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00140": {
+      "label": 0,
+      "score": 0.00154499348718673,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00002": {
+      "label": 1,
+      "score": 0.9986410140991211,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00110": {
+      "label": 1,
+      "score": 0.997286319732666,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00131": {
+      "label": 1,
+      "score": 0.9987224340438843,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00121": {
+      "label": 0,
+      "score": 0.010704727843403816,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00092": {
+      "label": 1,
+      "score": 0.9987020492553711,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00059": {
+      "label": 0,
+      "score": 0.0011771823046728969,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00028": {
+      "label": 1,
+      "score": 0.998753547668457,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00040": {
+      "label": 1,
+      "score": 0.9986845254898071,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00014": {
+      "label": 1,
+      "score": 0.9987224340438843,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00013": {
+      "label": 0,
+      "score": 0.009390784427523613,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00131": {
+      "label": 0,
+      "score": 0.0034851073287427425,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00041": {
+      "label": 0,
+      "score": 0.0023678236175328493,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00032": {
+      "label": 0,
+      "score": 0.05813603103160858,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00118": {
+      "label": 1,
+      "score": 0.9986845254898071,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00051": {
+      "label": 0,
+      "score": 0.0013907095417380333,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00112": {
+      "label": 0,
+      "score": 0.0013768599601462483,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00075": {
+      "label": 0,
+      "score": 0.004964521154761314,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00041": {
+      "label": 1,
+      "score": 0.9977269172668457,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00003": {
+      "label": 0,
+      "score": 0.0012240865034982562,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00105": {
+      "label": 1,
+      "score": 0.9987061023712158,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00099": {
+      "label": 0,
+      "score": 0.0018025065073743463,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00024": {
+      "label": 1,
+      "score": 0.9986892938613892,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00084": {
+      "label": 1,
+      "score": 0.9987399578094482,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00016": {
+      "label": 1,
+      "score": 0.9987504482269287,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00106": {
+      "label": 0,
+      "score": 0.0015985578065738082,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00101": {
+      "label": 0,
+      "score": 0.013856448233127594,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00082": {
+      "label": 1,
+      "score": 0.998764157295227,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00067": {
+      "label": 0,
+      "score": 0.003752092132344842,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00035": {
+      "label": 0,
+      "score": 0.001223278697580099,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00093": {
+      "label": 0,
+      "score": 0.002524332841858268,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00035": {
+      "label": 1,
+      "score": 0.9987125396728516,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00138": {
+      "label": 0,
+      "score": 0.0021628919057548046,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00120": {
+      "label": 1,
+      "score": 0.9986933469772339,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00042": {
+      "label": 1,
+      "score": 0.9987173080444336,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00010": {
+      "label": 1,
+      "score": 0.9986845254898071,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00058": {
+      "label": 1,
+      "score": 0.9987436532974243,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00090": {
+      "label": 1,
+      "score": 0.9986093044281006,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00135": {
+      "label": 0,
+      "score": 0.006292915903031826,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00019": {
+      "label": 1,
+      "score": 0.9987399578094482,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00096": {
+      "label": 1,
+      "score": 0.9987092018127441,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00077": {
+      "label": 0,
+      "score": 0.0013334158575162292,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00120": {
+      "label": 0,
+      "score": 0.0013973291497677565,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00026": {
+      "label": 0,
+      "score": 0.002295151585713029,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00039": {
+      "label": 1,
+      "score": 0.9986979961395264,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00065": {
+      "label": 1,
+      "score": 0.9987224340438843,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00010": {
+      "label": 0,
+      "score": 0.0013768506469205022,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00080": {
+      "label": 0,
+      "score": 0.00242583523504436,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00087": {
+      "label": 1,
+      "score": 0.9987565279006958,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00139": {
+      "label": 0,
+      "score": 0.0019191319588571787,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00001": {
+      "label": 1,
+      "score": 0.9987565279006958,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00100": {
+      "label": 0,
+      "score": 0.0011946074664592743,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00021": {
+      "label": 0,
+      "score": 0.0018826215527951717,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00129": {
+      "label": 1,
+      "score": 0.9986681938171387,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00119": {
+      "label": 1,
+      "score": 0.9987471103668213,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00135": {
+      "label": 1,
+      "score": 0.9987057447433472,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00107": {
+      "label": 0,
+      "score": 0.0014703745255246758,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00067": {
+      "label": 1,
+      "score": 0.9986093044281006,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00012": {
+      "label": 0,
+      "score": 0.0015193846775218844,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00102": {
+      "label": 1,
+      "score": 0.9987591505050659,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00049": {
+      "label": 0,
+      "score": 0.0012210642453283072,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00106": {
+      "label": 1,
+      "score": 0.9987272024154663,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00078": {
+      "label": 0,
+      "score": 0.006285544019192457,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00123": {
+      "label": 1,
+      "score": 0.9986845254898071,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00070": {
+      "label": 0,
+      "score": 0.002219171030446887,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00026": {
+      "label": 1,
+      "score": 0.9987504482269287,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00086": {
+      "label": 1,
+      "score": 0.9986789226531982,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00117": {
+      "label": 1,
+      "score": 0.9986681938171387,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00027": {
+      "label": 0,
+      "score": 0.0016511061694473028,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00072": {
+      "label": 1,
+      "score": 0.9987504482269287,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00036": {
+      "label": 0,
+      "score": 0.009865437634289265,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00040": {
+      "label": 0,
+      "score": 0.0014999860431998968,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00093": {
+      "label": 1,
+      "score": 0.998753547668457,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00045": {
+      "label": 1,
+      "score": 0.9986789226531982,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00052": {
+      "label": 0,
+      "score": 0.0012357884552329779,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00146": {
+      "label": 0,
+      "score": 0.001568138599395752,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00129": {
+      "label": 0,
+      "score": 0.0027847066521644592,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00089": {
+      "label": 1,
+      "score": 0.9986588954925537,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00012": {
+      "label": 1,
+      "score": 0.998753547668457,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00076": {
+      "label": 1,
+      "score": 0.9987317323684692,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00053": {
+      "label": 0,
+      "score": 0.0029021783266216516,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00059": {
+      "label": 1,
+      "score": 0.9985223412513733,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00064": {
+      "label": 1,
+      "score": 0.9987186193466187,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00115": {
+      "label": 0,
+      "score": 0.0027895490638911724,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00145": {
+      "label": 1,
+      "score": 0.9987591505050659,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00039": {
+      "label": 0,
+      "score": 0.002661904087290168,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00044": {
+      "label": 1,
+      "score": 0.9986892938613892,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00089": {
+      "label": 0,
+      "score": 0.002239827299490571,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00123": {
+      "label": 0,
+      "score": 0.0014191899681463838,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00025": {
+      "label": 0,
+      "score": 0.001370285521261394,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00056": {
+      "label": 0,
+      "score": 0.0047818198800086975,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00082": {
+      "label": 0,
+      "score": 0.001223278697580099,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00130": {
+      "label": 0,
+      "score": 0.0012078279396519065,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00108": {
+      "label": 1,
+      "score": 0.998661994934082,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00092": {
+      "label": 0,
+      "score": 0.0014431312447413802,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00009": {
+      "label": 0,
+      "score": 0.001531115616671741,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00053": {
+      "label": 1,
+      "score": 0.9987664222717285,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00122": {
+      "label": 1,
+      "score": 0.998753547668457,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00022": {
+      "label": 0,
+      "score": 0.0032540899701416492,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00062": {
+      "label": 0,
+      "score": 0.0025509123224765062,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00049": {
+      "label": 1,
+      "score": 0.9987504482269287,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00005": {
+      "label": 1,
+      "score": 0.9986793994903564,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00050": {
+      "label": 0,
+      "score": 0.002087050350382924,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00015": {
+      "label": 0,
+      "score": 0.002151054795831442,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00094": {
+      "label": 1,
+      "score": 0.998633086681366,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00073": {
+      "label": 0,
+      "score": 0.0014943223213776946,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00045": {
+      "label": 0,
+      "score": 0.0016057697357609868,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00030": {
+      "label": 1,
+      "score": 0.9986979961395264,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00068": {
+      "label": 0,
+      "score": 0.001238201861269772,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00124": {
+      "label": 0,
+      "score": 0.0011739748297259212,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00085": {
+      "label": 0,
+      "score": 0.0036857391241937876,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00006": {
+      "label": 1,
+      "score": 0.9987317323684692,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00018": {
+      "label": 1,
+      "score": 0.9987359046936035,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00136": {
+      "label": 1,
+      "score": 0.9986793994903564,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00146": {
+      "label": 1,
+      "score": 0.9987399578094482,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00011": {
+      "label": 1,
+      "score": 0.9986062049865723,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00044": {
+      "label": 0,
+      "score": 0.003922497853636742,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00128": {
+      "label": 0,
+      "score": 0.0019007157534360886,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00025": {
+      "label": 1,
+      "score": 0.9986681938171387,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00015": {
+      "label": 1,
+      "score": 0.9987061023712158,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00109": {
+      "label": 1,
+      "score": 0.9985855221748352,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00110": {
+      "label": 0,
+      "score": 0.0036857391241937876,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00043": {
+      "label": 1,
+      "score": 0.9987156391143799,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00095": {
+      "label": 1,
+      "score": 0.9986938238143921,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00056": {
+      "label": 1,
+      "score": 0.998761773109436,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00046": {
+      "label": 0,
+      "score": 0.004141008947044611,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00069": {
+      "label": 1,
+      "score": 0.9987471103668213,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00004": {
+      "label": 1,
+      "score": 0.9987272024154663,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00062": {
+      "label": 1,
+      "score": 0.9987471103668213,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00064": {
+      "label": 0,
+      "score": 0.005282972939312458,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00083": {
+      "label": 0,
+      "score": 0.0013902562204748392,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00132": {
+      "label": 0,
+      "score": 0.0012171835405752063,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00037": {
+      "label": 0,
+      "score": 0.0012901119189336896,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00109": {
+      "label": 0,
+      "score": 0.0038681162986904383,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00029": {
+      "label": 1,
+      "score": 0.9986681938171387,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00063": {
+      "label": 0,
+      "score": 0.02239813283085823,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00083": {
+      "label": 1,
+      "score": 0.9986410140991211,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00021": {
+      "label": 1,
+      "score": 0.9985855221748352,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00091": {
+      "label": 1,
+      "score": 0.9985164999961853,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00048": {
+      "label": 0,
+      "score": 0.0016610303428024054,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00014": {
+      "label": 0,
+      "score": 0.001586649101227522,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00127": {
+      "label": 0,
+      "score": 0.002149969805032015,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00126": {
+      "label": 1,
+      "score": 0.9987057447433472,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00115": {
+      "label": 1,
+      "score": 0.9987173080444336,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00042": {
+      "label": 0,
+      "score": 0.0016193748451769352,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00148": {
+      "label": 1,
+      "score": 0.9987186193466187,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00107": {
+      "label": 1,
+      "score": 0.9987317323684692,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00119": {
+      "label": 0,
+      "score": 0.0039473106153309345,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00071": {
+      "label": 0,
+      "score": 0.006439532618969679,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00055": {
+      "label": 1,
+      "score": 0.9987020492553711,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00060": {
+      "label": 1,
+      "score": 0.9987359046936035,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00117": {
+      "label": 0,
+      "score": 0.0014385522808879614,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00070": {
+      "label": 1,
+      "score": 0.9985073804855347,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00134": {
+      "label": 1,
+      "score": 0.9987317323684692,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00086": {
+      "label": 0,
+      "score": 0.004682386294007301,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00100": {
+      "label": 1,
+      "score": 0.998648464679718,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00024": {
+      "label": 0,
+      "score": 0.0027305842377245426,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00081": {
+      "label": 0,
+      "score": 0.0012276370543986559,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00029": {
+      "label": 0,
+      "score": 0.00413495535030961,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00096": {
+      "label": 0,
+      "score": 0.001490227528847754,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00009": {
+      "label": 1,
+      "score": 0.9987092018127441,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00038": {
+      "label": 1,
+      "score": 0.9987591505050659,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00033": {
+      "label": 1,
+      "score": 0.9987591505050659,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00043": {
+      "label": 0,
+      "score": 0.0012787170708179474,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00023": {
+      "label": 0,
+      "score": 0.0014638155698776245,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00022": {
+      "label": 1,
+      "score": 0.9987359046936035,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00017": {
+      "label": 1,
+      "score": 0.9987317323684692,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00121": {
+      "label": 1,
+      "score": 0.9987436532974243,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00066": {
+      "label": 1,
+      "score": 0.9984245300292969,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00018": {
+      "label": 0,
+      "score": 0.0014548525214195251,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00006": {
+      "label": 0,
+      "score": 0.03722428157925606,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00008": {
+      "label": 1,
+      "score": 0.9986938238143921,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00148": {
+      "label": 0,
+      "score": 0.0013235074002295732,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00060": {
+      "label": 0,
+      "score": 0.0015530625823885202,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00134": {
+      "label": 0,
+      "score": 0.003463219851255417,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00114": {
+      "label": 0,
+      "score": 0.0015042017912492156,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00087": {
+      "label": 0,
+      "score": 0.001516416552476585,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00104": {
+      "label": 0,
+      "score": 0.001176237128674984,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00147": {
+      "label": 1,
+      "score": 0.9987272024154663,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00095": {
+      "label": 0,
+      "score": 0.0012067215284332633,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00098": {
+      "label": 1,
+      "score": 0.9987156391143799,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00079": {
+      "label": 0,
+      "score": 0.006940486840903759,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00002": {
+      "label": 0,
+      "score": 0.009516541846096516,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00145": {
+      "label": 0,
+      "score": 0.0014943223213776946,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00105": {
+      "label": 0,
+      "score": 0.0013260755222290754,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00073": {
+      "label": 1,
+      "score": 0.9987359046936035,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00000": {
+      "label": 0,
+      "score": 0.0013825143687427044,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00084": {
+      "label": 0,
+      "score": 0.004589741583913565,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00004": {
+      "label": 0,
+      "score": 0.0022652163170278072,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00113": {
+      "label": 0,
+      "score": 0.0014802400255575776,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00052": {
+      "label": 1,
+      "score": 0.9987436532974243,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00138": {
+      "label": 1,
+      "score": 0.9987173080444336,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00058": {
+      "label": 0,
+      "score": 0.001168950810097158,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00085": {
+      "label": 1,
+      "score": 0.9986709952354431,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00140": {
+      "label": 1,
+      "score": 0.9986062049865723,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00118": {
+      "label": 0,
+      "score": 0.002757956273853779,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00030": {
+      "label": 0,
+      "score": 0.005099315196275711,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00074": {
+      "label": 1,
+      "score": 0.9987173080444336,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00141": {
+      "label": 1,
+      "score": 0.9987565279006958,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00077": {
+      "label": 1,
+      "score": 0.9987399578094482,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00027": {
+      "label": 1,
+      "score": 0.9987224340438843,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00125": {
+      "label": 1,
+      "score": 0.9987685680389404,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00088": {
+      "label": 0,
+      "score": 0.003392561338841915,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00130": {
+      "label": 1,
+      "score": 0.9986892938613892,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00074": {
+      "label": 0,
+      "score": 0.0017389948479831219,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00081": {
+      "label": 1,
+      "score": 0.9986410140991211,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00147": {
+      "label": 0,
+      "score": 0.0012195410672575235,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00023": {
+      "label": 1,
+      "score": 0.9986739754676819,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00114": {
+      "label": 1,
+      "score": 0.9987156391143799,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00139": {
+      "label": 1,
+      "score": 0.998761773109436,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00103": {
+      "label": 0,
+      "score": 0.0012551296968013048,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00036": {
+      "label": 1,
+      "score": 0.9986410140991211,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00097": {
+      "label": 0,
+      "score": 0.0014484520070254803,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00055": {
+      "label": 0,
+      "score": 0.03452377766370773,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00061": {
+      "label": 1,
+      "score": 0.9986793994903564,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00113": {
+      "label": 1,
+      "score": 0.9987436532974243,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00097": {
+      "label": 1,
+      "score": 0.9987565279006958,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00032": {
+      "label": 1,
+      "score": 0.998661994934082,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00016": {
+      "label": 0,
+      "score": 0.001341132097877562,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00124": {
+      "label": 1,
+      "score": 0.9987020492553711,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00020": {
+      "label": 0,
+      "score": 0.0011610795045271516,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00102": {
+      "label": 0,
+      "score": 0.005148178897798061,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00000": {
+      "label": 1,
+      "score": 0.9987359046936035,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00054": {
+      "label": 0,
+      "score": 0.001446432201191783,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00047": {
+      "label": 1,
+      "score": 0.9985855221748352,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00007": {
+      "label": 1,
+      "score": 0.9987359046936035,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00031": {
+      "label": 1,
+      "score": 0.9987565279006958,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00133": {
+      "label": 1,
+      "score": 0.998753547668457,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00116": {
+      "label": 0,
+      "score": 0.0014039865927770734,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00076": {
+      "label": 0,
+      "score": 0.0020016049966216087,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00141": {
+      "label": 0,
+      "score": 0.0011889612069353461,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00104": {
+      "label": 1,
+      "score": 0.9986739754676819,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00011": {
+      "label": 0,
+      "score": 0.0014234347036108375,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00072": {
+      "label": 0,
+      "score": 0.0012435055105015635,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00031": {
+      "label": 0,
+      "score": 0.001515716896392405,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00051": {
+      "label": 1,
+      "score": 0.998555064201355,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00091": {
+      "label": 0,
+      "score": 0.001957991160452366,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00019": {
+      "label": 0,
+      "score": 0.004230153746902943,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00037": {
+      "label": 1,
+      "score": 0.998764157295227,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00050": {
+      "label": 1,
+      "score": 0.9987186193466187,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00008": {
+      "label": 0,
+      "score": 0.0011889612069353461,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00075": {
+      "label": 1,
+      "score": 0.9987591505050659,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00122": {
+      "label": 0,
+      "score": 0.001180399558506906,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00128": {
+      "label": 1,
+      "score": 0.9986348152160645,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00048": {
+      "label": 1,
+      "score": 0.9987317323684692,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00137": {
+      "label": 0,
+      "score": 0.0018423686269670725,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00144": {
+      "label": 1,
+      "score": 0.9987565279006958,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00071": {
+      "label": 1,
+      "score": 0.9987436532974243,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00108": {
+      "label": 0,
+      "score": 0.0030369958840310574,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00111": {
+      "label": 1,
+      "score": 0.9987359046936035,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00033": {
+      "label": 0,
+      "score": 0.0012097794096916914,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00094": {
+      "label": 0,
+      "score": 0.003975904081016779,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00005": {
+      "label": 0,
+      "score": 0.0011380737414583564,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00057": {
+      "label": 0,
+      "score": 0.0013775343541055918,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00098": {
+      "label": 0,
+      "score": 0.0012907600030303001,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00111": {
+      "label": 0,
+      "score": 0.0020498367957770824,
+      "pred": 0
+    },
+    "sid_set/fake/sid_fake_00132": {
+      "label": 1,
+      "score": 0.9987020492553711,
+      "pred": 1
+    },
+    "sid_set/fake/sid_fake_00020": {
+      "label": 1,
+      "score": 0.9987471103668213,
+      "pred": 1
+    },
+    "sid_set/real/sid_real_00065": {
+      "label": 0,
+      "score": 0.0015696606133133173,
+      "pred": 0
+    },
+    "sid_set/real/sid_real_00047": {
+      "label": 0,
+      "score": 0.002224704949185252,
+      "pred": 0
+    }
+  }
+}

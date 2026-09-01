@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "PrismGuard — AIGC Signal Inspector",
+  "version": "0.2.0",
+  "description": "Locally scan rendered images with a calibrated pure-DINO PrismGuard service and independent diagnostics.",
+  "minimum_chrome_version": "109",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "http://localhost/*"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_title": "Scan page images",
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

@@ -1,0 +1,6007 @@
+{
+  "threshold": 0.7649999999999998,
+  "ds": "wildfake",
+  "arch": "patchhead-dinov3-vitl16",
+  "preds": {
+    "wildfake/fake/DDIM_00010": {
+      "label": 1,
+      "score": 0.9996843338012695,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00110": {
+      "label": 1,
+      "score": 0.9997023344039917,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00088": {
+      "label": 0,
+      "score": 0.007017703261226416,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00039": {
+      "label": 0,
+      "score": 0.0014953436329960823,
+      "pred": 0
+    },
+    "wildfake/real/coco_00004": {
+      "label": 0,
+      "score": 0.00033775740303099155,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00084": {
+      "label": 0,
+      "score": 0.00030635451548732817,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00057": {
+      "label": 0,
+      "score": 0.0003043145115952939,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00062": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00033": {
+      "label": 1,
+      "score": 0.999656617641449,
+      "pred": 1
+    },
+    "wildfake/real/coco_00083": {
+      "label": 0,
+      "score": 0.00038106131250970066,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00087": {
+      "label": 1,
+      "score": 0.9996890425682068,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00014": {
+      "label": 0,
+      "score": 0.0003057853609789163,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00140": {
+      "label": 0,
+      "score": 0.00030624886858277023,
+      "pred": 0
+    },
+    "wildfake/real/coco_00009": {
+      "label": 0,
+      "score": 0.00034995825262740254,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00102": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00135": {
+      "label": 1,
+      "score": 0.9996957182884216,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00134": {
+      "label": 0,
+      "score": 0.0003049889055546373,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00146": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00122": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/real/coco_00064": {
+      "label": 0,
+      "score": 0.1351342648267746,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00108": {
+      "label": 0,
+      "score": 0.8873002529144287,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00035": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00107": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00034": {
+      "label": 0,
+      "score": 0.0003146181988995522,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00020": {
+      "label": 0,
+      "score": 0.00030426745070144534,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00062": {
+      "label": 0,
+      "score": 0.00031046077492646873,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00070": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00098": {
+      "label": 0,
+      "score": 0.00031399389263242483,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00015": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00068": {
+      "label": 0,
+      "score": 0.0005082979914732277,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00096": {
+      "label": 1,
+      "score": 0.9996093511581421,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00016": {
+      "label": 0,
+      "score": 0.0003561277117114514,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00011": {
+      "label": 1,
+      "score": 0.9996950626373291,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00054": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00085": {
+      "label": 0,
+      "score": 0.00029814901063218713,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00006": {
+      "label": 0,
+      "score": 0.0002951413334812969,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00018": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00064": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00053": {
+      "label": 0,
+      "score": 0.00029606770840473473,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00139": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00069": {
+      "label": 1,
+      "score": 0.99968421459198,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00046": {
+      "label": 0,
+      "score": 0.00029540745890699327,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00144": {
+      "label": 0,
+      "score": 0.0002948093169834465,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00024": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00061": {
+      "label": 0,
+      "score": 0.0002957491378765553,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00029": {
+      "label": 0,
+      "score": 0.0003100413305219263,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00134": {
+      "label": 0,
+      "score": 0.0032935754861682653,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00072": {
+      "label": 0,
+      "score": 0.0002957491378765553,
+      "pred": 0
+    },
+    "wildfake/real/coco_00046": {
+      "label": 0,
+      "score": 0.0003847989428322762,
+      "pred": 0
+    },
+    "wildfake/real/coco_00019": {
+      "label": 0,
+      "score": 0.0400676354765892,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00132": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00148": {
+      "label": 0,
+      "score": 0.007407588884234428,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00067": {
+      "label": 0,
+      "score": 0.00032610076596029103,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00050": {
+      "label": 1,
+      "score": 0.9996680021286011,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00106": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00084": {
+      "label": 1,
+      "score": 0.9996963143348694,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00108": {
+      "label": 1,
+      "score": 0.9996826648712158,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00010": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00095": {
+      "label": 1,
+      "score": 0.9995682239532471,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00125": {
+      "label": 0,
+      "score": 0.00031363818561658263,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00109": {
+      "label": 0,
+      "score": 0.0004348232178017497,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00139": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00104": {
+      "label": 1,
+      "score": 0.9996935725212097,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00013": {
+      "label": 0,
+      "score": 0.0003136096347589046,
+      "pred": 0
+    },
+    "wildfake/real/coco_00068": {
+      "label": 0,
+      "score": 0.7151138782501221,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00025": {
+      "label": 0,
+      "score": 0.0034144888631999493,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00096": {
+      "label": 0,
+      "score": 0.00030564918415620923,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00022": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/real/coco_00091": {
+      "label": 0,
+      "score": 0.00039181168540380895,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00109": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00143": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00031": {
+      "label": 0,
+      "score": 0.0002952017530333251,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00084": {
+      "label": 0,
+      "score": 0.0003138110041618347,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00099": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00035": {
+      "label": 1,
+      "score": 0.9996721744537354,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00145": {
+      "label": 0,
+      "score": 0.007903019897639751,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00073": {
+      "label": 1,
+      "score": 0.9996938705444336,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00124": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00027": {
+      "label": 0,
+      "score": 0.0003049009828828275,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00119": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00072": {
+      "label": 1,
+      "score": 0.9996885657310486,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00120": {
+      "label": 1,
+      "score": 0.9996992945671082,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00070": {
+      "label": 0,
+      "score": 0.00031736609525978565,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00130": {
+      "label": 0,
+      "score": 0.0003043145115952939,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00136": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/real/coco_00136": {
+      "label": 0,
+      "score": 0.0007463612710125744,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00003": {
+      "label": 0,
+      "score": 0.0003136096347589046,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00051": {
+      "label": 1,
+      "score": 0.9996950626373291,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00023": {
+      "label": 0,
+      "score": 0.0005071684718132019,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00112": {
+      "label": 0,
+      "score": 0.00030518212588503957,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00102": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00006": {
+      "label": 1,
+      "score": 0.9996817708015442,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00077": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00023": {
+      "label": 0,
+      "score": 0.0003045994380954653,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00077": {
+      "label": 1,
+      "score": 0.9996979236602783,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00051": {
+      "label": 0,
+      "score": 0.004998577758669853,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00002": {
+      "label": 0,
+      "score": 0.002345006912946701,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00084": {
+      "label": 1,
+      "score": 0.9996869564056396,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00029": {
+      "label": 1,
+      "score": 0.999693751335144,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00099": {
+      "label": 1,
+      "score": 0.999610960483551,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00104": {
+      "label": 0,
+      "score": 0.008296331390738487,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00077": {
+      "label": 0,
+      "score": 0.00030518212588503957,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00027": {
+      "label": 1,
+      "score": 0.99968421459198,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00093": {
+      "label": 1,
+      "score": 0.9996935725212097,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00071": {
+      "label": 0,
+      "score": 0.0003059302980545908,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00079": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00122": {
+      "label": 1,
+      "score": 0.999669075012207,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00020": {
+      "label": 0,
+      "score": 0.00030773680191487074,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00013": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00114": {
+      "label": 0,
+      "score": 0.0003060846065636724,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00011": {
+      "label": 0,
+      "score": 0.0006690249429084361,
+      "pred": 0
+    },
+    "wildfake/real/coco_00040": {
+      "label": 0,
+      "score": 0.00036808839649893343,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00003": {
+      "label": 0,
+      "score": 0.00037616342888213694,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00030": {
+      "label": 0,
+      "score": 0.00030564918415620923,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00110": {
+      "label": 0,
+      "score": 0.00031763690640218556,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00111": {
+      "label": 0,
+      "score": 0.00038134868373163044,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00099": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00021": {
+      "label": 1,
+      "score": 0.9996837377548218,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00058": {
+      "label": 1,
+      "score": 0.9996843338012695,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00026": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00099": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00112": {
+      "label": 0,
+      "score": 0.00030157389119267464,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00091": {
+      "label": 1,
+      "score": 0.9996727705001831,
+      "pred": 1
+    },
+    "wildfake/real/coco_00058": {
+      "label": 0,
+      "score": 0.00031623913673684,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00139": {
+      "label": 1,
+      "score": 0.9996875524520874,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00069": {
+      "label": 1,
+      "score": 0.999671220779419,
+      "pred": 1
+    },
+    "wildfake/real/coco_00099": {
+      "label": 0,
+      "score": 0.0003149174735881388,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00123": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00132": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00037": {
+      "label": 1,
+      "score": 0.9996700286865234,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00082": {
+      "label": 0,
+      "score": 0.001492515206336975,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00114": {
+      "label": 1,
+      "score": 0.9996938705444336,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00028": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00083": {
+      "label": 0,
+      "score": 0.00882588792592287,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00106": {
+      "label": 0,
+      "score": 0.00031138252234086394,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00093": {
+      "label": 1,
+      "score": 0.9996742010116577,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00065": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00041": {
+      "label": 0,
+      "score": 0.0015427276957780123,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00030": {
+      "label": 1,
+      "score": 0.999689519405365,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00074": {
+      "label": 1,
+      "score": 0.9996826648712158,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00113": {
+      "label": 0,
+      "score": 0.014948357827961445,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00129": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00042": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00030": {
+      "label": 0,
+      "score": 0.0007732767844572663,
+      "pred": 0
+    },
+    "wildfake/real/coco_00100": {
+      "label": 0,
+      "score": 0.004737087059766054,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00036": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/real/coco_00084": {
+      "label": 0,
+      "score": 0.00030624886858277023,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00110": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00081": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00105": {
+      "label": 1,
+      "score": 0.9996857047080994,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00061": {
+      "label": 1,
+      "score": 0.9996992945671082,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00096": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/real/coco_00073": {
+      "label": 0,
+      "score": 0.00031736609525978565,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00007": {
+      "label": 1,
+      "score": 0.9996833801269531,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00027": {
+      "label": 1,
+      "score": 0.9996715784072876,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00012": {
+      "label": 1,
+      "score": 0.9996799230575562,
+      "pred": 1
+    },
+    "wildfake/real/coco_00002": {
+      "label": 0,
+      "score": 0.0003215177566744387,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00024": {
+      "label": 0,
+      "score": 0.0003092771512456238,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00084": {
+      "label": 1,
+      "score": 0.9996305108070374,
+      "pred": 1
+    },
+    "wildfake/real/coco_00020": {
+      "label": 0,
+      "score": 0.0003256484924349934,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00068": {
+      "label": 1,
+      "score": 0.9997023344039917,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00139": {
+      "label": 0,
+      "score": 0.03147440776228905,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00142": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00073": {
+      "label": 0,
+      "score": 0.0003049889055546373,
+      "pred": 0
+    },
+    "wildfake/real/coco_00047": {
+      "label": 0,
+      "score": 0.022636553272604942,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00025": {
+      "label": 1,
+      "score": 0.9996845722198486,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00123": {
+      "label": 1,
+      "score": 0.9996610879898071,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00100": {
+      "label": 0,
+      "score": 0.00030466791940853,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00098": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00090": {
+      "label": 0,
+      "score": 0.0003118884633295238,
+      "pred": 0
+    },
+    "wildfake/real/coco_00042": {
+      "label": 0,
+      "score": 0.00031138252234086394,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00073": {
+      "label": 0,
+      "score": 0.00029595481464639306,
+      "pred": 0
+    },
+    "wildfake/real/coco_00035": {
+      "label": 0,
+      "score": 0.00029533455381169915,
+      "pred": 0
+    },
+    "wildfake/real/coco_00043": {
+      "label": 0,
+      "score": 0.0003643169766291976,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00070": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00088": {
+      "label": 1,
+      "score": 0.9996944069862366,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00066": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00138": {
+      "label": 1,
+      "score": 0.9996639490127563,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00085": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00137": {
+      "label": 1,
+      "score": 0.9996992945671082,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00142": {
+      "label": 0,
+      "score": 0.0009141789050772786,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00044": {
+      "label": 1,
+      "score": 0.9996151924133301,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00073": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00067": {
+      "label": 0,
+      "score": 0.0003049009828828275,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00134": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00041": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00134": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00137": {
+      "label": 1,
+      "score": 0.9996928572654724,
+      "pred": 1
+    },
+    "wildfake/real/coco_00127": {
+      "label": 0,
+      "score": 0.00029565553995780647,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00081": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00141": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00145": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00144": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00005": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00025": {
+      "label": 0,
+      "score": 0.0003118884633295238,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00070": {
+      "label": 0,
+      "score": 0.0004032622091472149,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00092": {
+      "label": 0,
+      "score": 0.05345293879508972,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00138": {
+      "label": 1,
+      "score": 0.9996969103813171,
+      "pred": 1
+    },
+    "wildfake/real/coco_00016": {
+      "label": 0,
+      "score": 0.00031046077492646873,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00060": {
+      "label": 0,
+      "score": 0.007876269519329071,
+      "pred": 0
+    },
+    "wildfake/real/coco_00053": {
+      "label": 0,
+      "score": 0.00031300034606829286,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00036": {
+      "label": 0,
+      "score": 0.0003066098433919251,
+      "pred": 0
+    },
+    "wildfake/real/coco_00107": {
+      "label": 0,
+      "score": 0.0004804705095011741,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00109": {
+      "label": 1,
+      "score": 0.9996880888938904,
+      "pred": 1
+    },
+    "wildfake/real/coco_00003": {
+      "label": 0,
+      "score": 0.0007411174010485411,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00016": {
+      "label": 1,
+      "score": 0.9996668100357056,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00035": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00145": {
+      "label": 1,
+      "score": 0.9996935725212097,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00039": {
+      "label": 0,
+      "score": 0.00033145234920084476,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00022": {
+      "label": 0,
+      "score": 0.0009716411004774272,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00143": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00122": {
+      "label": 0,
+      "score": 0.00031515053706243634,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00125": {
+      "label": 0,
+      "score": 0.0003142972127534449,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00083": {
+      "label": 1,
+      "score": 0.9996731281280518,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00010": {
+      "label": 0,
+      "score": 0.0003149174735881388,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00076": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00097": {
+      "label": 1,
+      "score": 0.9996969103813171,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00133": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00033": {
+      "label": 0,
+      "score": 0.00036053266376256943,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00128": {
+      "label": 0,
+      "score": 0.00031736609525978565,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00020": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00004": {
+      "label": 0,
+      "score": 0.0003049009828828275,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00003": {
+      "label": 0,
+      "score": 0.00040849612560123205,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00142": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00096": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00036": {
+      "label": 0,
+      "score": 0.00030518212588503957,
+      "pred": 0
+    },
+    "wildfake/real/coco_00067": {
+      "label": 0,
+      "score": 0.0003041426825802773,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00140": {
+      "label": 1,
+      "score": 0.999693751335144,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00016": {
+      "label": 1,
+      "score": 0.9996826648712158,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00009": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00076": {
+      "label": 0,
+      "score": 0.0003147117968183011,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00149": {
+      "label": 0,
+      "score": 0.0003049009828828275,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00125": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00008": {
+      "label": 1,
+      "score": 0.9996850490570068,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00005": {
+      "label": 0,
+      "score": 0.00030508250347338617,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00062": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00090": {
+      "label": 1,
+      "score": 0.9996950626373291,
+      "pred": 1
+    },
+    "wildfake/real/coco_00089": {
+      "label": 0,
+      "score": 0.0003100413305219263,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00102": {
+      "label": 0,
+      "score": 0.0003137353342026472,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00047": {
+      "label": 1,
+      "score": 0.9996833801269531,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00100": {
+      "label": 0,
+      "score": 0.4480324387550354,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00000": {
+      "label": 0,
+      "score": 0.0003639574279077351,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00083": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00130": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00030": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00148": {
+      "label": 0,
+      "score": 0.00029659693245776,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00098": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00076": {
+      "label": 1,
+      "score": 0.9993453025817871,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00138": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00136": {
+      "label": 0,
+      "score": 0.0003045351186301559,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00123": {
+      "label": 1,
+      "score": 0.9996974468231201,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00023": {
+      "label": 1,
+      "score": 0.9996829032897949,
+      "pred": 1
+    },
+    "wildfake/real/coco_00087": {
+      "label": 0,
+      "score": 0.00030466791940853,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00062": {
+      "label": 0,
+      "score": 0.00029659693245776,
+      "pred": 0
+    },
+    "wildfake/real/coco_00023": {
+      "label": 0,
+      "score": 0.0003059302980545908,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00085": {
+      "label": 0,
+      "score": 0.6380230188369751,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00108": {
+      "label": 0,
+      "score": 0.0003047408245038241,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00143": {
+      "label": 0,
+      "score": 0.000728502229321748,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00119": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00017": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00048": {
+      "label": 1,
+      "score": 0.9997026920318604,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00120": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00120": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00110": {
+      "label": 0,
+      "score": 0.000343424006132409,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00071": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00112": {
+      "label": 1,
+      "score": 0.9996826648712158,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00066": {
+      "label": 1,
+      "score": 0.9996826648712158,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00101": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/real/coco_00024": {
+      "label": 0,
+      "score": 0.00033145234920084476,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00009": {
+      "label": 0,
+      "score": 0.0002948898763861507,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00028": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/real/coco_00126": {
+      "label": 0,
+      "score": 0.0003057853609789163,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00079": {
+      "label": 0,
+      "score": 0.0021492098458111286,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00106": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00066": {
+      "label": 1,
+      "score": 0.9996974468231201,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00007": {
+      "label": 0,
+      "score": 0.00030426745070144534,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00121": {
+      "label": 0,
+      "score": 0.0022652163170278072,
+      "pred": 0
+    },
+    "wildfake/real/coco_00001": {
+      "label": 0,
+      "score": 0.00031361059518530965,
+      "pred": 0
+    },
+    "wildfake/real/coco_00142": {
+      "label": 0,
+      "score": 0.0003185587120242417,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00120": {
+      "label": 0,
+      "score": 0.0003043145115952939,
+      "pred": 0
+    },
+    "wildfake/real/coco_00118": {
+      "label": 0,
+      "score": 0.00033382410765625536,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00135": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/coco_00033": {
+      "label": 0,
+      "score": 0.0003278228105045855,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00118": {
+      "label": 1,
+      "score": 0.9996936321258545,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00007": {
+      "label": 0,
+      "score": 0.0002955676172859967,
+      "pred": 0
+    },
+    "wildfake/real/coco_00132": {
+      "label": 0,
+      "score": 0.0005374793545342982,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00129": {
+      "label": 1,
+      "score": 0.9996817708015442,
+      "pred": 1
+    },
+    "wildfake/real/coco_00097": {
+      "label": 0,
+      "score": 0.0005881997640244663,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00020": {
+      "label": 0,
+      "score": 0.011062810197472572,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00097": {
+      "label": 1,
+      "score": 0.999679446220398,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00008": {
+      "label": 0,
+      "score": 0.0003627437981776893,
+      "pred": 0
+    },
+    "wildfake/real/coco_00070": {
+      "label": 0,
+      "score": 0.00032205632305704057,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00122": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00095": {
+      "label": 0,
+      "score": 0.00031453027622774243,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00054": {
+      "label": 0,
+      "score": 0.006292915903031826,
+      "pred": 0
+    },
+    "wildfake/real/coco_00092": {
+      "label": 0,
+      "score": 0.01646382547914982,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00059": {
+      "label": 1,
+      "score": 0.9996974468231201,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00021": {
+      "label": 1,
+      "score": 0.999689519405365,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00034": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00113": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00019": {
+      "label": 0,
+      "score": 0.00048470564070157707,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00088": {
+      "label": 0,
+      "score": 0.00031377197592519224,
+      "pred": 0
+    },
+    "wildfake/real/coco_00134": {
+      "label": 0,
+      "score": 0.00032960521639324725,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00106": {
+      "label": 0,
+      "score": 0.0002958487602882087,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00005": {
+      "label": 1,
+      "score": 0.9991011619567871,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00050": {
+      "label": 1,
+      "score": 0.9996837377548218,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00100": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00107": {
+      "label": 0,
+      "score": 0.00030552124371752143,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00013": {
+      "label": 1,
+      "score": 0.9996799230575562,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00110": {
+      "label": 1,
+      "score": 0.9995322227478027,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00026": {
+      "label": 1,
+      "score": 0.9991490840911865,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00059": {
+      "label": 0,
+      "score": 0.0004377342411316931,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00073": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00060": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00121": {
+      "label": 0,
+      "score": 0.0002948093169834465,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00065": {
+      "label": 0,
+      "score": 0.000307482376229018,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00102": {
+      "label": 1,
+      "score": 0.9996836185455322,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00012": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00106": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00100": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00039": {
+      "label": 0,
+      "score": 0.0002951413334812969,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00063": {
+      "label": 0,
+      "score": 0.00029959605308249593,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00045": {
+      "label": 0,
+      "score": 0.0002947059110738337,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00092": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00109": {
+      "label": 1,
+      "score": 0.9996938705444336,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00127": {
+      "label": 0,
+      "score": 0.24517780542373657,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00123": {
+      "label": 0,
+      "score": 0.00030403927667066455,
+      "pred": 0
+    },
+    "wildfake/real/coco_00007": {
+      "label": 0,
+      "score": 0.001026278012432158,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00071": {
+      "label": 1,
+      "score": 0.999470055103302,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00058": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00025": {
+      "label": 1,
+      "score": 0.9996850490570068,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00055": {
+      "label": 1,
+      "score": 0.9996621608734131,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00140": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00099": {
+      "label": 0,
+      "score": 0.0003238895151298493,
+      "pred": 0
+    },
+    "wildfake/real/coco_00000": {
+      "label": 0,
+      "score": 0.03129343315958977,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00049": {
+      "label": 0,
+      "score": 0.0002979100390803069,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00070": {
+      "label": 1,
+      "score": 0.9995816349983215,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00050": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00140": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00102": {
+      "label": 0,
+      "score": 0.0038318701554089785,
+      "pred": 0
+    },
+    "wildfake/real/coco_00115": {
+      "label": 0,
+      "score": 0.15518823266029358,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00046": {
+      "label": 1,
+      "score": 0.999671220779419,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00142": {
+      "label": 1,
+      "score": 0.9975857734680176,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00113": {
+      "label": 0,
+      "score": 0.00029477267526090145,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00028": {
+      "label": 0,
+      "score": 0.00030624886858277023,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00094": {
+      "label": 0,
+      "score": 0.0015185382217168808,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00126": {
+      "label": 0,
+      "score": 0.0005881997640244663,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00053": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00122": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00117": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00021": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00129": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00139": {
+      "label": 0,
+      "score": 0.0003238895151298493,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00068": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00067": {
+      "label": 0,
+      "score": 0.43283116817474365,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00032": {
+      "label": 0,
+      "score": 0.0002949340851046145,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00148": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00089": {
+      "label": 1,
+      "score": 0.9996808171272278,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00074": {
+      "label": 0,
+      "score": 0.0003043145115952939,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00029": {
+      "label": 0,
+      "score": 0.0003215177566744387,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00135": {
+      "label": 0,
+      "score": 0.0003148114192299545,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00121": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00060": {
+      "label": 1,
+      "score": 0.9996439218521118,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00125": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00123": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00006": {
+      "label": 1,
+      "score": 0.9996833801269531,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00134": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00025": {
+      "label": 0,
+      "score": 0.00030426745070144534,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00018": {
+      "label": 1,
+      "score": 0.9996936321258545,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00020": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00004": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00026": {
+      "label": 0,
+      "score": 0.0003179251798428595,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00044": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00038": {
+      "label": 0,
+      "score": 0.9996834993362427,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00108": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00129": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00052": {
+      "label": 1,
+      "score": 0.9996936321258545,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00018": {
+      "label": 1,
+      "score": 0.9996833801269531,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00136": {
+      "label": 0,
+      "score": 0.000304071611026302,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00063": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00147": {
+      "label": 1,
+      "score": 0.9997023344039917,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00119": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/real/coco_00010": {
+      "label": 0,
+      "score": 0.012138879857957363,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00131": {
+      "label": 1,
+      "score": 0.9995659589767456,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00120": {
+      "label": 0,
+      "score": 0.003906645812094212,
+      "pred": 0
+    },
+    "wildfake/real/coco_00138": {
+      "label": 0,
+      "score": 0.00029727647779509425,
+      "pred": 0
+    },
+    "wildfake/real/coco_00130": {
+      "label": 0,
+      "score": 0.00040288642048835754,
+      "pred": 0
+    },
+    "wildfake/real/coco_00117": {
+      "label": 0,
+      "score": 0.00037425156915560365,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00005": {
+      "label": 0,
+      "score": 0.0003662492090370506,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00011": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00055": {
+      "label": 0,
+      "score": 0.9937307834625244,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00010": {
+      "label": 0,
+      "score": 0.0005376753397285938,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00012": {
+      "label": 0,
+      "score": 0.0009263965184800327,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00090": {
+      "label": 1,
+      "score": 0.9996890425682068,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00128": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00050": {
+      "label": 0,
+      "score": 0.00030508250347338617,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00046": {
+      "label": 0,
+      "score": 0.836823046207428,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00029": {
+      "label": 0,
+      "score": 0.0004035136953461915,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00047": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00126": {
+      "label": 0,
+      "score": 0.009357251226902008,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00009": {
+      "label": 0,
+      "score": 0.008414953015744686,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00037": {
+      "label": 0,
+      "score": 0.00030624886858277023,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00027": {
+      "label": 0,
+      "score": 0.0005759288906119764,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00067": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00065": {
+      "label": 0,
+      "score": 0.002048726426437497,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00011": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00129": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00018": {
+      "label": 0,
+      "score": 0.0003049009828828275,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00037": {
+      "label": 0,
+      "score": 0.9982861876487732,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00120": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00058": {
+      "label": 1,
+      "score": 0.9996857047080994,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00023": {
+      "label": 1,
+      "score": 0.9996988773345947,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00059": {
+      "label": 0,
+      "score": 0.0002961878781206906,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00001": {
+      "label": 0,
+      "score": 0.0003147117968183011,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00126": {
+      "label": 1,
+      "score": 0.999630331993103,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00016": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00079": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00057": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/real/coco_00032": {
+      "label": 0,
+      "score": 0.00031913872226141393,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00003": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00142": {
+      "label": 1,
+      "score": 0.999689519405365,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00001": {
+      "label": 0,
+      "score": 0.00038398083415813744,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00097": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00021": {
+      "label": 0,
+      "score": 0.0004453086876310408,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00015": {
+      "label": 1,
+      "score": 0.9996979236602783,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00017": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00093": {
+      "label": 1,
+      "score": 0.9996890425682068,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00080": {
+      "label": 0,
+      "score": 0.00030422324198298156,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00026": {
+      "label": 1,
+      "score": 0.9996869564056396,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00132": {
+      "label": 0,
+      "score": 0.0007344596087932587,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00024": {
+      "label": 1,
+      "score": 0.999680757522583,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00082": {
+      "label": 1,
+      "score": 0.9996843338012695,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00126": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00035": {
+      "label": 0,
+      "score": 0.0003041426825802773,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00130": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00019": {
+      "label": 0,
+      "score": 0.00030564918415620923,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00044": {
+      "label": 0,
+      "score": 0.0003137353342026472,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00000": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00054": {
+      "label": 1,
+      "score": 0.9996839761734009,
+      "pred": 1
+    },
+    "wildfake/real/coco_00085": {
+      "label": 0,
+      "score": 0.00030624886858277023,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00055": {
+      "label": 0,
+      "score": 0.0003181935171596706,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00149": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00122": {
+      "label": 0,
+      "score": 0.0773317739367485,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00075": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00046": {
+      "label": 0,
+      "score": 0.00030422324198298156,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00131": {
+      "label": 0,
+      "score": 0.0003064237243961543,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00057": {
+      "label": 1,
+      "score": 0.9996880888938904,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00144": {
+      "label": 0,
+      "score": 0.0006170353153720498,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00055": {
+      "label": 1,
+      "score": 0.9996869564056396,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00145": {
+      "label": 0,
+      "score": 0.0003179251798428595,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00134": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/real/coco_00120": {
+      "label": 0,
+      "score": 0.00042890332406386733,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00091": {
+      "label": 1,
+      "score": 0.9996836185455322,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00000": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00077": {
+      "label": 0,
+      "score": 0.4254935383796692,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00104": {
+      "label": 1,
+      "score": 0.9996750950813293,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00012": {
+      "label": 0,
+      "score": 0.0003250851295888424,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00083": {
+      "label": 0,
+      "score": 0.00031763690640218556,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00072": {
+      "label": 1,
+      "score": 0.9996731281280518,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00029": {
+      "label": 1,
+      "score": 0.9996890425682068,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00004": {
+      "label": 1,
+      "score": 0.9994971752166748,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00104": {
+      "label": 0,
+      "score": 0.00029473824542947114,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00110": {
+      "label": 0,
+      "score": 0.007471680175513029,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00029": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00120": {
+      "label": 1,
+      "score": 0.9996933341026306,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00022": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00039": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/real/coco_00026": {
+      "label": 0,
+      "score": 0.0003368695033714175,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00077": {
+      "label": 1,
+      "score": 0.9996836185455322,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00002": {
+      "label": 0,
+      "score": 0.0003137353342026472,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00141": {
+      "label": 0,
+      "score": 0.0003560500917956233,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00031": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00026": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00107": {
+      "label": 0,
+      "score": 0.0044892700389027596,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00066": {
+      "label": 1,
+      "score": 0.9996742010116577,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00002": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00098": {
+      "label": 0,
+      "score": 0.006257287226617336,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00024": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00079": {
+      "label": 1,
+      "score": 0.9996933341026306,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00071": {
+      "label": 1,
+      "score": 0.9996979236602783,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00147": {
+      "label": 0,
+      "score": 0.0003041817108169198,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00082": {
+      "label": 0,
+      "score": 0.00031587816192768514,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00065": {
+      "label": 1,
+      "score": 0.9996833801269531,
+      "pred": 1
+    },
+    "wildfake/real/coco_00148": {
+      "label": 0,
+      "score": 0.00030390467145480216,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00037": {
+      "label": 1,
+      "score": 0.999462366104126,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00059": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00076": {
+      "label": 0,
+      "score": 0.04856351390480995,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00051": {
+      "label": 1,
+      "score": 0.9996820688247681,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00094": {
+      "label": 1,
+      "score": 0.9996957182884216,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00087": {
+      "label": 0,
+      "score": 0.0002949340851046145,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00090": {
+      "label": 0,
+      "score": 0.0021414170041680336,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00063": {
+      "label": 0,
+      "score": 0.931201696395874,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00023": {
+      "label": 1,
+      "score": 0.9996775984764099,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00039": {
+      "label": 1,
+      "score": 0.9996188879013062,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00064": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00040": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00123": {
+      "label": 0,
+      "score": 0.0003066098433919251,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00094": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00028": {
+      "label": 0,
+      "score": 0.0008452086476609111,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00147": {
+      "label": 0,
+      "score": 0.00030447469907812774,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00105": {
+      "label": 0,
+      "score": 0.0003192765871062875,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00051": {
+      "label": 0,
+      "score": 0.0003137353342026472,
+      "pred": 0
+    },
+    "wildfake/real/coco_00060": {
+      "label": 0,
+      "score": 0.00031046077492646873,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00114": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/real/coco_00055": {
+      "label": 0,
+      "score": 0.0003238895151298493,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00115": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00068": {
+      "label": 1,
+      "score": 0.999689519405365,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00075": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00085": {
+      "label": 0,
+      "score": 0.00029533455381169915,
+      "pred": 0
+    },
+    "wildfake/real/coco_00124": {
+      "label": 0,
+      "score": 0.0012448433553799987,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00103": {
+      "label": 1,
+      "score": 0.9996880888938904,
+      "pred": 1
+    },
+    "wildfake/real/coco_00077": {
+      "label": 0,
+      "score": 0.0003428137570153922,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00105": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/real/coco_00093": {
+      "label": 0,
+      "score": 0.6489359140396118,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00038": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00034": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00101": {
+      "label": 0,
+      "score": 0.00030892941867932677,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00034": {
+      "label": 0,
+      "score": 0.0023276698775589466,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00034": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00044": {
+      "label": 0,
+      "score": 0.0003488227375783026,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00140": {
+      "label": 0,
+      "score": 0.004539211746305227,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00063": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00043": {
+      "label": 0,
+      "score": 0.0003045994380954653,
+      "pred": 0
+    },
+    "wildfake/real/coco_00079": {
+      "label": 0,
+      "score": 0.0005805383552797139,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00114": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00052": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00101": {
+      "label": 0,
+      "score": 0.002483416348695755,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00115": {
+      "label": 1,
+      "score": 0.9996988773345947,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00014": {
+      "label": 1,
+      "score": 0.9996974468231201,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00111": {
+      "label": 0,
+      "score": 0.00833167601376772,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00145": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00088": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/real/coco_00125": {
+      "label": 0,
+      "score": 0.00039197679143399,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00013": {
+      "label": 0,
+      "score": 0.00037753413198515773,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00019": {
+      "label": 0,
+      "score": 0.0002963158185593784,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00007": {
+      "label": 1,
+      "score": 0.9996880888938904,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00126": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00059": {
+      "label": 1,
+      "score": 0.9996836185455322,
+      "pred": 1
+    },
+    "wildfake/real/coco_00025": {
+      "label": 0,
+      "score": 0.0003263718681409955,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00143": {
+      "label": 0,
+      "score": 0.0002949340851046145,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00146": {
+      "label": 1,
+      "score": 0.9996857047080994,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00101": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00074": {
+      "label": 1,
+      "score": 0.9996880888938904,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00049": {
+      "label": 0,
+      "score": 0.00457426393404603,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00010": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00104": {
+      "label": 0,
+      "score": 0.0003045994380954653,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00056": {
+      "label": 1,
+      "score": 0.9996799230575562,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00053": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/real/coco_00119": {
+      "label": 0,
+      "score": 0.9995566010475159,
+      "pred": 1
+    },
+    "wildfake/real/coco_00121": {
+      "label": 0,
+      "score": 0.9572938680648804,
+      "pred": 1
+    },
+    "wildfake/real/coco_00039": {
+      "label": 0,
+      "score": 0.00030447469907812774,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00065": {
+      "label": 0,
+      "score": 0.0003060846065636724,
+      "pred": 0
+    },
+    "wildfake/real/coco_00112": {
+      "label": 0,
+      "score": 0.00033732986776158214,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00000": {
+      "label": 0,
+      "score": 0.0003585813392419368,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00108": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00032": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00058": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00030": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00033": {
+      "label": 0,
+      "score": 0.0003048183862119913,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00061": {
+      "label": 0,
+      "score": 0.39146268367767334,
+      "pred": 0
+    },
+    "wildfake/real/coco_00059": {
+      "label": 0,
+      "score": 0.0003568592946976423,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00031": {
+      "label": 1,
+      "score": 0.9996784925460815,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00100": {
+      "label": 0,
+      "score": 0.0002946469758171588,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00116": {
+      "label": 1,
+      "score": 0.9996974468231201,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00093": {
+      "label": 0,
+      "score": 0.00031571389990858734,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00064": {
+      "label": 1,
+      "score": 0.9996764063835144,
+      "pred": 1
+    },
+    "wildfake/real/coco_00038": {
+      "label": 0,
+      "score": 0.00045038736425340176,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00015": {
+      "label": 0,
+      "score": 0.00048523518489673734,
+      "pred": 0
+    },
+    "wildfake/real/coco_00028": {
+      "label": 0,
+      "score": 0.0003325642319396138,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00132": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00068": {
+      "label": 0,
+      "score": 0.00030441791750490665,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00138": {
+      "label": 0,
+      "score": 0.0003238895151298493,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00116": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00012": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00123": {
+      "label": 0,
+      "score": 0.8255832195281982,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00130": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00086": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00075": {
+      "label": 0,
+      "score": 0.0003041817108169198,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00090": {
+      "label": 0,
+      "score": 0.0003049009828828275,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00085": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00140": {
+      "label": 0,
+      "score": 0.00030426745070144534,
+      "pred": 0
+    },
+    "wildfake/real/coco_00146": {
+      "label": 0,
+      "score": 0.11599916219711304,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00138": {
+      "label": 0,
+      "score": 0.0011880500242114067,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00111": {
+      "label": 1,
+      "score": 0.9996837377548218,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00045": {
+      "label": 0,
+      "score": 0.9690095782279968,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00092": {
+      "label": 0,
+      "score": 0.00030422324198298156,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00045": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00077": {
+      "label": 1,
+      "score": 0.9996857047080994,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00065": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00016": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/real/coco_00014": {
+      "label": 0,
+      "score": 0.00041384584619663656,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00079": {
+      "label": 0,
+      "score": 0.00030447469907812774,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00005": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00101": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/real/coco_00049": {
+      "label": 0,
+      "score": 0.0027050795033574104,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00043": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/real/coco_00052": {
+      "label": 0,
+      "score": 0.0003043145115952939,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00124": {
+      "label": 1,
+      "score": 0.999618649482727,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00075": {
+      "label": 0,
+      "score": 0.000331985269440338,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00096": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00040": {
+      "label": 0,
+      "score": 0.00029659693245776,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00003": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00052": {
+      "label": 0,
+      "score": 0.0003060846065636724,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00054": {
+      "label": 0,
+      "score": 0.0003049889055546373,
+      "pred": 0
+    },
+    "wildfake/real/coco_00044": {
+      "label": 0,
+      "score": 0.00039197679143399,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00061": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00113": {
+      "label": 1,
+      "score": 0.9996936321258545,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00052": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00043": {
+      "label": 0,
+      "score": 0.00029498114599846303,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00049": {
+      "label": 1,
+      "score": 0.999683141708374,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00054": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00112": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00130": {
+      "label": 0,
+      "score": 0.0003137353342026472,
+      "pred": 0
+    },
+    "wildfake/real/coco_00139": {
+      "label": 0,
+      "score": 0.00034027418587356806,
+      "pred": 0
+    },
+    "wildfake/real/coco_00101": {
+      "label": 0,
+      "score": 0.6512662768363953,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00119": {
+      "label": 0,
+      "score": 0.6692714095115662,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00044": {
+      "label": 0,
+      "score": 0.21654294431209564,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00057": {
+      "label": 0,
+      "score": 0.00031377197592519224,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00028": {
+      "label": 0,
+      "score": 0.00031736609525978565,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00058": {
+      "label": 0,
+      "score": 0.9742056131362915,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00103": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00048": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00091": {
+      "label": 0,
+      "score": 0.00029595481464639306,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00095": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00027": {
+      "label": 1,
+      "score": 0.9996820688247681,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00087": {
+      "label": 0,
+      "score": 0.0003483229666016996,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00121": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00061": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00005": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00149": {
+      "label": 0,
+      "score": 0.0003047408245038241,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00007": {
+      "label": 0,
+      "score": 0.0004444484948180616,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00053": {
+      "label": 1,
+      "score": 0.9996890425682068,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00144": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00063": {
+      "label": 0,
+      "score": 0.00030508250347338617,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00056": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/real/coco_00057": {
+      "label": 0,
+      "score": 0.002369742142036557,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00056": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/real/coco_00088": {
+      "label": 0,
+      "score": 0.10529220104217529,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00143": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00094": {
+      "label": 1,
+      "score": 0.9996938705444336,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00130": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00083": {
+      "label": 0,
+      "score": 0.0002963158185593784,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00063": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00092": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00093": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00117": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00010": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00118": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00055": {
+      "label": 1,
+      "score": 0.9996875524520874,
+      "pred": 1
+    },
+    "wildfake/real/coco_00018": {
+      "label": 0,
+      "score": 0.0003278228105045855,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00040": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00110": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00133": {
+      "label": 1,
+      "score": 0.9996992945671082,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00069": {
+      "label": 1,
+      "score": 0.9996979236602783,
+      "pred": 1
+    },
+    "wildfake/real/coco_00128": {
+      "label": 0,
+      "score": 0.00039467171882279217,
+      "pred": 0
+    },
+    "wildfake/real/coco_00050": {
+      "label": 0,
+      "score": 0.0003472644602879882,
+      "pred": 0
+    },
+    "wildfake/real/coco_00051": {
+      "label": 0,
+      "score": 0.0021437550894916058,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00020": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00042": {
+      "label": 0,
+      "score": 0.002234799787402153,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00000": {
+      "label": 0,
+      "score": 0.0003041817108169198,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00114": {
+      "label": 0,
+      "score": 0.00041488054557703435,
+      "pred": 0
+    },
+    "wildfake/real/coco_00098": {
+      "label": 0,
+      "score": 0.0003041060408577323,
+      "pred": 0
+    },
+    "wildfake/real/coco_00113": {
+      "label": 0,
+      "score": 0.012580043636262417,
+      "pred": 0
+    },
+    "wildfake/real/coco_00027": {
+      "label": 0,
+      "score": 0.0010923936497420073,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00012": {
+      "label": 0,
+      "score": 0.0003070188977289945,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00098": {
+      "label": 1,
+      "score": 0.9996885657310486,
+      "pred": 1
+    },
+    "wildfake/real/coco_00021": {
+      "label": 0,
+      "score": 0.0003045351186301559,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00061": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00047": {
+      "label": 0,
+      "score": 0.0013487222604453564,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00078": {
+      "label": 1,
+      "score": 0.9973479509353638,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00014": {
+      "label": 0,
+      "score": 0.00031515053706243634,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00146": {
+      "label": 0,
+      "score": 0.000963958736974746,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00032": {
+      "label": 0,
+      "score": 0.0005432363832369447,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00137": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00034": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00064": {
+      "label": 1,
+      "score": 0.9996944069862366,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00092": {
+      "label": 1,
+      "score": 0.9996979236602783,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00103": {
+      "label": 0,
+      "score": 0.0018137284787371755,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00067": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00080": {
+      "label": 1,
+      "score": 0.9996938705444336,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00021": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00113": {
+      "label": 0,
+      "score": 0.0003040088922716677,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00002": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00064": {
+      "label": 0,
+      "score": 0.012704189866781235,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00038": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00021": {
+      "label": 0,
+      "score": 0.0003041817108169198,
+      "pred": 0
+    },
+    "wildfake/real/coco_00030": {
+      "label": 0,
+      "score": 0.00030564918415620923,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00007": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00127": {
+      "label": 0,
+      "score": 0.00031571389990858734,
+      "pred": 0
+    },
+    "wildfake/real/coco_00031": {
+      "label": 0,
+      "score": 0.0002967512409668416,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00080": {
+      "label": 1,
+      "score": 0.9996935725212097,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00119": {
+      "label": 0,
+      "score": 0.00030422324198298156,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00040": {
+      "label": 1,
+      "score": 0.9996527433395386,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00078": {
+      "label": 1,
+      "score": 0.9996928572654724,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00033": {
+      "label": 0,
+      "score": 0.00030508250347338617,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00034": {
+      "label": 0,
+      "score": 0.00030892941867932677,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00031": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00001": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00089": {
+      "label": 0,
+      "score": 0.0022301985882222652,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00088": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00041": {
+      "label": 0,
+      "score": 0.0003711267199832946,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00091": {
+      "label": 0,
+      "score": 0.16726753115653992,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00113": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00116": {
+      "label": 0,
+      "score": 0.0013730127830058336,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00087": {
+      "label": 1,
+      "score": 0.9996974468231201,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00137": {
+      "label": 0,
+      "score": 0.00030508250347338617,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00029": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00025": {
+      "label": 1,
+      "score": 0.9997023344039917,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00048": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00099": {
+      "label": 0,
+      "score": 0.0005278310272842646,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00074": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/real/coco_00111": {
+      "label": 0,
+      "score": 0.0003360353584866971,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00043": {
+      "label": 0,
+      "score": 0.04275039955973625,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00072": {
+      "label": 0,
+      "score": 0.00030624886858277023,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00047": {
+      "label": 0,
+      "score": 0.9681598544120789,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00050": {
+      "label": 0,
+      "score": 0.0003182320506311953,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00006": {
+      "label": 0,
+      "score": 0.0030194874852895737,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00060": {
+      "label": 1,
+      "score": 0.999689519405365,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00030": {
+      "label": 1,
+      "score": 0.9996988773345947,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00031": {
+      "label": 0,
+      "score": 0.0003059302980545908,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00057": {
+      "label": 1,
+      "score": 0.9996885657310486,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00138": {
+      "label": 0,
+      "score": 0.0003086027572862804,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00015": {
+      "label": 0,
+      "score": 0.0005423235124908388,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00096": {
+      "label": 0,
+      "score": 0.00031046077492646873,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00053": {
+      "label": 0,
+      "score": 0.00029498114599846303,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00115": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00136": {
+      "label": 0,
+      "score": 0.013899576850235462,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00031": {
+      "label": 0,
+      "score": 0.02213522046804428,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00106": {
+      "label": 0,
+      "score": 0.010639502666890621,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00010": {
+      "label": 0,
+      "score": 0.00030422324198298156,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00137": {
+      "label": 0,
+      "score": 0.0003215177566744387,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00097": {
+      "label": 0,
+      "score": 0.0003472644602879882,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00109": {
+      "label": 1,
+      "score": 0.9996944069862366,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00070": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/real/coco_00082": {
+      "label": 0,
+      "score": 0.0003164714726153761,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00109": {
+      "label": 0,
+      "score": 0.00030624886858277023,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00032": {
+      "label": 0,
+      "score": 0.00045369681902229786,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00107": {
+      "label": 1,
+      "score": 0.9996702671051025,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00149": {
+      "label": 1,
+      "score": 0.9996803998947144,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00038": {
+      "label": 0,
+      "score": 0.00030564918415620923,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00071": {
+      "label": 1,
+      "score": 0.9996826648712158,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00118": {
+      "label": 0,
+      "score": 0.00031138252234086394,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00056": {
+      "label": 0,
+      "score": 0.0003064237243961543,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00103": {
+      "label": 0,
+      "score": 0.00033888814505189657,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00141": {
+      "label": 0,
+      "score": 0.00036053266376256943,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00107": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00088": {
+      "label": 0,
+      "score": 0.00031527847750112414,
+      "pred": 0
+    },
+    "wildfake/real/coco_00105": {
+      "label": 0,
+      "score": 0.0004056228790432215,
+      "pred": 0
+    },
+    "wildfake/real/coco_00149": {
+      "label": 0,
+      "score": 0.0004929561400786042,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00093": {
+      "label": 0,
+      "score": 0.00029606770840473473,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00012": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00088": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00112": {
+      "label": 0,
+      "score": 0.08955460786819458,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00115": {
+      "label": 0,
+      "score": 0.00030518212588503957,
+      "pred": 0
+    },
+    "wildfake/real/coco_00144": {
+      "label": 0,
+      "score": 0.00032009006827138364,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00074": {
+      "label": 0,
+      "score": 0.00030508250347338617,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00053": {
+      "label": 0,
+      "score": 0.030909817665815353,
+      "pred": 0
+    },
+    "wildfake/real/coco_00090": {
+      "label": 0,
+      "score": 0.0004247462493367493,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00141": {
+      "label": 1,
+      "score": 0.9996935725212097,
+      "pred": 1
+    },
+    "wildfake/real/coco_00106": {
+      "label": 0,
+      "score": 0.00036698533222079277,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00149": {
+      "label": 1,
+      "score": 0.9996974468231201,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00117": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00075": {
+      "label": 1,
+      "score": 0.9996836185455322,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00077": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/real/coco_00034": {
+      "label": 0,
+      "score": 0.007772992365062237,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00133": {
+      "label": 1,
+      "score": 0.9996935725212097,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00072": {
+      "label": 1,
+      "score": 0.999683141708374,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00095": {
+      "label": 0,
+      "score": 0.0002951413334812969,
+      "pred": 0
+    },
+    "wildfake/real/coco_00129": {
+      "label": 0,
+      "score": 0.8598079681396484,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00148": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00050": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00009": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00080": {
+      "label": 0,
+      "score": 0.00029659693245776,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00081": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00119": {
+      "label": 1,
+      "score": 0.9996834993362427,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00103": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/real/coco_00015": {
+      "label": 0,
+      "score": 0.015988841652870178,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00008": {
+      "label": 1,
+      "score": 0.9996992945671082,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00094": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00062": {
+      "label": 1,
+      "score": 0.9996731281280518,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00076": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00117": {
+      "label": 0,
+      "score": 0.0003049889055546373,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00129": {
+      "label": 0,
+      "score": 0.01695738360285759,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00086": {
+      "label": 1,
+      "score": 0.9996944069862366,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00072": {
+      "label": 0,
+      "score": 0.2135692536830902,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00089": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00054": {
+      "label": 0,
+      "score": 0.0003138525353278965,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00102": {
+      "label": 0,
+      "score": 0.00033656382584013045,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00128": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00041": {
+      "label": 0,
+      "score": 0.0003041817108169198,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00020": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00009": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00103": {
+      "label": 0,
+      "score": 0.00031366857001557946,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00002": {
+      "label": 0,
+      "score": 0.000307482376229018,
+      "pred": 0
+    },
+    "wildfake/real/coco_00122": {
+      "label": 0,
+      "score": 0.0005909919273108244,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00064": {
+      "label": 0,
+      "score": 0.00032458105124533176,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00038": {
+      "label": 1,
+      "score": 0.9996880888938904,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00136": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00059": {
+      "label": 1,
+      "score": 0.9996803998947144,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00116": {
+      "label": 0,
+      "score": 0.00030518212588503957,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00005": {
+      "label": 0,
+      "score": 0.0005254365969449282,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00040": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00036": {
+      "label": 0,
+      "score": 0.005620670039206743,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00051": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00094": {
+      "label": 0,
+      "score": 0.00030624886858277023,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00035": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00042": {
+      "label": 1,
+      "score": 0.9996901750564575,
+      "pred": 1
+    },
+    "wildfake/real/coco_00054": {
+      "label": 0,
+      "score": 0.0003215177566744387,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00101": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00111": {
+      "label": 1,
+      "score": 0.9996944069862366,
+      "pred": 1
+    },
+    "wildfake/real/coco_00114": {
+      "label": 0,
+      "score": 0.00030564918415620923,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00066": {
+      "label": 0,
+      "score": 0.35347533226013184,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00036": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00112": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/real/coco_00008": {
+      "label": 0,
+      "score": 0.0003560500917956233,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00072": {
+      "label": 1,
+      "score": 0.9996816515922546,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00146": {
+      "label": 0,
+      "score": 0.0003135828301310539,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00085": {
+      "label": 1,
+      "score": 0.9996755123138428,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00068": {
+      "label": 0,
+      "score": 0.010769300162792206,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00015": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00049": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/real/coco_00086": {
+      "label": 0,
+      "score": 0.0013997266069054604,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00148": {
+      "label": 0,
+      "score": 0.00030426745070144534,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00039": {
+      "label": 1,
+      "score": 0.9996875524520874,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00133": {
+      "label": 0,
+      "score": 0.0003185587120242417,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00131": {
+      "label": 0,
+      "score": 0.0004913965240120888,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00132": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/real/coco_00036": {
+      "label": 0,
+      "score": 0.00048135939869098365,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00104": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00004": {
+      "label": 0,
+      "score": 0.0008587069460190833,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00146": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00147": {
+      "label": 1,
+      "score": 0.9996957182884216,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00003": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00017": {
+      "label": 1,
+      "score": 0.9996988773345947,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00126": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00042": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00036": {
+      "label": 1,
+      "score": 0.9996024370193481,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00093": {
+      "label": 0,
+      "score": 0.037458352744579315,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00048": {
+      "label": 0,
+      "score": 0.0003054010740015656,
+      "pred": 0
+    },
+    "wildfake/real/coco_00143": {
+      "label": 0,
+      "score": 0.0003047408245038241,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00095": {
+      "label": 1,
+      "score": 0.9996817708015442,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00135": {
+      "label": 0,
+      "score": 0.00030447469907812774,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00075": {
+      "label": 0,
+      "score": 0.8093714714050293,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00058": {
+      "label": 0,
+      "score": 0.00030070796492509544,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00045": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00041": {
+      "label": 1,
+      "score": 0.9996424913406372,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00127": {
+      "label": 1,
+      "score": 0.9996837377548218,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00004": {
+      "label": 1,
+      "score": 0.9996837377548218,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00069": {
+      "label": 0,
+      "score": 0.0018322323448956013,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00009": {
+      "label": 1,
+      "score": 0.999680757522583,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00148": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00001": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00084": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00062": {
+      "label": 1,
+      "score": 0.9996734857559204,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00032": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00100": {
+      "label": 1,
+      "score": 0.9996988773345947,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00081": {
+      "label": 1,
+      "score": 0.9996988773345947,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00145": {
+      "label": 1,
+      "score": 0.9996992945671082,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00095": {
+      "label": 0,
+      "score": 0.019967272877693176,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00019": {
+      "label": 1,
+      "score": 0.9996612668037415,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00059": {
+      "label": 0,
+      "score": 0.0002967512409668416,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00129": {
+      "label": 0,
+      "score": 0.0003066098433919251,
+      "pred": 0
+    },
+    "wildfake/real/coco_00048": {
+      "label": 0,
+      "score": 0.006524621043354273,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00071": {
+      "label": 0,
+      "score": 0.0003041426825802773,
+      "pred": 0
+    },
+    "wildfake/real/coco_00012": {
+      "label": 0,
+      "score": 0.0012843081494793296,
+      "pred": 0
+    },
+    "wildfake/real/coco_00061": {
+      "label": 0,
+      "score": 0.000613044947385788,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00017": {
+      "label": 0,
+      "score": 0.00031437011784873903,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00116": {
+      "label": 0,
+      "score": 0.00030466791940853,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00128": {
+      "label": 0,
+      "score": 0.00030518212588503957,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00119": {
+      "label": 0,
+      "score": 0.0003192765871062875,
+      "pred": 0
+    },
+    "wildfake/real/coco_00071": {
+      "label": 0,
+      "score": 0.0003288410371169448,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00075": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00022": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00121": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/real/coco_00062": {
+      "label": 0,
+      "score": 0.0003100413305219263,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00097": {
+      "label": 0,
+      "score": 0.00030398034141398966,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00060": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00041": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00043": {
+      "label": 1,
+      "score": 0.9988667964935303,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00019": {
+      "label": 1,
+      "score": 0.9996890425682068,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00013": {
+      "label": 0,
+      "score": 0.0004572001053020358,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00137": {
+      "label": 0,
+      "score": 0.0012212328147143126,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00008": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00117": {
+      "label": 1,
+      "score": 0.9996527433395386,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00055": {
+      "label": 1,
+      "score": 0.9996784925460815,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00060": {
+      "label": 0,
+      "score": 0.00030892941867932677,
+      "pred": 0
+    },
+    "wildfake/real/coco_00094": {
+      "label": 0,
+      "score": 0.00032617372926324606,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00086": {
+      "label": 0,
+      "score": 0.0003160530177410692,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00115": {
+      "label": 0,
+      "score": 0.001005337806418538,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00069": {
+      "label": 0,
+      "score": 0.0002950312336906791,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00136": {
+      "label": 1,
+      "score": 0.9954478740692139,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00112": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00132": {
+      "label": 0,
+      "score": 0.0003070188977289945,
+      "pred": 0
+    },
+    "wildfake/real/coco_00141": {
+      "label": 0,
+      "score": 0.0014668946387246251,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00061": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00069": {
+      "label": 0,
+      "score": 0.0003048183862119913,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00013": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00131": {
+      "label": 1,
+      "score": 0.9996935725212097,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00022": {
+      "label": 1,
+      "score": 0.9996936321258545,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00083": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00042": {
+      "label": 0,
+      "score": 0.0003047408245038241,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00106": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/real/coco_00103": {
+      "label": 0,
+      "score": 0.0004205390578135848,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00037": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00102": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00097": {
+      "label": 0,
+      "score": 0.0005895014619454741,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00105": {
+      "label": 0,
+      "score": 0.0003057853609789163,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00135": {
+      "label": 0,
+      "score": 0.0031802344601601362,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00009": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00144": {
+      "label": 0,
+      "score": 0.00029540745890699327,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00053": {
+      "label": 1,
+      "score": 0.9996837377548218,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00050": {
+      "label": 0,
+      "score": 0.05800125002861023,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00022": {
+      "label": 0,
+      "score": 0.0003142972127534449,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00121": {
+      "label": 1,
+      "score": 0.9996885657310486,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00045": {
+      "label": 1,
+      "score": 0.999693751335144,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00100": {
+      "label": 1,
+      "score": 0.9996556043624878,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00026": {
+      "label": 0,
+      "score": 0.2706204354763031,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00091": {
+      "label": 1,
+      "score": 0.9996789693832397,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00091": {
+      "label": 0,
+      "score": 0.00030518212588503957,
+      "pred": 0
+    },
+    "wildfake/real/coco_00041": {
+      "label": 0,
+      "score": 0.0003345156437717378,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00109": {
+      "label": 0,
+      "score": 0.0020832233130931854,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00022": {
+      "label": 0,
+      "score": 0.0002974746166728437,
+      "pred": 0
+    },
+    "wildfake/real/coco_00145": {
+      "label": 0,
+      "score": 0.0006616953760385513,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00014": {
+      "label": 1,
+      "score": 0.9996768236160278,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00068": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00003": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00023": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00127": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00094": {
+      "label": 0,
+      "score": 0.00029498114599846303,
+      "pred": 0
+    },
+    "wildfake/real/coco_00074": {
+      "label": 0,
+      "score": 0.00038106131250970066,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00015": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00133": {
+      "label": 1,
+      "score": 0.9996957182884216,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00142": {
+      "label": 0,
+      "score": 0.0002952017530333251,
+      "pred": 0
+    },
+    "wildfake/real/coco_00045": {
+      "label": 0,
+      "score": 0.000805653166025877,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00085": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/real/coco_00104": {
+      "label": 0,
+      "score": 0.00031527847750112414,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00111": {
+      "label": 1,
+      "score": 0.9996890425682068,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00042": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00125": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00081": {
+      "label": 0,
+      "score": 0.0003054010740015656,
+      "pred": 0
+    },
+    "wildfake/real/coco_00080": {
+      "label": 0,
+      "score": 0.0004975951160304248,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00092": {
+      "label": 0,
+      "score": 0.0004808421363122761,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00078": {
+      "label": 0,
+      "score": 0.00037115285522304475,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00051": {
+      "label": 1,
+      "score": 0.9996992945671082,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00028": {
+      "label": 1,
+      "score": 0.9996780157089233,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00107": {
+      "label": 0,
+      "score": 0.0003612182626966387,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00019": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00033": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00056": {
+      "label": 1,
+      "score": 0.9996974468231201,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00039": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/real/coco_00135": {
+      "label": 0,
+      "score": 0.0009885122999548912,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00000": {
+      "label": 1,
+      "score": 0.999689519405365,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00023": {
+      "label": 0,
+      "score": 0.00030447469907812774,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00018": {
+      "label": 0,
+      "score": 0.0003137009043712169,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00124": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/real/coco_00029": {
+      "label": 0,
+      "score": 0.0003326833830215037,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00048": {
+      "label": 1,
+      "score": 0.9996979236602783,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00117": {
+      "label": 0,
+      "score": 0.002291275653988123,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00090": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00007": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/real/coco_00123": {
+      "label": 0,
+      "score": 0.0014186589978635311,
+      "pred": 0
+    },
+    "wildfake/real/coco_00072": {
+      "label": 0,
+      "score": 0.0004032622091472149,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00115": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00065": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00006": {
+      "label": 1,
+      "score": 0.9996857047080994,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00019": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00047": {
+      "label": 1,
+      "score": 0.9996768236160278,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00126": {
+      "label": 0,
+      "score": 0.0002952017530333251,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00078": {
+      "label": 0,
+      "score": 0.0003070188977289945,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00040": {
+      "label": 0,
+      "score": 0.0002967512409668416,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00128": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/real/coco_00078": {
+      "label": 0,
+      "score": 0.0004565487033687532,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00118": {
+      "label": 0,
+      "score": 0.000343424006132409,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00142": {
+      "label": 0,
+      "score": 0.0003043645992875099,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00111": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00032": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00048": {
+      "label": 0,
+      "score": 0.0024844035506248474,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00145": {
+      "label": 0,
+      "score": 0.00032009006827138364,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00131": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/real/coco_00109": {
+      "label": 0,
+      "score": 0.0004918069462291896,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00146": {
+      "label": 0,
+      "score": 0.0003060846065636724,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00127": {
+      "label": 0,
+      "score": 0.0003049009828828275,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00074": {
+      "label": 0,
+      "score": 0.0057264650240540504,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00008": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00052": {
+      "label": 0,
+      "score": 0.0003057853609789163,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00078": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/real/coco_00116": {
+      "label": 0,
+      "score": 0.00029565553995780647,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00013": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00042": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00115": {
+      "label": 0,
+      "score": 0.00030422324198298156,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00046": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00008": {
+      "label": 0,
+      "score": 0.0003444253816269338,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00001": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00147": {
+      "label": 0,
+      "score": 0.002340877428650856,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00105": {
+      "label": 0,
+      "score": 0.8685858845710754,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00098": {
+      "label": 0,
+      "score": 0.00029548502061516047,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00124": {
+      "label": 1,
+      "score": 0.9996910691261292,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00016": {
+      "label": 0,
+      "score": 0.0003070188977289945,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00097": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00017": {
+      "label": 1,
+      "score": 0.9997023344039917,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00132": {
+      "label": 0,
+      "score": 0.000304071611026302,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00135": {
+      "label": 1,
+      "score": 0.9990898370742798,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00130": {
+      "label": 0,
+      "score": 0.00956198014318943,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00124": {
+      "label": 0,
+      "score": 0.00030508250347338617,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00048": {
+      "label": 0,
+      "score": 0.00031389674404636025,
+      "pred": 0
+    },
+    "wildfake/real/coco_00013": {
+      "label": 0,
+      "score": 0.00041724051698111,
+      "pred": 0
+    },
+    "wildfake/real/coco_00069": {
+      "label": 0,
+      "score": 0.0015962941106408834,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00004": {
+      "label": 0,
+      "score": 0.00030426745070144534,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00067": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00089": {
+      "label": 0,
+      "score": 0.00029645199538208544,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00144": {
+      "label": 1,
+      "score": 0.99967360496521,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00024": {
+      "label": 0,
+      "score": 0.000303953536786139,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00060": {
+      "label": 1,
+      "score": 0.9996811151504517,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00043": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00118": {
+      "label": 0,
+      "score": 0.001471889903768897,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00030": {
+      "label": 0,
+      "score": 0.00031515053706243634,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00027": {
+      "label": 0,
+      "score": 0.00032205632305704057,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00138": {
+      "label": 1,
+      "score": 0.9996837377548218,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00137": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00107": {
+      "label": 1,
+      "score": 0.9996559619903564,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00014": {
+      "label": 0,
+      "score": 0.0005103150033392012,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00006": {
+      "label": 0,
+      "score": 0.00032925885170698166,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00043": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00011": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/real/coco_00037": {
+      "label": 0,
+      "score": 0.00030892941867932677,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00025": {
+      "label": 1,
+      "score": 0.9996631145477295,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00014": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/real/coco_00137": {
+      "label": 0,
+      "score": 0.03295155242085457,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00045": {
+      "label": 0,
+      "score": 0.0003185587120242417,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00052": {
+      "label": 0,
+      "score": 0.0023412087466567755,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00037": {
+      "label": 0,
+      "score": 0.0003041060408577323,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00089": {
+      "label": 0,
+      "score": 0.0003052881802432239,
+      "pred": 0
+    },
+    "wildfake/real/coco_00065": {
+      "label": 0,
+      "score": 0.00034407363273203373,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00027": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00058": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/real/coco_00005": {
+      "label": 0,
+      "score": 0.0003568592946976423,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00090": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00133": {
+      "label": 0,
+      "score": 0.9347033500671387,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00101": {
+      "label": 0,
+      "score": 0.0003043145115952939,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00031": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00024": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00118": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00084": {
+      "label": 0,
+      "score": 0.8379859924316406,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00046": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/real/coco_00063": {
+      "label": 0,
+      "score": 0.0004247462493367493,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00134": {
+      "label": 0,
+      "score": 0.00030447469907812774,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00011": {
+      "label": 0,
+      "score": 0.0006946008652448654,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00108": {
+      "label": 1,
+      "score": 0.999680757522583,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00026": {
+      "label": 0,
+      "score": 0.0005619495059363544,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00035": {
+      "label": 0,
+      "score": 0.004791215993463993,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00080": {
+      "label": 1,
+      "score": 0.9995834827423096,
+      "pred": 1
+    },
+    "wildfake/real/coco_00056": {
+      "label": 0,
+      "score": 0.06602998077869415,
+      "pred": 0
+    },
+    "wildfake/real/coco_00131": {
+      "label": 0,
+      "score": 0.00029727647779509425,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00015": {
+      "label": 0,
+      "score": 0.00393904373049736,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00069": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00143": {
+      "label": 0,
+      "score": 0.00030157389119267464,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00117": {
+      "label": 0,
+      "score": 0.00030398034141398966,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00016": {
+      "label": 0,
+      "score": 0.00031763690640218556,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00147": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00002": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00143": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00087": {
+      "label": 0,
+      "score": 0.0021885582245886326,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00057": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00121": {
+      "label": 0,
+      "score": 0.0003179251798428595,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00046": {
+      "label": 1,
+      "score": 0.9995659589767456,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00125": {
+      "label": 1,
+      "score": 0.9996817708015442,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00131": {
+      "label": 1,
+      "score": 0.9997023344039917,
+      "pred": 1
+    },
+    "wildfake/real/coco_00081": {
+      "label": 0,
+      "score": 0.0003814023802988231,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00103": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00078": {
+      "label": 1,
+      "score": 0.9997016191482544,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00098": {
+      "label": 1,
+      "score": 0.9996784925460815,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00044": {
+      "label": 1,
+      "score": 0.9996842741966248,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00074": {
+      "label": 1,
+      "score": 0.9996691942214966,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00087": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00008": {
+      "label": 0,
+      "score": 0.0005746399983763695,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00080": {
+      "label": 0,
+      "score": 0.0013775594998151064,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00099": {
+      "label": 0,
+      "score": 0.001169054419733584,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00095": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00086": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00104": {
+      "label": 1,
+      "score": 0.9996839761734009,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00054": {
+      "label": 1,
+      "score": 0.9996902942657471,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00128": {
+      "label": 0,
+      "score": 0.0005538100958801806,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00092": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00148": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00149": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00124": {
+      "label": 0,
+      "score": 0.001627898309379816,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00114": {
+      "label": 0,
+      "score": 0.0005103150033392012,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00122": {
+      "label": 0,
+      "score": 0.0002967512409668416,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00086": {
+      "label": 0,
+      "score": 0.015517648309469223,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00049": {
+      "label": 1,
+      "score": 0.999689519405365,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00011": {
+      "label": 0,
+      "score": 0.0002967512409668416,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00001": {
+      "label": 1,
+      "score": 0.99964439868927,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00089": {
+      "label": 1,
+      "score": 0.9997013211250305,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00105": {
+      "label": 1,
+      "score": 0.9996919631958008,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00033": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00047": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00089": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00086": {
+      "label": 0,
+      "score": 0.0003041060408577323,
+      "pred": 0
+    },
+    "wildfake/real/coco_00096": {
+      "label": 0,
+      "score": 0.00035300356103107333,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00086": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00064": {
+      "label": 0,
+      "score": 0.00029540745890699327,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00018": {
+      "label": 1,
+      "score": 0.9997020959854126,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00131": {
+      "label": 0,
+      "score": 0.0003160530177410692,
+      "pred": 0
+    },
+    "wildfake/real/coco_00108": {
+      "label": 0,
+      "score": 0.00030422324198298156,
+      "pred": 0
+    },
+    "wildfake/real/coco_00022": {
+      "label": 0,
+      "score": 0.0004138366202823818,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00113": {
+      "label": 1,
+      "score": 0.9996817708015442,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00108": {
+      "label": 0,
+      "score": 0.00030964729376137257,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00140": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00032": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00018": {
+      "label": 0,
+      "score": 0.0004900037893094122,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00114": {
+      "label": 1,
+      "score": 0.9996950626373291,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00024": {
+      "label": 0,
+      "score": 0.0003686030686367303,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00051": {
+      "label": 0,
+      "score": 0.0003060846065636724,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00057": {
+      "label": 0,
+      "score": 0.0014355545863509178,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00125": {
+      "label": 0,
+      "score": 0.0008525034063495696,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00079": {
+      "label": 1,
+      "score": 0.9997007250785828,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00006": {
+      "label": 1,
+      "score": 0.9996850490570068,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00116": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00033": {
+      "label": 1,
+      "score": 0.9996931552886963,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00141": {
+      "label": 1,
+      "score": 0.9996869564056396,
+      "pred": 1
+    },
+    "wildfake/real/coco_00075": {
+      "label": 0,
+      "score": 0.00044050984433852136,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00082": {
+      "label": 1,
+      "score": 0.9996979236602783,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00067": {
+      "label": 1,
+      "score": 0.9996808171272278,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00082": {
+      "label": 1,
+      "score": 0.999691367149353,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00087": {
+      "label": 1,
+      "score": 0.9996834993362427,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00076": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00144": {
+      "label": 1,
+      "score": 0.9996996521949768,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00045": {
+      "label": 1,
+      "score": 0.9996984004974365,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00049": {
+      "label": 0,
+      "score": 0.0002945713058579713,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00149": {
+      "label": 0,
+      "score": 0.05958794802427292,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00037": {
+      "label": 1,
+      "score": 0.9996837377548218,
+      "pred": 1
+    },
+    "wildfake/real/coco_00011": {
+      "label": 0,
+      "score": 0.000670804176479578,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00139": {
+      "label": 1,
+      "score": 0.9996899366378784,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00070": {
+      "label": 0,
+      "score": 0.005837420001626015,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00116": {
+      "label": 1,
+      "score": 0.9997023344039917,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00056": {
+      "label": 0,
+      "score": 0.0007294086972251534,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00081": {
+      "label": 0,
+      "score": 0.00030441791750490665,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00071": {
+      "label": 0,
+      "score": 0.19755691289901733,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00105": {
+      "label": 1,
+      "score": 0.99968421459198,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00146": {
+      "label": 1,
+      "score": 0.9996979236602783,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00078": {
+      "label": 0,
+      "score": 0.001728365896269679,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00017": {
+      "label": 0,
+      "score": 0.00029540745890699327,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00073": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/real/coco_00102": {
+      "label": 0,
+      "score": 0.0003757567028515041,
+      "pred": 0
+    },
+    "wildfake/real/coco_00140": {
+      "label": 0,
+      "score": 0.0012843081494793296,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00055": {
+      "label": 0,
+      "score": 0.00030564918415620923,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00014": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00036": {
+      "label": 1,
+      "score": 0.9996837377548218,
+      "pred": 1
+    },
+    "wildfake/real/coco_00017": {
+      "label": 0,
+      "score": 0.0002974746166728437,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00062": {
+      "label": 0,
+      "score": 0.015159029513597488,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00141": {
+      "label": 1,
+      "score": 0.9996843338012695,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00038": {
+      "label": 1,
+      "score": 0.9996891617774963,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00004": {
+      "label": 1,
+      "score": 0.9996863603591919,
+      "pred": 1
+    },
+    "wildfake/fake/DDPM_00091": {
+      "label": 1,
+      "score": 0.9997018575668335,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00128": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00066": {
+      "label": 0,
+      "score": 0.0003043145115952939,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00049": {
+      "label": 1,
+      "score": 0.9997000694274902,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00082": {
+      "label": 0,
+      "score": 0.0003041817108169198,
+      "pred": 0
+    },
+    "wildfake/real/coco_00110": {
+      "label": 0,
+      "score": 0.0003059302980545908,
+      "pred": 0
+    },
+    "wildfake/fake/ADM_00002": {
+      "label": 1,
+      "score": 0.9996721744537354,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00066": {
+      "label": 0,
+      "score": 0.00030552124371752143,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00041": {
+      "label": 1,
+      "score": 0.9996924996376038,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00028": {
+      "label": 1,
+      "score": 0.9997004270553589,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00073": {
+      "label": 0,
+      "score": 0.8295159339904785,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00127": {
+      "label": 1,
+      "score": 0.9996907114982605,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00083": {
+      "label": 1,
+      "score": 0.9996885657310486,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00017": {
+      "label": 0,
+      "score": 0.00040186563273891807,
+      "pred": 0
+    },
+    "wildfake/real/coco_00006": {
+      "label": 0,
+      "score": 0.0003047408245038241,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00141": {
+      "label": 0,
+      "score": 0.027690552175045013,
+      "pred": 0
+    },
+    "wildfake/real/imagenet_00081": {
+      "label": 0,
+      "score": 0.1351042240858078,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00118": {
+      "label": 1,
+      "score": 0.9996922612190247,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00047": {
+      "label": 0,
+      "score": 0.0003057853609789163,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00139": {
+      "label": 0,
+      "score": 0.0007714747334830463,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00124": {
+      "label": 0,
+      "score": 0.0003345156437717378,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00056": {
+      "label": 1,
+      "score": 0.999692976474762,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00096": {
+      "label": 0,
+      "score": 0.005414625629782677,
+      "pred": 0
+    },
+    "wildfake/real/coco_00066": {
+      "label": 0,
+      "score": 0.04220227152109146,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00076": {
+      "label": 0,
+      "score": 0.00031363818561658263,
+      "pred": 0
+    },
+    "wildfake/fake/DDIM_00001": {
+      "label": 1,
+      "score": 0.9996933341026306,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00052": {
+      "label": 1,
+      "score": 0.9996933341026306,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00035": {
+      "label": 0,
+      "score": 0.0003137009043712169,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00000": {
+      "label": 1,
+      "score": 0.9997023344039917,
+      "pred": 1
+    },
+    "wildfake/real/imagenet_00040": {
+      "label": 0,
+      "score": 0.0052301655523478985,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00063": {
+      "label": 1,
+      "score": 0.999683141708374,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00044": {
+      "label": 1,
+      "score": 0.9997010231018066,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00136": {
+      "label": 1,
+      "score": 0.9997023344039917,
+      "pred": 1
+    },
+    "wildfake/fake/VQDM_00127": {
+      "label": 1,
+      "score": 0.999689519405365,
+      "pred": 1
+    },
+    "wildfake/fake/DDIM_00135": {
+      "label": 1,
+      "score": 0.9996927380561829,
+      "pred": 1
+    },
+    "wildfake/real/coco_00133": {
+      "label": 0,
+      "score": 0.0005542982835322618,
+      "pred": 0
+    },
+    "wildfake/fake/DDPM_00147": {
+      "label": 1,
+      "score": 0.9996988773345947,
+      "pred": 1
+    },
+    "wildfake/real/afhq_00133": {
+      "label": 0,
+      "score": 0.0002957491378765553,
+      "pred": 0
+    },
+    "wildfake/real/coco_00076": {
+      "label": 0,
+      "score": 0.0003196706238668412,
+      "pred": 0
+    },
+    "wildfake/real/afhq_00021": {
+      "label": 0,
+      "score": 0.00032323988853022456,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00079": {
+      "label": 0,
+      "score": 0.00030773680191487074,
+      "pred": 0
+    },
+    "wildfake/real/coco_00095": {
+      "label": 0,
+      "score": 0.0007755827391520143,
+      "pred": 0
+    },
+    "wildfake/real/coco_00147": {
+      "label": 0,
+      "score": 0.0003054010740015656,
+      "pred": 0
+    },
+    "wildfake/fake/VQDM_00080": {
+      "label": 1,
+      "score": 0.9996916651725769,
+      "pred": 1
+    },
+    "wildfake/fake/ADM_00082": {
+      "label": 1,
+      "score": 0.9916441440582275,
+      "pred": 1
+    },
+    "wildfake/real/celebahq_00111": {
+      "label": 0,
+      "score": 0.0002974746166728437,
+      "pred": 0
+    },
+    "wildfake/real/celebahq_00038": {
+      "label": 0,
+      "score": 0.00029565553995780647,
+      "pred": 0
+    }
+  }
+}

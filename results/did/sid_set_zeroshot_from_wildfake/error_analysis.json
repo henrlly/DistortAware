@@ -1,0 +1,128 @@
+{
+  "n_false_pos": 62,
+  "n_false_neg": 63,
+  "worst_false_positives": [
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00030.npz",
+      "score": 0.99995356798172
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00032.npz",
+      "score": 0.9998588562011719
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00135.npz",
+      "score": 0.9996380805969238
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00126.npz",
+      "score": 0.9987823963165283
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00128.npz",
+      "score": 0.9986939430236816
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00146.npz",
+      "score": 0.998579740524292
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00007.npz",
+      "score": 0.9982658624649048
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00110.npz",
+      "score": 0.998096227645874
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00034.npz",
+      "score": 0.9980436563491821
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00063.npz",
+      "score": 0.9977933168411255
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00094.npz",
+      "score": 0.9963878989219666
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00018.npz",
+      "score": 0.9957404136657715
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00127.npz",
+      "score": 0.9942961931228638
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00055.npz",
+      "score": 0.9939872026443481
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/real/sid_real_00088.npz",
+      "score": 0.9934990406036377
+    }
+  ],
+  "worst_false_negatives": [
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00006.npz",
+      "score": 7.987731078173965e-05
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00138.npz",
+      "score": 0.0017858485225588083
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00031.npz",
+      "score": 0.0055657424964010715
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00127.npz",
+      "score": 0.005767819005995989
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00012.npz",
+      "score": 0.005784421227872372
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00108.npz",
+      "score": 0.006466935388743877
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00111.npz",
+      "score": 0.006663218606263399
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00088.npz",
+      "score": 0.00850577000528574
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00020.npz",
+      "score": 0.01002965122461319
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00128.npz",
+      "score": 0.013925766572356224
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00024.npz",
+      "score": 0.015008088201284409
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00032.npz",
+      "score": 0.02269240841269493
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00104.npz",
+      "score": 0.023864122107625008
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00005.npz",
+      "score": 0.028491849079728127
+    },
+    {
+      "path": "cache/feat_sid_set_sd15_r256s10/test/clean/fake/sid_fake_00046.npz",
+      "score": 0.029535995796322823
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>WildFake blind-label evaluation wall</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="eyebrow">Validation-only local demo</div>
+      <h1>Can the detector tell which images are synthetic?</h1>
+      <p class="lede">
+        This wall uses a small, reproducible subset of the declared WildFake
+        demonstration benchmark: COCO val2017 photographs and DALL-E Advanced
+        images. Ground truth is visible to you below each image, but is outside
+        the pixel crop sent to the detector.
+      </p>
+      <div class="notice" role="note">
+        <strong>Evaluation boundary:</strong> these samples are for demonstration
+        and evaluation only. They must not be used for training or threshold tuning.
+      </div>
+      <div class="actions">
+        <button id="truth-toggle" type="button" aria-pressed="true">Hide ground truth</button>
+        <span id="summary" class="summary">Loading local validation subset…</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="how-to" aria-labelledby="how-to-heading">
+        <h2 id="how-to-heading">Try the browser extension</h2>
+        <ol>
+          <li>Open <strong>AIGC Signal Inspector</strong> from Brave’s Extensions button.</li>
+          <li>Select <strong>Scan page images</strong> for one bounded whole-wall run.</li>
+          <li>Compare each coloured detector badge with the ground-truth caption.</li>
+          <li>
+            Watch the page auto-scroll once, return to its starting position, and
+            report whether the configured image or viewport safety cap was reached.
+          </li>
+        </ol>
+      </section>
+
+      <section id="gallery" class="gallery" aria-live="polite"></section>
+      <section id="error-panel" class="error-panel" hidden>
+        <h2>The local sample is not prepared yet</h2>
+        <p id="error-copy"></p>
+        <code>python3 scripts/prepare_wildfake_validation_demo.py</code>
+      </section>
+    </main>
+
+    <footer>
+      The extension receives rendered image pixels—not captions, labels, source
+      filenames, page cookies, or the validation manifest.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Large downloaded datasets are local-only.
+data/
+
+# Training outputs other than the selected checkpoint/report.
+models/*.tmp
+reports/*.csv
+reports/*.png

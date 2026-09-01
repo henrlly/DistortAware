@@ -1,0 +1,32 @@
+[
+  {
+    "image_path": "examples/demo_images/annotated_consistent.png",
+    "pred": 0.5,
+    "is_aigc": false,
+    "mock_prediction": true
+  },
+  {
+    "image_path": "examples/demo_images/annotated_inconsistent.png",
+    "pred": 0.5,
+    "is_aigc": false,
+    "mock_prediction": true
+  },
+  {
+    "image_path": "examples/demo_images/no_geometry.png",
+    "pred": 0.5,
+    "is_aigc": false,
+    "mock_prediction": true
+  },
+  {
+    "image_path": "examples/demo_images/perspective_consistent.png",
+    "pred": 0.5,
+    "is_aigc": false,
+    "mock_prediction": true
+  },
+  {
+    "image_path": "examples/demo_images/perspective_inconsistent.png",
+    "pred": 0.5,
+    "is_aigc": false,
+    "mock_prediction": true
+  }
+]
