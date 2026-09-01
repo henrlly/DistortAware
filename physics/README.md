@@ -218,7 +218,7 @@ cd ..
 .venv/bin/python -m unittest patchhead.tests.test_inference patchhead.tests.test_unified_infer -v
 ```
 
-The version 0.6.1 implementation passes 86 physics tests and 18 PatchHead/unified-inference tests.
+The version 0.6.1 implementation passes 83 physics tests and 18 PatchHead/unified-inference tests.
 
 ## Remaining limitations
 
