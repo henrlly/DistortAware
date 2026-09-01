@@ -1,0 +1,28 @@
+{
+  "SID_Set": {
+    "samples": 300,
+    "binary_accuracy": 0.6733333333333333,
+    "balanced_accuracy": 0.5700000000000001,
+    "authentic_accuracy": 0.26,
+    "ai_accuracy": 0.88,
+    "tamper_mask_iou": 0.15478957084669812,
+    "confusion": [
+      [
+        26,
+        74
+      ],
+      [
+        24,
+        176
+      ]
+    ]
+  },
+  "WildFake": {
+    "samples": 200,
+    "binary_accuracy": 0.74,
+    "authentic_accuracy": 0.82,
+    "synthetic_accuracy": 0.66,
+    "mean_predicted_mask_area_authentic": 0.2294083658854167,
+    "mean_predicted_mask_area_synthetic": 0.21644395616319442
+  }
+}
