@@ -2,7 +2,7 @@ $ tail -f job_matched_774160.out
 
 cuda=NVIDIA H100 NVL MIG 3g.47gb
 
-=== matched PatchHead data=/home/v/vincentl/tiktok-aigc-detect/data/matched_refactored tag=3class_maskcrop epochs=10 ===
+=== matched PatchHead data=data/matched_refactored tag=3class_maskcrop epochs=10 ===
 
 device=cuda  cuda_available=True
 
@@ -32,13 +32,13 @@ ep09 loss 0.0001  val_acc 0.9695 (t=0.50)  checkpoint selection uses validation 
 
 
 
-SAVED /home/v/vincentl/tiktok-aigc-detect/patchhead/checkpoints/patchhead_3class_maskcrop.pt  val_acc=0.9704  threshold=0.977
+SAVED patchhead/checkpoints/patchhead_3class_maskcrop.pt  val_acc=0.9704  threshold=0.977
 
 TEST  acc@0.5=0.9469  acc@t=0.9486
 
 === WildFake combined benchmark: 1000 images ===
 
-ckpt /home/v/vincentl/tiktok-aigc-detect/patchhead/checkpoints/patchhead_3class_maskcrop.pt  ds=wildfake  thr=0.977  size=256
+ckpt patchhead/checkpoints/patchhead_3class_maskcrop.pt  ds=wildfake  thr=0.977  size=256
 
 clean        n=1000 acc=0.983 auc=1.000 real=0.970 fake=0.996
 
@@ -72,11 +72,11 @@ crop80       n= 300 acc=0.987 auc=1.000 real=0.973 fake=1.000
 
 
 
-clean: 15 FP, 2 FN   wrote /home/v/vincentl/tiktok-aigc-detect/patchhead/results_3class_maskcrop_wildfake_benchmark
+clean: 15 FP, 2 FN   wrote patchhead/results_3class_maskcrop_wildfake_benchmark
 
 === SID: exact 200-image subset, normal inference ===
 
-ckpt /home/v/vincentl/tiktok-aigc-detect/patchhead/checkpoints/patchhead_3class_maskcrop.pt  ds=wildfake  thr=0.977  size=256
+ckpt patchhead/checkpoints/patchhead_3class_maskcrop.pt  ds=wildfake  thr=0.977  size=256
 
 clean        n= 200 acc=0.945 auc=0.984 real=0.898 fake=0.965
 
@@ -110,11 +110,11 @@ crop80       n= 200 acc=0.955 auc=0.985 real=0.932 fake=0.965
 
 
 
-clean: 6 FP, 5 FN   wrote /home/v/vincentl/tiktok-aigc-detect/patchhead/results_3class_maskcrop_sid_normal
+clean: 6 FP, 5 FN   wrote patchhead/results_3class_maskcrop_sid_normal
 
 === SID: exact 200-image subset, top-3 overlapping-crop TTA ===
 
-ckpt /home/v/vincentl/tiktok-aigc-detect/patchhead/checkpoints/patchhead_3class_maskcrop.pt  ds=wildfake  thr=0.977  size=256
+ckpt patchhead/checkpoints/patchhead_3class_maskcrop.pt  ds=wildfake  thr=0.977  size=256
 
 clean        n= 200 acc=0.780 auc=0.970 real=0.966 fake=0.702
 
@@ -148,11 +148,11 @@ crop80       n= 200 acc=0.785 auc=0.971 real=0.983 fake=0.702
 
 
 
-clean: 2 FP, 42 FN   wrote /home/v/vincentl/tiktok-aigc-detect/patchhead/results_3class_maskcrop_sid_top3
+clean: 2 FP, 42 FN   wrote patchhead/results_3class_maskcrop_sid_top3
 
 === SID: exact 200-image subset, top-5 overlapping-crop TTA ===
 
-ckpt /home/v/vincentl/tiktok-aigc-detect/patchhead/checkpoints/patchhead_3class_maskcrop.pt  ds=wildfake  thr=0.977  size=256
+ckpt patchhead/checkpoints/patchhead_3class_maskcrop.pt  ds=wildfake  thr=0.977  size=256
 
 clean        n= 200 acc=0.765 auc=0.972 real=0.983 fake=0.674
 
@@ -186,7 +186,7 @@ crop80       n= 200 acc=0.740 auc=0.968 real=1.000 fake=0.631
 
 
 
-clean: 1 FP, 46 FN   wrote /home/v/vincentl/tiktok-aigc-detect/patchhead/results_3class_maskcrop_sid_top5
+clean: 1 FP, 46 FN   wrote patchhead/results_3class_maskcrop_sid_top5
 
 === DONE ===
 

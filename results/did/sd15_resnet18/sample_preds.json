@@ -1,61 +1,61 @@
 [
   {
-    "image_path": "/home/h/henry/tmp/infer_check/ADM_00000.png",
+    "image_path": "infer_check/ADM_00000.png",
     "pred": 0.999728,
     "is_aigc": true
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/ADM_00001.png",
+    "image_path": "infer_check/ADM_00001.png",
     "pred": 0.999958,
     "is_aigc": true
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/ADM_00002.png",
+    "image_path": "infer_check/ADM_00002.png",
     "pred": 0.814668,
     "is_aigc": true
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/ADM_00003.png",
+    "image_path": "infer_check/ADM_00003.png",
     "pred": 0.992586,
     "is_aigc": true
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/ADM_00004.png",
+    "image_path": "infer_check/ADM_00004.png",
     "pred": 0.999226,
     "is_aigc": true
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/ADM_00005.png",
+    "image_path": "infer_check/ADM_00005.png",
     "pred": 0.99994,
     "is_aigc": true
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/afhq_00000.png",
+    "image_path": "infer_check/afhq_00000.png",
     "pred": 0.008784,
     "is_aigc": false
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/afhq_00001.png",
+    "image_path": "infer_check/afhq_00001.png",
     "pred": 0.005596,
     "is_aigc": false
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/afhq_00002.png",
+    "image_path": "infer_check/afhq_00002.png",
     "pred": 6.5e-05,
     "is_aigc": false
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/afhq_00003.png",
+    "image_path": "infer_check/afhq_00003.png",
     "pred": 0.011538,
     "is_aigc": false
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/afhq_00004.png",
+    "image_path": "infer_check/afhq_00004.png",
     "pred": 0.46774,
     "is_aigc": false
   },
   {
-    "image_path": "/home/h/henry/tmp/infer_check/afhq_00005.png",
+    "image_path": "infer_check/afhq_00005.png",
     "pred": 0.115137,
     "is_aigc": false
   }
