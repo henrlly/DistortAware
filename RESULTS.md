@@ -106,3 +106,108 @@ targeted calibration or augmentation before that claim is justified.
   quantity; per-source balanced accuracy and ROC-AUC are not meaningful.
 - These are external benchmark results. They should not be conflated with the
   internal training/validation accuracies printed during training.
+
+## Physics engine: bounded explanation-sidecar validation
+
+The physics engine checks perspective and vanishing points, cast-shadow
+geometry, and planar reflections. It returns applicability-aware evidence and
+cannot change the primary detector score, threshold, or verdict. Accuracy and
+ROC-AUC are therefore not applicable to this component; the relevant questions
+are whether it preserves the primary result, how often each cue is testable,
+and whether its automatic proposals and safety gates behave as intended.
+
+### Primary-score noninterference and SID_Set coverage
+
+A deterministic, storage-bounded SID_Set sample contained 50 real, 50
+full-synthetic, and 50 tampered images. Detector-only and physics-integrated
+runs used the same checkpoint, order, device, and batch size. All 150 primary
+scores, component scores, and verdicts were exactly equal, with zero physics
+errors.
+
+| SID_Set slice | Images | Perspective applicable | Perspective result | Cast shadow applicable | Reflection applicable |
+|---|---:|---:|---|---:|---:|
+| Real | 50 | 40/50 | 35 consistent, 5 indeterminate | 0/50 | 0/50 |
+| Full-synthetic | 50 | 31/50 | 29 consistent, 2 indeterminate | 1/50 (consistent) | 0/50 |
+| Tampered | 50 | 35/50 | 32 consistent, 3 indeterminate | 0/50 | 0/50 |
+
+Perspective was applicable to 106/150 images (70.7%). Automatic shadow and
+reflection coverage was much lower: one shadow result was applicable and no
+reflection reached the required three-pair gate. Five candidate mirror regions
+used the same-pass PatchHead DINO grid before safely abstaining. A separate
+20-image WildFake pilot also preserved every detector score and verdict and
+completed with zero physics errors.
+
+### Automatic shadow and mirror proposal quality
+
+Automatic region proposals were evaluated on deterministic 24-image subsets of
+the SBU shadow test set and PMD mirror test set. The learned CLIPSeg profiles
+substantially outperformed the deterministic heuristic fallbacks.
+
+| Cue/source | Proposal backend | IoU | Dice | Precision | Recall |
+|---|---|---:|---:|---:|---:|
+| Shadow / SBU | CLIPSeg + photometric prior | 0.4866 | 0.6107 | 0.8335 | 0.5589 |
+| Shadow / SBU | Heuristic | 0.0404 | 0.0673 | 0.4924 | 0.0422 |
+| Mirror / PMD | CLIPSeg + framed-mirror prior | 0.2981 | 0.3670 | 0.5344 | 0.3767 |
+| Mirror / PMD | Heuristic | 0.1015 | 0.1104 | 0.1031 | 0.1232 |
+
+These are macro image-level mask metrics on small subsets. They measure only
+region proposal overlap—not object-to-shadow ownership, reflection
+correspondence, geometric correctness, or AIGC detection accuracy. The source
+datasets also carry non-commercial terms and were not redistributed with the
+repository.
+
+### End-to-end WildFake demonstration wall
+
+The learned browser profile was run on an evaluation-only 12-image wall with
+six COCO val2017 real images and six DALL-E Advanced images. The detector was
+blind to the human-visible labels.
+
+| Cue | Consistent | Inconsistent | Indeterminate | Not applicable |
+|---|---:|---:|---:|---:|
+| Perspective | 5 | 0 | 3 | 4 |
+| Cast shadow | 0 | 0 | 1 | 11 |
+| Reflection | 0 | 2 | 0 | 10 |
+
+The two reflection inconsistencies occurred on DALL-E examples, but this tiny
+selected wall is not an accuracy estimate. Same-pass DINO produced too few
+accepted matches for those mirror regions, so the engine disclosed that its
+local-appearance fallback supplied the usable correspondences. Every response
+reported that physics had no influence on the detector verdict.
+
+### Transformation safety smoke
+
+One controlled consistent fixture was evaluated clean and under 14 image
+transformations. A hard flip means a cue changed between a definitive
+`consistent` and `inconsistent` result.
+
+| Cue | Applicability retained | Hard flips | Mean score drift | Maximum score drift |
+|---|---:|---:|---:|---:|
+| Perspective | 13/14 (92.9%) | 0 | 0.000 | 0.000 |
+| Cast shadow | 12/14 (85.7%) | 0 | 0.128 | 0.356 |
+| Reflection | 13/14 (92.9%) | 0 | 0.007 | 0.090 |
+
+The clean-plus-transform run took 15.55 seconds on the development CPU. Crop
+and noise caused some abstention, while the four-pair inconsistency gate
+converted an unsupported three-pair shadow result to `indeterminate` and
+prevented a hard flip. This validates the gate on one synthetic fixture, not
+production robustness.
+
+### Interpretation and conclusion
+
+- Physics remained exactly non-causal to the primary detector in every matched
+  integration run.
+- Perspective provided useful coverage, while automatic natural-scene shadow
+  and reflection evidence remained sparse and appropriately abstention-heavy.
+- Learned shadow and mirror proposals improved substantially over the
+  heuristic fallbacks, but proposal overlap is not end-to-end geometry
+  accuracy.
+- The engine is ready to serve as a conservative, human-readable explanation
+  sidecar. It is not supported as a standalone detector or a weighted fusion
+  input.
+- The full 1,000-image-per-transform shared physics harness has not been
+  committed, so no full-benchmark physics claim is made here.
+
+The bounded runs use deterministic seeds and storage caps. The supporting
+records are documented in `physics/docs/checkpoint_validation.md`,
+`physics/docs/automatic_proposals.md`, and `browser_product/VALIDATION.md`.
+The current cleaned-repository suite passes all 83 discovered physics tests.
