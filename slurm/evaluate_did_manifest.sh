@@ -9,7 +9,7 @@
 #SBATCH --error=job_did_manifest_eval_%j.err
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${DATA:-$REPO/data/harness_large}"
 MANIFEST="${MANIFEST:-matched_test.csv}"
 TAG="${TAG:-pooled_sd15_resnet18}"

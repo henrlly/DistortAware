@@ -10,7 +10,7 @@
 # Parquet download must have happened first (slurm/dl_sid.py on the login node).
 # CPU-only — parsing just needs RAM the login node doesn't allow.
 set -e
-source "${REPO:-$HOME/tiktok-aigc-detect}/slurm/_env.sh"
+source "${REPO:-$HOME/DistortAware}/slurm/_env.sh"
 python did/fetch_sid_set.py --out data/sid_set --split validation --train 300 --test 150 "$@"
 echo "=== counts ==="
 for d in train/real train/fake test/real test/fake; do

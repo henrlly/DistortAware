@@ -8,7 +8,7 @@
 #SBATCH --error=job_physics_eval_%j.err
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${DATA:-$REPO/data/harness_large}"
 MANIFEST="${MANIFEST:-matched_test.csv}"
 OUT="${OUT:-$REPO/results/parallel_evaluation/physics}"

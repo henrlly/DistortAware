@@ -11,7 +11,7 @@
 
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${DATA:-$REPO/data/harness_quick}"
 BASELINE="${BASELINE:-$REPO/runs/quick_training/baseline/checkpoint.pt}"
 AWARE="${AWARE:-$REPO/runs/quick_training/distortion_aware/checkpoint.pt}"

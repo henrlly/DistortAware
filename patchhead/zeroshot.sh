@@ -9,7 +9,7 @@
 # Zero-shot cross-dataset: PatchHead trained on one dataset, evaluated on the other.
 # Mirrors the DID zero-shot study (results_*_zeroshot_from_*).
 set -e
-source "${REPO:-$HOME/tiktok-aigc-detect}/slurm/_env.sh"
+source "${REPO:-$HOME/DistortAware}/slurm/_env.sh"
 
 # wildfake-trained -> SID_Set test  (compared against the SID-native DID model)
 python patchhead/evaluate.py --ds sid_set --ckpt patchhead/checkpoints/patchhead_wildfake.pt \

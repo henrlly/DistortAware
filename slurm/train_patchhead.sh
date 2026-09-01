@@ -9,7 +9,7 @@
 #SBATCH --error=job_patchhead_train_%j.err
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${DATA:-$REPO/data/harness_large}"
 OUT="${OUT:-$REPO/checkpoints/patchhead/pooled}"
 EPOCHS="${EPOCHS:-10}"

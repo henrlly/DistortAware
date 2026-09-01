@@ -22,7 +22,7 @@
 #   EVAL_CKPT=path   skip training, evaluate this checkpoint against the cache
 #                    (zero-shot cross-dataset: point a wildfake ckpt at a sid cache)
 set -e
-source "${REPO:-$HOME/tiktok-aigc-detect}/slurm/_env.sh"
+source "${REPO:-$HOME/DistortAware}/slurm/_env.sh"
 
 DS=${DS:-wildfake}
 RECON=${RECON:-sd15}

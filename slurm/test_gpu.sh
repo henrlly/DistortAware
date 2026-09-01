@@ -7,7 +7,7 @@
 #SBATCH --output=job_%j.out
 #SBATCH --error=job_%j.err
 set -e
-source "${REPO:-$HOME/tiktok-aigc-detect}/slurm/_env.sh"
+source "${REPO:-$HOME/DistortAware}/slurm/_env.sh"
 python - <<'PY'
 import torch, torchvision, diffusers, transformers
 print("torch", torch.__version__, "cuda", torch.version.cuda)

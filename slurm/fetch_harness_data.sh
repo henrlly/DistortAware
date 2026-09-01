@@ -10,10 +10,10 @@
 # Do not source slurm/_env.sh: fetch jobs must not inherit HF_HUB_OFFLINE=1.
 #
 # Submit with:
-#   sbatch --export=ALL,REPO=$HOME/tiktok-aigc-detect slurm/fetch_harness_data.sh
+#   sbatch --export=ALL,REPO=$HOME/DistortAware slurm/fetch_harness_data.sh
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${DATA:-$REPO/data/harness_large}"
 SEED="${SEED:-42}"
 BASE_PER_CLASS="${BASE_PER_CLASS:-3000}"

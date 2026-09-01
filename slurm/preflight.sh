@@ -2,7 +2,7 @@
 # Run on the login node before submitting a PatchHead job.
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${MATCHED_DATA:-$REPO/data/matched_refactored}"
 TAG="${TAG:-distortion_aware}"
 

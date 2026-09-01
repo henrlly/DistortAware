@@ -13,7 +13,7 @@
 # MATCHED_DATA, TAG, or EPOCHS with --export=ALL,KEY=value.
 set -euo pipefail
 
-source "${REPO:-$HOME/tiktok-aigc-detect}/slurm/_env.sh"
+source "${REPO:-$HOME/DistortAware}/slurm/_env.sh"
 
 python -c 'import torch; assert torch.cuda.is_available(), "CUDA is unavailable on this compute node"; print(f"cuda={torch.cuda.get_device_name(0)}", flush=True)'
 python -m unittest discover -s tests -p 'test_*.py'

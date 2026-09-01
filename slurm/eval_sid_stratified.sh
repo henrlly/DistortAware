@@ -10,7 +10,7 @@
 #SBATCH --error=job_sid_stratified_%j.err
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${DATA:-$REPO/data/matched_refactored}"
 CKPT="${CKPT:-$REPO/patchhead/checkpoints/patchhead_3class_maskcrop.pt}"
 OUT="${OUT:-$REPO/results/patchhead/results_3class_sid_stratified}"

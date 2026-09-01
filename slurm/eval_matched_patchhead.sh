@@ -11,7 +11,7 @@
 # Run after the matched checkpoint and manifests already exist.
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 MATCHED_DATA="${MATCHED_DATA:-$REPO/data/matched_refactored}"
 TAG="${TAG:-distortion_aware}"
 CKPT="${CKPT:-$REPO/patchhead/checkpoints/patchhead_${TAG}.pt}"

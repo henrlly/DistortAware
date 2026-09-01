@@ -219,7 +219,7 @@ RESULTS=(
 )
 
 # Stop before committing if a report contains an absolute home path or name.
-rg -n '/home/|vincentl|henry|henrlly' "${RESULTS[@]}" && exit 1
+rg -n '/home/|/Users/' "${RESULTS[@]}" && exit 1
 
 git add \
   results/parallel_evaluation/patchhead_baseline/{metrics.json,report.md,records.csv} \

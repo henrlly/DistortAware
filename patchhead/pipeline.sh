@@ -21,7 +21,7 @@
 #   DID_CACHE  DID feature cache for that ckpt  (default cache/feat_${DS}_sd15_r256s10)
 #   SKIP_TRAIN=1   reuse patchhead/checkpoints/patchhead_$TAG.pt
 set -e
-source "${REPO:-$HOME/tiktok-aigc-detect}/slurm/_env.sh"
+source "${REPO:-$HOME/DistortAware}/slurm/_env.sh"
 
 DS=${DS:-wildfake}
 TAG=${TAG:-$DS}

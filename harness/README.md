@@ -24,7 +24,7 @@ labels, so `--base-per-class` and `--sid-per-class` should match for now.
 For a network-enabled CPU SLURM job:
 
 ```bash
-sbatch --export=ALL,REPO="$HOME/tiktok-aigc-detect" \
+sbatch --export=ALL,REPO="$HOME/DistortAware" \
   slurm/fetch_harness_data.sh
 ```
 
