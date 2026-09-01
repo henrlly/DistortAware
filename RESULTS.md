@@ -20,6 +20,44 @@ The PatchHead tables below report the committed results. Accuracy equals
 balanced accuracy because each transform has 500 real and 500 generated
 examples.
 
+## Difference-In-Differences (DiD) analysis
+
+SD-1.5 (1.07B) + ResNet-18 ×2
+
+| Condition | Accuracy | AUC | Real accuracy | Fake accuracy |
+|---|---:|---:|---:|---:|
+| Clean | 88.6% | 0.957 | 85.3% | 90.9% |
+| JPEG quality 30 | 88.0% | 0.941 | 91.7% | 85.4% |
+| Noise \(\sigma=0.05\) | 90.8% | 0.962 | 87.9% | 92.8% |
+| Resize ¼ | 92.1% | 0.968 | 89.4% | 93.9% |
+
+SD-1.5 + ResNet-50 ×2
+
+| Condition | Accuracy | AUC | Real accuracy | Fake accuracy |
+|---|---:|---:|---:|---:|
+| Clean | 87.2% | 0.950 | 83.6% | 89.7% |
+| JPEG quality 30 | 82.7% | 0.918 | 88.5% | 78.6% |
+| Noise \(\sigma=0.05\) | 89.4% | 0.947 | 85.0% | 92.3% |
+| Resize ¼ | 91.0% | 0.958 | 87.7% | 93.2% |
+
+SANA-1.6B + ResNet-18 ×2
+
+| Condition | Accuracy | AUC | Real accuracy | Fake accuracy |
+|---|---:|---:|---:|---:|
+| Clean | 88.2% | 0.963 | 84.9% | 90.5% |
+| JPEG quality 30 | 91.3% | 0.965 | 90.1% | 92.1% |
+| Noise \(\sigma=0.05\) | 93.6% | 0.971 | 91.8% | 94.8% |
+| Resize ¼ | 87.5% | 0.939 | 92.4% | 84.2% |
+
+SANA-1.6B + ResNet-50 ×2
+
+| Condition | Accuracy | AUC | Real accuracy | Fake accuracy |
+|---|---:|---:|---:|---:|
+| Clean | 88.3% | 0.966 | 85.7% | 90.1% |
+| JPEG quality 30 | 90.9% | 0.964 | 89.3% | 92.0% |
+| Noise \(\sigma=0.05\) | 93.2% | 0.970 | 91.0% | 94.6% |
+| Resize ¼ | 92.4% | 0.969 | 89.8% | 94.1% |
+
 ## PatchHead: baseline versus distortion-aware
 
 | Transform | Baseline accuracy | Distortion-aware accuracy | Change | Baseline ROC-AUC | Distortion-aware ROC-AUC |
