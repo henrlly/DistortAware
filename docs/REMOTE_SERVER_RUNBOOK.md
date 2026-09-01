@@ -3,15 +3,13 @@
 ## Update and prepare
 
 ```bash
-cd ~/tiktok-aigc-detect
+cd ~/DistortAware
 git fetch origin
-git switch matched-patchhead-experiment
-git pull --ff-only origin matched-patchhead-experiment
+git switch main
+git pull --ff-only origin main
 source .venv/bin/activate
 python -m pip check
 ```
-
-If the branch is not present locally, run `git switch --track origin/matched-patchhead-experiment`.
 
 Verify credentials with `hf auth whoami` and `kaggle datasets list`. Run
 `hf auth login` or `kaggle auth login` if needed.
@@ -29,7 +27,7 @@ python -c "from huggingface_hub import hf_hub_download; [print(hf_hub_download('
 ## Fetch data
 
 ```bash
-cd ~/tiktok-aigc-detect
+cd ~/DistortAware
 bash slurm/fetch_matched_data.sh
 ```
 

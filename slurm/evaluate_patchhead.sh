@@ -9,7 +9,7 @@
 #SBATCH --error=job_patchhead_eval_%j.err
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${DATA:-$REPO/data/harness_large}"
 MANIFEST="${MANIFEST:-matched_test.csv}"
 BASELINE="${BASELINE:-$REPO/checkpoints/patchhead/pooled/baseline/checkpoint.pt}"

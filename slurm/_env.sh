@@ -1,7 +1,7 @@
 # Shared environment for all SLURM jobs in this repo. `source` it from job scripts.
 # Login node has a 1 GB virtual-memory ulimit, so torch can only be imported on
 # compute nodes. /tmp is quota-limited on every node -> keep TMPDIR in $HOME.
-export REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+export REPO="${REPO:-$HOME/DistortAware}"
 export TMPDIR="${TMPDIR:-$HOME/tmp}"
 export HF_HOME="${HF_HOME:-$HOME/.cache/huggingface}"
 export TORCH_HOME="${TORCH_HOME:-$HOME/.cache/torch}"

@@ -9,7 +9,7 @@
 #SBATCH --error=job_did_eval_%j.err
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${DATA:-$REPO/data/harness_large}"
 TAG="${TAG:-pooled_sd15_resnet18}"
 RECON="${RECON:-sd15}"

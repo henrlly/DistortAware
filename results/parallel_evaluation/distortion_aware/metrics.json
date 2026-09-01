@@ -50,7 +50,7 @@
       "returned": 1000
     }
   },
-  "data_dir": "/home/v/vincentl/tiktok-aigc-detect/data/harness_large",
+  "data_dir": "data/harness_large",
   "manifest": "wildfake_benchmark.csv",
   "manifest_fingerprint": "b55280a497240a44d5f42f0e76a6363ae18b8a0cfe93b73c26d4de69c5696603",
   "metrics": {

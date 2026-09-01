@@ -10,7 +10,7 @@
 # Fast de-risk for the PatchHead pipeline: build the model, forward + backward a
 # batch, run 1 mini training epoch on a tiny slice, eval clean only, compare.
 set -e
-source "${REPO:-$HOME/tiktok-aigc-detect}/slurm/_env.sh"
+source "${REPO:-$HOME/DistortAware}/slurm/_env.sh"
 
 nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
 python - <<'PY'

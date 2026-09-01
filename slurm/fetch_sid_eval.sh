@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${DATA:-$REPO/data/matched_refactored}"
 source "$REPO/slurm/_env.sh"
 # This is a networked login-node fetch; GPU jobs remain offline.

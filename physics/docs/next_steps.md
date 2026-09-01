@@ -1,6 +1,6 @@
 # Integration readiness and remaining work
 
-Review date: 2026-08-31 (Asia/Singapore)
+Review date: 2026-09-01 (Asia/Singapore)
 
 ## Current state
 
@@ -15,7 +15,9 @@ DID                          -> comparison/ablation
 ```
 
 Physics never changes the PatchHead score, threshold, or verdict. Checkpoints,
-frozen backbones, datasets, caches, and generated reports remain outside Git.
+frozen backbones, datasets, and caches remain outside Git. Curated compact
+result reports and the documented residual-sidecar checkpoint are the deliberate
+exceptions.
 
 ## Completed engineering work
 
@@ -119,14 +121,17 @@ the zero-shot providers through the existing interfaces. This requires suitable
 licenses, labelled correspondences, and GPU training. Any replacement must keep
 confidence/provenance and feed the same independent geometric verifier.
 
-### 4. Product integration and presentation
+## Presentation and release discipline
 
-- Keep PatchHead as the primary decision and physics as a low-weight sidecar.
+The browser API and extension now surface model/checkpoint provenance and
+explanation applicability while preserving the primary verdict. For the final
+presentation and any later release:
+
+- Keep PatchHead as the primary decision and physics as an explanation-only
+  sidecar.
 - Show one successful automatic example, one correct abstention, and one known
   failure rather than implying universal coverage.
 - Label patch maps as weak evidence and physics scores as constraint violations.
-- Surface model/checkpoint provenance and explanation applicability in the API
-  and browser-extension UI.
 - Do not ship external checkpoints or datasets in Git; document acquisition and
   local cache setup.
 
@@ -143,7 +148,7 @@ confidence/provenance and feed the same independent geometric verifier.
 | SID bounded evaluation | Binary, tamper, cue coverage, error reporting | **Complete bounded study** |
 | WildFake bounded evaluation | Range-read clean and 14-transform run | **Complete 20-image pilot** |
 | Patch/dense stability | Real checkpoint under 14 transforms | **Complete six-image engineering check** |
-| Regression suites | Checkpoint-independent physics and unified contracts | **Pass: 86 + 18 tests** |
+| Regression suites | Checkpoint-independent physics and unified contracts | **Pass: 83 + 18 tests** |
 | Pair/endpoint accuracy | Frozen independent point correspondence ground truth | **Pending external review** |
 | Natural-scene coverage | Broad held-out mirrors/shadows | **Pending** |
 | Source hygiene | No external PatchHead/physics checkpoints, model caches, datasets, credentials, or bulk outputs tracked; the documented compact residual sidecar checkpoint is the deliberate exception | **Pass** |

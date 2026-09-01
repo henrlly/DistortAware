@@ -7,7 +7,7 @@
 #SBATCH --output=job_%j.out
 #SBATCH --error=job_%j.err
 set -e
-source "${REPO:-$HOME/tiktok-aigc-detect}/slurm/_env.sh"
+source "${REPO:-$HOME/DistortAware}/slurm/_env.sh"
 D=$TMPDIR/infer_check; rm -rf $D; mkdir -p $D
 cp $(ls data/wildfake/test/real/*.png | head -6) $D/
 cp $(ls data/wildfake/test/fake/*.png | head -6) $D/

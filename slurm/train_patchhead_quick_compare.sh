@@ -11,7 +11,7 @@
 # This is intentionally a GPU job: fetching remains CPU-only.
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${DATA:-$REPO/data/harness_quick}"
 OUT="${OUT:-$REPO/checkpoints/patchhead/quick}"
 EPOCHS="${EPOCHS:-1}"

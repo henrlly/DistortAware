@@ -1,6 +1,6 @@
 # Harness evaluation report
 
-- Data: `/home/v/vincentl/tiktok-aigc-detect/data/harness_large`
+- Data: `data/harness_large`
 - Manifest: `wildfake_benchmark.csv`
 - Manifest fingerprint: `b55280a497240a44d5f42f0e76a6363ae18b8a0cfe93b73c26d4de69c5696603`
 - Records: **7000**

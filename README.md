@@ -311,8 +311,10 @@ Model artifacts remain outside the browser extension. The verified launcher chec
 
 The current integrated repository passes:
 
-- 86 physics-engine tests;
+- 83 physics-engine tests;
 - 18 PatchHead and unified-inference tests;
+- 9 distortion-aware PatchHead tests;
+- 15 shared-harness tests;
 - 16 browser-service tests;
 - 17 browser-extension tests;
 - 5 verified-launcher tests.

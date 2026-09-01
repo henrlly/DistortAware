@@ -9,21 +9,15 @@ evaluation run through SLURM on an H100 compute node.
 ### 1. Update the repository and environment
 
 ```bash
-cd ~/tiktok-aigc-detect
+cd ~/DistortAware
 git fetch origin
-git switch matched-patchhead-experiment
-git pull --ff-only origin matched-patchhead-experiment
+git switch main
+git pull --ff-only origin main
 source .venv/bin/activate
 python -m pip check
 ```
 
-If this branch is not yet local:
-
-```bash
-git switch --track origin/matched-patchhead-experiment
-```
-
-Confirm that the new files are present before submitting anything:
+Confirm that the required files are present before submitting anything:
 
 ```bash
 test -f distortion_aware_approach.md
@@ -64,7 +58,7 @@ This step can be skipped when both files are already in the Hugging Face cache.
 To create `data/matched_refactored/` using the repository fetcher:
 
 ```bash
-cd ~/tiktok-aigc-detect
+cd ~/DistortAware
 bash slurm/fetch_matched_data.sh
 ```
 
@@ -277,7 +271,7 @@ The SLURM runbook above is preferred on the school server. For an interactive
 GPU environment, run commands from the repository root:
 
 ```bash
-cd ~/tiktok-aigc-detect
+cd ~/DistortAware
 ```
 
 The DINOv3 backbone must already be available in the Hugging Face cache. If it

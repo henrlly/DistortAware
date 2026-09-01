@@ -75,9 +75,10 @@ plain-language reason in the extension.
 
 ## Checkpoint-independent contracts
 
-- 12/12 browser-service unit/HTTP tests passed with a fake PatchHead runtime.
-- 12/12 extension helper/manifest/demo-wall tests passed under Node.
-- 86/86 physics and 18/18 PatchHead/unified-inference tests passed.
+- 16/16 browser-service unit/HTTP tests passed with a fake PatchHead runtime.
+- 17/17 extension helper/manifest/demo-wall tests passed under Node.
+- 83/83 physics and 18/18 PatchHead/unified-inference tests passed.
+- 5/5 verified-launcher tests passed.
 - All five extension JavaScript entrypoints passed `node --check`.
 - Ruff and `git diff --check` passed for the new Python/source changes.
 

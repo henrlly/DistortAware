@@ -2,7 +2,7 @@
 # Login-node data preparation. PatchHead owns all fetch and split logic.
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 DATA="${MATCHED_DATA:-$REPO/data/matched_refactored}"
 SEED="${SEED:-42}"
 BASE_QUOTA="${BASE_QUOTA:-1250}"

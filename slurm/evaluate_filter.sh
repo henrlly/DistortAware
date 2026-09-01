@@ -8,7 +8,7 @@
 #SBATCH --error=job_filter_eval_%j.err
 set -euo pipefail
 
-REPO="${REPO:-$HOME/tiktok-aigc-detect}"
+REPO="${REPO:-$HOME/DistortAware}"
 CHECKPOINT="${CHECKPOINT:-$REPO/filter_based_approach/models/mask_classifier.pt}"
 DATA="${DATA:-$REPO/data/harness_large}"
 MANIFEST="${MANIFEST:-wildfake_benchmark.csv}"

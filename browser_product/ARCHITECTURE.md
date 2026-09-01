@@ -141,9 +141,10 @@ Successful responses contain:
   contract; a repeated request is a cache hit.
 - Optional heuristic physics attaches evidence while preserving primary fields.
 - Candidate filtering/deduplication and result-label helpers pass Node tests.
-- Existing 86 physics and 18 PatchHead contracts remain green.
-- Source imports without downloading checkpoints; no model/data artifact is
-  tracked.
+- Existing 83 physics and 18 PatchHead contracts remain green.
+- Source imports without downloading checkpoints; no primary detector
+  checkpoint or dataset is tracked. The compact residual-sidecar checkpoint is
+  the documented exception.
 
 ### Manual demo
 

@@ -7,7 +7,7 @@
 #SBATCH --output=job_%j.out
 #SBATCH --error=job_%j.err
 set -e
-source "${REPO:-$HOME/tiktok-aigc-detect}/slurm/_env.sh"
+source "${REPO:-$HOME/DistortAware}/slurm/_env.sh"
 RECON=${RECON:-sd15}
 BACKBONE=${BACKBONE:-resnet18}
 RES=${RES:-256}
