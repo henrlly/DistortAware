@@ -105,6 +105,113 @@ JPEG, blur, noise, jitter, and crop conditions. The resize regression means it
 should not yet be described as uniformly more robust; resized real images need
 targeted calibration or augmentation before that claim is justified.
 
+## Standardized COCO and DALL-E Benchmark Update
+
+The historical DID, Filter-pilot, and Physics-validation sections below remain
+useful as separate experiments. This section adds a directly comparable shared
+benchmark for DID, Filter, and Physics.
+
+### Shared evaluation protocol
+
+All methods below use `wildfake_benchmark.csv`: 500 real COCO images and 500
+DALL-E generated images per condition. The seven conditions are clean, JPEG
+quality 90, Gaussian blur (1.0), resize to 0.5×, Gaussian noise
+(\(\sigma=0.05\)), colour jitter, and 80% crop. Each completed classifier is
+therefore evaluated on 7,000 image-condition pairs.
+
+Every completed method returned all expected predictions, with zero missing
+records, duplicates, or reported inference errors. Accuracy equals balanced
+accuracy because each condition is balanced between real and generated images.
+
+### Standardized overview
+
+| Method | Clean accuracy | Clean ROC-AUC | Mean accuracy | Mean ROC-AUC | Role |
+|---|---:|---:|---:|---:|---|
+| PatchHead baseline | 88.2% | 0.955 | 85.4% | 0.937 | Primary-detector baseline |
+| **DistortAware PatchHead** | **94.9%** | **0.990** | **89.8%** | **0.965** | Primary detector |
+| DID (SD-1.5 + ResNet-18 ×2) | 77.1% | 0.842 | 68.5% | 0.757 | Comparative reconstruction baseline |
+| Filter baseline | 46.9% | 0.460 | 47.0% | 0.437 | Rejected external baseline |
+| Physics sidecar | n/a | n/a | n/a | n/a | Explanation-only evidence |
+
+The existing PatchHead table remains the detailed comparison for the primary
+model. DistortAware improves over baseline PatchHead in six of seven conditions
+(+4.5 percentage points mean accuracy), while resize remains its known
+false-positive regression on real COCO images.
+
+### DID: standardized external evaluation
+
+This is a new shared-benchmark evaluation and should not be conflated with the
+historical DID experiments above, which used different datasets and transform
+settings.
+
+| Condition | Accuracy | Precision | Recall | F1 | ROC-AUC | Real accuracy | Generated accuracy |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Clean | 77.1% | 77.5% | 76.4% | 76.9% | 0.842 | 77.8% | 76.4% |
+| JPEG quality 90 | 79.9% | 83.3% | 74.8% | 78.8% | 0.883 | 85.0% | 74.8% |
+| Gaussian blur | 50.0% | 50.0% | 78.2% | 61.0% | 0.578 | 21.8% | 78.2% |
+| Resize to 0.5× | 51.8% | 51.2% | 77.4% | 61.6% | 0.594 | 26.2% | 77.4% |
+| Gaussian noise | 73.2% | 73.5% | 72.6% | 73.0% | 0.802 | 73.8% | 72.6% |
+| Colour jitter | 75.6% | 75.3% | 76.2% | 75.7% | 0.825 | 75.0% | 76.2% |
+| Crop 80% | 71.6% | 72.5% | 69.6% | 71.0% | 0.772 | 73.6% | 69.6% |
+| **Unweighted mean** | **68.5%** | — | — | — | **0.757** | — | — |
+
+DID is usable on clean and JPEG-reencoded inputs, but is not robust to blur or
+resize in this external protocol. The failures are primarily false positives on
+transformed real COCO images, not a complete loss of generated-image recall.
+
+### Filter: standardized external evaluation
+
+The Filter baseline was evaluated using the common binary AIGC decision rule:
+the summed synthetic/tampered probability is classified at a threshold of 0.5.
+
+| Condition | Accuracy | Precision | Recall | F1 | ROC-AUC | Real accuracy | Generated accuracy |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Clean | 46.9% | 48.3% | 86.6% | 62.0% | 0.460 | 7.2% | 86.6% |
+| JPEG quality 90 | 46.9% | 48.3% | 86.6% | 62.0% | 0.467 | 7.2% | 86.6% |
+| Gaussian blur | 47.4% | 48.5% | 86.6% | 62.2% | 0.388 | 8.2% | 86.6% |
+| Resize to 0.5× | 47.1% | 48.4% | 86.6% | 62.1% | 0.362 | 7.6% | 86.6% |
+| Gaussian noise | 47.2% | 48.4% | 86.6% | 62.1% | 0.551 | 7.8% | 86.6% |
+| Colour jitter | 47.2% | 48.5% | 89.2% | 62.8% | 0.460 | 5.2% | 89.2% |
+| Crop 80% | 46.3% | 47.9% | 85.6% | 61.5% | 0.374 | 7.0% | 85.6% |
+| **Unweighted mean** | **47.0%** | — | — | — | **0.437** | — | — |
+
+Filter retains high generated-image recall but labels almost every real COCO
+image as AIGC. It is therefore a rejected external baseline, not a deployable
+detector or a voting component.
+
+### Physics: standardized evidence evaluation
+
+Physics does not produce an AIGC probability, accuracy, or ROC-AUC. It reports
+applicability-aware scene-consistency evidence and never changes the primary
+detector score or verdict.
+
+| Condition | Applicable images | Applicability | Mean violation score | Mean confidence |
+|---|---:|---:|---:|---:|
+| Clean | 724 / 1,000 | 72.4% | 21.2% | 88.0% |
+| JPEG quality 90 | 716 / 1,000 | 71.6% | 20.8% | 87.7% |
+| Gaussian blur | 729 / 1,000 | 72.9% | 23.6% | 87.2% |
+| Resize to 0.5× | 727 / 1,000 | 72.7% | 22.5% | 87.8% |
+| Gaussian noise | 629 / 1,000 | 62.9% | 21.0% | 84.9% |
+| Colour jitter | 718 / 1,000 | 71.8% | 20.5% | 88.1% |
+| Crop 80% | 708 / 1,000 | 70.8% | 22.2% | 87.9% |
+| **Overall** | **4,951 / 7,000** | **70.7%** | **21.7%** | **87.4%** |
+
+Perspective was the only automatically applicable cue in this benchmark;
+cast-shadow and reflection checks abstained on every image. The sidecar emitted
+nine `inconsistent` scene-evidence statuses across 7,000 evaluations. These
+are reviewer-facing leads, not ground-truth AIGC predictions or proof of image
+manipulation.
+
+### Consolidated interpretation
+
+The standardized benchmark confirms DistortAware PatchHead as the strongest
+completed AIGC classifier among the evaluated methods. DID remains a valuable
+reconstruction-based comparative baseline, but its real-image false positives
+under blur and resize limit deployment robustness. Filter fails external
+generalization because of an extreme real-image false-positive rate. Physics
+provides conservative perspective-based context when applicable, while keeping
+the classifier decision unchanged.
+
 ## Filter segmentation baseline
 
 The compact RGB/high-pass residual U-Net was evaluated as an independent
