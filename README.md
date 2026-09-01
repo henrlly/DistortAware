@@ -47,7 +47,7 @@ Our final system grew out of three stages of experimentation.
 
 Our first approach was based on the paper [Difference-in-Difference for AI-generated image detection](https://arxiv.org/pdf/2602.23732).
 
-A pretrained diffusion model reconstructs an input image \(x_0\). We first use DDIM inversion and sampling to obtain a reconstruction \(x_0'\), following [Denoising Diffusion Implicit Models](https://arxiv.org/pdf/2010.02502).
+A pretrained diffusion model reconstructs an input image $x_0$. We first use DDIM inversion and sampling to obtain a reconstruction $x_0'$, following [Denoising Diffusion Implicit Models](https://arxiv.org/pdf/2010.02502).
 
 The first-order reconstruction error is:
 
