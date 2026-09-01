@@ -20,7 +20,7 @@ fusion weight `alpha = 0`.
 | PatchHead baseline | Complete | `results/parallel_evaluation/patchhead_baseline/` |
 | PatchHead distortion-aware | Complete | `results/parallel_evaluation/distortion_aware/` |
 | Filter segmentation baseline | Complete local pilots | `results/filter_based_approach/reports/evaluation.json` |
-| Physics/light solver | Controlled fixtures complete; no real-image AIGC benchmark | PrismGuard evidence ledger, summarized below |
+| Physics and scene-consistency explainers | Bounded automatic-scene validation and controlled fixtures complete; no standalone AIGC benchmark | Physics sections and supporting documents below |
 | DID | Completed historical local evaluations | `results/did/` |
 | CIFAKE handcrafted detector | Complete; rejected as submission candidate | PrismGuard evidence ledger, summarized below |
 | Frozen DINOv3-L CIFAKE proxy | Complete; selection-ineligible | PrismGuard evidence ledger, summarized below |
@@ -222,7 +222,12 @@ difference `0.00476`. A direct Mac CPU smoke produced a real DINO score in
 10.6 seconds for one 384 px crop; requesting unavailable diagnostics left the
 verdict byte-identical. This establishes runnable plumbing, not accuracy.
 
-## Physics and forensic diagnostics
+## Controlled PrismGuard physics and forensic diagnostics
+
+These analytic-oracle and caller-supplied-geometry checks validate a separate
+controlled diagnostic path. They do not replace the automatic perspective,
+shadow, and reflection sidecar evaluated on bounded natural-image samples later
+in this document.
 
 ### Explicit distant-light solver
 
@@ -326,7 +331,7 @@ The PrismGuard machine-readable artifacts remain in the separate local
 evidence package and are summarized here without copying datasets, checkpoints,
 absolute home paths, or organizer demonstration items into this repository.
 
-## Reproducibility notes
+## PatchHead reproducibility notes
 
 - Both variants were evaluated on the same manifest fingerprint:
   `b55280a497240a44d5f42f0e76a6363ae18b8a0cfe93b73c26d4de69c5696603`.
@@ -346,6 +351,15 @@ cannot change the primary detector score, threshold, or verdict. Accuracy and
 ROC-AUC are therefore not applicable to this component; the relevant questions
 are whether it preserves the primary result, how often each cue is testable,
 and whether its automatic proposals and safety gates behave as intended.
+
+### Results at a glance
+
+| Validation | Bounded scope | Most relevant result | Interpretation boundary |
+|---|---:|---|---|
+| Primary-result safety | 150 SID_Set + 20 WildFake images | Every matched score and verdict was preserved; zero physics errors | Integration safety, not physics accuracy |
+| Automatic region proposals | 24 SBU shadow + 24 PMD mirror images | Learned shadow IoU 0.4866; learned mirror IoU 0.2981 | Region overlap only, not correspondence or geometry accuracy |
+| End-to-end browser wall | 12 WildFake demonstration images | Perspective was testable on 8; reflection reported 2 inconsistencies; shadows mostly abstained | Selected demonstration, not an accuracy estimate |
+| Transformation safety | One fixture under 14 transformations | Zero hard consistent/inconsistent flips; applicability retained for 85.7%–92.9% of transforms | Single synthetic fixture, not production robustness |
 
 ### Primary-score noninterference and SID_Set coverage
 
