@@ -51,42 +51,42 @@ A pretrained diffusion model reconstructs an input image \(x_0\). We first use D
 
 The first-order reconstruction error is:
 
-\[
+$$
 \Delta = |x_0 - x_0'|
-\]
+$$
 
 Earlier reconstruction-based detectors such as [DIRE](https://arxiv.org/pdf/2303.09295) classified images directly from this residual. However, a single reconstruction error contains both meaningful distance-to-manifold information and reconstruction noise.
 
-DID reconstructs the image a second time. We treat \(x_0'\) as a new input, invert and reconstruct it, and obtain \(x_0''\):
+DID reconstructs the image a second time. We treat $x_0'$ as a new input, invert and reconstruct it, and obtain $x_0''$:
 
-\[
+$$
 \Delta' = |x_0' - x_0''|
-\]
+$$
 
 The second-order Difference-in-Difference feature is:
 
-\[
+$$
 \Delta^2 = \Delta - \Delta'
-\]
+$$
 
 Each reconstruction introduces perturbation from inversion, sampling, and model imperfections. This perturbation tends to be similar across the two reconstruction passes.
 
 For an AI-generated image already close to the diffusion manifold:
 
-\[
+$$
 \Delta \approx |\delta(x_0)|,\qquad
 \Delta' \approx |\delta(x_0')|
-\]
+$$
 
-Because \(x_0\) and \(x_0'\) are already close, these terms tend to cancel:
+Because $x_0$ and $x_0'$ are already close, these terms tend to cancel:
 
-\[
+$$
 \Delta^2 \approx 0
-\]
+$$
 
 For a real photograph, there is a larger gap between the input and what the diffusion model naturally represents. That gap survives the subtraction, producing a stronger second-order residual.
 
-We trained separate classifiers over \(\Delta\) and \(\Delta^2\), using their agreement as the final prediction.
+We trained separate classifiers over $\Delta$ and $\Delta^2$, using their agreement as the final prediction.
 
 We tested:
 
@@ -122,8 +122,8 @@ Under severe JPEG compression and Gaussian noise, PatchHead often retained stron
 |---|---:|---:|---:|---:|
 | Clean | 94.5% | 0.984 | 89.8% | 96.5% |
 | JPEG quality 30 | 83.0% | 0.965 | 93.2% | 78.7% |
-| Noise \(\sigma=0.05\) | 83.5% | 0.950 | 88.1% | 81.6% |
-| Noise \(\sigma=0.10\) | 86.5% | 0.933 | 78.0% | 90.1% |
+| Noise $\sigma=0.05$ | 83.5% | 0.950 | 88.1% | 81.6% |
+| Noise $\sigma=0.10$ | 86.5% | 0.933 | 78.0% | 90.1% |
 
 This was an important clue.
 
@@ -152,7 +152,7 @@ The supported transformations are:
 - cropping;
 - compositions of multiple transformations.
 
-We deliberately included stronger transformations than our original pipeline, including JPEG quality down to 25 and Gaussian noise up to \(\sigma=0.11\). This prevents the model from seeing only mild corruption during training and then being expected to extrapolate to severe benchmark conditions.
+We deliberately included stronger transformations than our original pipeline, including JPEG quality down to 25 and Gaussian noise up to $\sigma=0.11$. This prevents the model from seeing only mild corruption during training and then being expected to extrapolate to severe benchmark conditions.
 
 We also discovered and fixed a bug in our original Gaussian-noise augmentation. It added one random scalar to the entire image instead of sampling independent noise for every pixel and channel. Correcting this significantly improved the realism of our training distribution.
 
@@ -228,15 +228,15 @@ The original PatchHead three-class prediction remains intact. The probabilities 
 
 A small threshold adapter then consumes the predicted distortion vector and produces a bounded adjustment in logit space:
 
-\[
+$$
 z_{\text{adjusted}} = z_{\text{base}} - s(d)
-\]
+$$
 
 where:
 
-- \(z_{\text{base}}\) is the original AIGC logit;
-- \(d\) is the predicted distortion vector;
-- \(s(d)\) is the learned threshold shift.
+- $z_{\text{base}}$ is the original AIGC logit;
+- $d$ is the predicted distortion vector;
+- $s(d)$ is the learned threshold shift.
 
 A positive shift requires stronger evidence before declaring the image AIGC. A negative shift lowers the required evidence.
 
