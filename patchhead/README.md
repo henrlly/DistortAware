@@ -142,7 +142,7 @@ against per `DS` (wildfake → `checkpoints/did_sd15_resnet18.pt`, etc.).
 
 ## Results — PatchHead vs DID (SD-1.5 / ResNet-18), same test sets
 
-| Test set | metric | **PatchHead** | DID | 
+| Test set | metric | **PatchHead** | DID |
 |---|---|---:|---:|
 | WildFake | clean acc / AUC | **98.5% / 1.000** | 88.6% / 0.957 |
 | WildFake | mean over 14 transforms | **99.0%** | 93.0% |
