@@ -2,19 +2,29 @@
 
 ## Scope and status
 
-This document summarizes completed results from the shared WildFake benchmark
-manifest, `wildfake_benchmark.csv`. Each transform contains 1,000 images: 500
+This document consolidates the completed DistortAware benchmark results and the
+local PrismGuard evidence ledger as of 2026-09-01. The primary shared WildFake
+manifest, `wildfake_benchmark.csv`, contains 1,000 images per transform: 500
 COCO real images and 500 DALL-E generated images. The same seven transforms
 are applied to every method: clean, JPEG quality 90, Gaussian blur (1.0),
 resize to 0.5, Gaussian noise (0.05), colour jitter, and 80% crop.
+
+The PrismGuard sections deliberately separate competition-relevant results
+from narrow engineering diagnostics, controlled synthetic validation, and
+runtime smoke tests. In particular, the CIFAKE runs cannot select a Track 5
+submission, and physics/forensics are interpretability-only with permanent
+fusion weight `alpha = 0`.
 
 | Method | Status | Result location |
 |---|---|---|
 | PatchHead baseline | Complete | `results/parallel_evaluation/patchhead_baseline/` |
 | PatchHead distortion-aware | Complete | `results/parallel_evaluation/distortion_aware/` |
-| Filter baseline | Complete remotely; not yet committed | `results/parallel_evaluation/filter/` |
-| Physics | Running | `results/parallel_evaluation/physics_benchmark/` |
-| DID | Training | `checkpoints/did/pooled_sd15_resnet18.pt` |
+| Filter segmentation baseline | Complete local pilots | `results/filter_based_approach/reports/evaluation.json` |
+| Physics/light solver | Controlled fixtures complete; no real-image AIGC benchmark | PrismGuard evidence ledger, summarized below |
+| DID | Completed historical local evaluations | `results/did/` |
+| CIFAKE handcrafted detector | Complete; rejected as submission candidate | PrismGuard evidence ledger, summarized below |
+| Frozen DINOv3-L CIFAKE proxy | Complete; selection-ineligible | PrismGuard evidence ledger, summarized below |
+| Legal 50K group-OOF PrismGuard | Not run; hard gates remain | Shared-A100 readiness summary below |
 
 The PatchHead tables below report the committed results. Accuracy equals
 balanced accuracy because each transform has 500 real and 500 generated
@@ -28,7 +38,7 @@ SD-1.5 (1.07B) + ResNet-18 ×2
 |---|---:|---:|---:|---:|
 | Clean | 88.6% | 0.957 | 85.3% | 90.9% |
 | JPEG quality 30 | 88.0% | 0.941 | 91.7% | 85.4% |
-| Noise $\sigma=0.05$ | 90.8% | 0.962 | 87.9% | 92.8% |
+| Noise \(\sigma=0.05\) | 90.8% | 0.962 | 87.9% | 92.8% |
 | Resize ¼ | 92.1% | 0.968 | 89.4% | 93.9% |
 
 SD-1.5 + ResNet-50 ×2
@@ -37,7 +47,7 @@ SD-1.5 + ResNet-50 ×2
 |---|---:|---:|---:|---:|
 | Clean | 87.2% | 0.950 | 83.6% | 89.7% |
 | JPEG quality 30 | 82.7% | 0.918 | 88.5% | 78.6% |
-| Noise $\sigma=0.05$ | 89.4% | 0.947 | 85.0% | 92.3% |
+| Noise \(\sigma=0.05\) | 89.4% | 0.947 | 85.0% | 92.3% |
 | Resize ¼ | 91.0% | 0.958 | 87.7% | 93.2% |
 
 SANA-1.6B + ResNet-18 ×2
@@ -46,7 +56,7 @@ SANA-1.6B + ResNet-18 ×2
 |---|---:|---:|---:|---:|
 | Clean | 88.2% | 0.963 | 84.9% | 90.5% |
 | JPEG quality 30 | 91.3% | 0.965 | 90.1% | 92.1% |
-| Noise $\sigma=0.05$ | 93.6% | 0.971 | 91.8% | 94.8% |
+| Noise \(\sigma=0.05\) | 93.6% | 0.971 | 91.8% | 94.8% |
 | Resize ¼ | 87.5% | 0.939 | 92.4% | 84.2% |
 
 SANA-1.6B + ResNet-50 ×2
@@ -55,7 +65,7 @@ SANA-1.6B + ResNet-50 ×2
 |---|---:|---:|---:|---:|
 | Clean | 88.3% | 0.966 | 85.7% | 90.1% |
 | JPEG quality 30 | 90.9% | 0.964 | 89.3% | 92.0% |
-| Noise $\sigma=0.05$ | 93.2% | 0.970 | 91.0% | 94.6% |
+| Noise \(\sigma=0.05\) | 93.2% | 0.970 | 91.0% | 94.6% |
 | Resize ¼ | 92.4% | 0.969 | 89.8% | 94.1% |
 
 ## PatchHead: baseline versus distortion-aware
@@ -94,6 +104,227 @@ On this benchmark, distortion-aware PatchHead is the better default for clean,
 JPEG, blur, noise, jitter, and crop conditions. The resize regression means it
 should not yet be described as uniformly more robust; resized real images need
 targeted calibration or augmentation before that claim is justified.
+
+## Filter segmentation baseline
+
+The compact RGB/high-pass residual U-Net was evaluated as an independent
+three-class/segmentation sidecar. It is useful as inspectable artifact evidence,
+but its mask is weak localization rather than validated forensic segmentation.
+
+| Dataset | Samples | Binary accuracy | Balanced accuracy | Authentic accuracy | AI accuracy | Tamper-mask IoU |
+|---|---:|---:|---:|---:|---:|---:|
+| SID_Set | 300 | 67.3% | 57.0% | 26.0% | 88.0% | 15.5% |
+| WildFake | 200 | 74.0% | — | 82.0% | 66.0% | — |
+
+On WildFake, the mean predicted mask area was 22.9% for authentic images and
+21.6% for synthetic images. This near-equality and the low SID mask IoU are why
+the sidecar remains explanation-only and never votes on the detector score.
+
+## PrismGuard predictor contract
+
+The locked prediction boundary is:
+
+```text
+pred = calibrated_probability(dino_logit)
+```
+
+Physics and forensic diagnostics cannot enter features, training loss, head or
+calibration selection, thresholding, test-time aggregation, or the returned
+challenge score. Their fusion coefficient is permanently `alpha = 0`. The
+required challenge output remains exactly `image_path` plus `pred`; optional
+explanations are written separately.
+
+No legal 50K, source/generator/content/duplicate-group nested-OOF PrismGuard
+model has been trained yet. Results below are therefore either rejected
+baselines, selection-ineligible proxies, controlled validation, or frozen
+external diagnostics—not a competition-ready PrismGuard score.
+
+## Rejected handcrafted CIFAKE baseline
+
+The first sealed baseline used 102 handcrafted global features at 32×32, a
+standardized logistic head, and scalar temperature calibration. It has 104
+fitted scalars and 308 deployed prediction-state scalars, no Transformer, no
+geometry model, and physics `alpha = 0`.
+
+### Internal CIFAKE diagnostic
+
+| Metric | Clean-only head |
+|---|---:|
+| Clean ROC-AUC | 0.9212 |
+| Equal-family macro corruption ROC-AUC | 0.8390 |
+| Hierarchical macro corruption ROC-AUC | 0.8552 |
+| Worst-transform ROC-AUC | 0.6913 |
+| Worst transform | Gaussian noise, sigma 0.10 |
+
+These strong-looking numbers are not generalization evidence: CIFAKE is 32×32,
+uses one fake generator, and its authentic source and fake generator are
+perfectly label-confounded. The paired-consistency head was worse than the
+clean-only head: hierarchical macro AUC 0.8467 versus 0.8552, observed delta
+`-0.00650`, with 95% paired bootstrap interval `[-0.01064, -0.00206]`.
+
+### Frozen external diagnostics
+
+The following datasets were evaluated once after sealing the handcrafted model.
+They were not used for training, calibration, thresholding, model selection,
+or early stopping.
+
+| Frozen pilot | Sample | Native clean AUC | Native macro AUC | Standardized clean AUC | Standardized macro AUC |
+|---|---|---:|---:|---:|---:|
+| SID_Set, real vs full synthetic | 40 + 40 | 0.5213 | 0.5202 | 0.4944 | 0.5018 |
+| SID_Set, real vs any manipulated | 40 + 80 | 0.5656 | 0.5569 | 0.5338 | 0.5354 |
+| Organizer WildFake demo, COCO vs DALL-E 3 | 40 + 40 | 0.5425 | 0.5702 | 0.5425 | 0.5438 |
+| Broad WildFake publisher test | 80 + 80 | 0.6113 | 0.6235 | — | — |
+| CommunityForensics CompEval | 40 + 40 | 0.5519 | — | 0.5231 | 0.5168 |
+
+Additional diagnostic details:
+
+- SID_Set real-versus-tampered achieved native clean/macro AUC 0.6100/0.5936,
+  falling to 0.5731/0.5690 after symmetric square-512/JPEG-Q95 normalization.
+- The broad WildFake macro AUC 95% interval was `[0.5330, 0.7041]`, but generator
+  clean AUC ranged from 0.3891 for DDPM and 0.4922 for VQGAN to 0.8641 for
+  DALL-E 2. This is generator dependence, not robust generalization.
+- CommunityForensics standardized worst-transform AUC was 0.4838 on colour
+  jitter. Its macro AUC 95% interval was `[0.3931, 0.6301]`.
+- The organizer demo pilot used exact publisher pools, while the broad
+  WildFake pilot had zero intersection with the 13,841 organizer demo paths.
+  These path checks do not replace the still-required independent full
+  SHA-256 plus dHash64 organizer trust root.
+
+All four external pilots reject the handcrafted model as a submission
+candidate. It should be discarded when a legal Transformer model is available.
+
+## Frozen DINOv3-L CIFAKE proxy
+
+A real frozen DINOv3-L/16 proxy was run on the same narrow CIFAKE setting. The
+backbone is `timm/vit_large_patch16_dinov3.lvd1689m` at pinned revision
+`30c1109559f65dea34316b0d4842d35c5771fe11`, with checkpoint SHA-256
+`45172f209c9583c40538afc26b60a07033e6fcc2e8c30228338e6b2e932e7941`.
+All 303,079,424 backbone parameters were frozen.
+
+| Frozen feature head | Clean AUC | Equal-family macro AUC | Worst-transform AUC |
+|---|---:|---:|---:|
+| CLS only | 0.9931 | 0.9730 | 0.9403 |
+| CLS + fixed 4×4 spatial summary | 0.9942 | 0.9773 | 0.9465 |
+| Candidate minus CLS | +0.00113 | +0.00432 | +0.00618 |
+
+The paired atomic-image bootstrap mean macro gain was `+0.00431`, with 95%
+interval `[+0.00244, +0.00612]` over 1,000 replicates. The positive interval is
+useful engineering evidence for retaining a spatial-summary bake-off, but it
+does not pass the predeclared `+0.005` macro-gain threshold and does not include
+split/refit/source/generator uncertainty. The data remain 32×32,
+source-confounded, and single-generator, so neither head can qualify a Track 5
+submission.
+
+The local browser-demo head is a deterministic CPU refit of the locked policy.
+Against the original CUDA calibrated logits it reached Pearson correlation
+`0.9999999903`, mean absolute difference `0.000858`, and maximum absolute
+difference `0.00476`. A direct Mac CPU smoke produced a real DINO score in
+10.6 seconds for one 384 px crop; requesting unavailable diagnostics left the
+verdict byte-identical. This establishes runnable plumbing, not accuracy.
+
+## Physics and forensic diagnostics
+
+### Explicit distant-light solver
+
+The linear-light, robustly cross-fitted four-term model
+`[1, nx, ny, nz]` passed its controlled analytic-oracle suite:
+
+- 20/20 clean Lambertian scenes were usable; median held-out Q90 absolute log
+  residual was `0.000937`.
+- Maximum light-vector absolute error was `0.000453`; maximum relative albedo
+  RMSE was `0.000378`.
+- Across 100 injected local-light-mismatch cases, every scene was monotonic;
+  median Spearman correlation was effectively 1.0 and median endpoint effect
+  was `0.01306`, above the locked `0.01` threshold.
+- Four non-proportional spatial-albedo layouts remained stable, with residual
+  score range `3.13e-8`.
+- Constant normals correctly abstained with quality `q = 0`; shuffled normals
+  destroyed the clean base fit; linear-light luminance outperformed fitting in
+  gamma-coded luminance.
+- All seven representative official views remained usable. Six of eight
+  deliberately severe stress views abstained (75%) because of quality,
+  bootstrap, local-zone, solver, or cross-fit failures, demonstrating the
+  intended fail-open diagnostic behavior.
+
+This suite uses analytic depth/normals and a simple Lambertian renderer. It does
+not validate Metric3Dv2, Depth Anything V2, automatic real-image regions, or
+real AIGC discrimination.
+
+### Four-term versus nine-term lighting
+
+The nine-term spherical-harmonic ablation was less reliable than the simple
+four-term model. SH9 was usable for only 67% of scene/strength combinations,
+versus 100% for the four-term solver. Its median endpoint effect was 0.01268
+versus 0.01415 on paired usable scenes, an effect ratio of 0.896. SH9 therefore
+remains rejected as over-capacity for the core solver.
+
+### Six independent forensic cue cards
+
+Controlled fixtures cover illuminant/colour temperature, cast-shadow direction,
+reflection/highlight geometry, perspective/vanishing points, noise/sensor
+residuals, and spectral/codec traces.
+
+| Aggregate fixture metric | Result |
+|---|---:|
+| Clean applicability correctness | 100% |
+| Clean evidence-direction correctness | 100% |
+| Consistent-scene false-evidence rate | 0% |
+| Violation detection across official views | 94.4% |
+| Mean applicability/direction stability | 98.6% |
+
+Noise/sensor residuals were the weakest cue, with 73.3% violation detection;
+spectral/codec traces reached 93.3%, and the other four controlled cues reached
+100%. Shadow, reflection, and perspective tests use caller-supplied geometry
+and exact crop transport, so these figures validate cue arithmetic and schema
+behavior—not automatic scene understanding or real-world forensic accuracy.
+
+### Physics conclusion
+
+There is no real held-out source/generator/corruption AUC or paired-bootstrap
+gain for physics, no completed alternate learned-geometry benchmark, and no
+hard-authentic/physically-relit/flat-overcast falsification suite on real data.
+Physics has therefore not earned—and under the current architecture cannot
+earn—prediction admission. It remains lazy, fail-open, explanation-only, and
+permanently neutral with `alpha = 0`.
+
+## Operational and release readiness
+
+- The local VFM preflight is not ready and recorded 14 blockers, including the
+  legal checkpoint and dataset ledgers, source-verified corpus manifest, full
+  organizer inventory, suitable accelerator, RAM, and persistent disk.
+- The shared-A100 job pack's focused trust-boundary and signed-cache fixture
+  tests pass, but the pack remains explicitly **NOT AUTHORIZED TO RUN**. No VM
+  connection, CUDA extraction, 50K training run, or target-A100 throughput/VRAM
+  measurement has occurred.
+- The serious next model remains frozen DINOv3-L/16 at locked 384 px
+  preprocessing, followed by nested group-OOF DINO-only head/calibration
+  selection. DINOv3-H+/16 is conditional on an L benchmark and resource gate;
+  DINOv3-7B is excluded.
+- SID_Set, organizer WildFake, broad WildFake, and CommunityForensics remain
+  one-shot frozen evaluation sets and cannot enter training, calibration,
+  architecture choice, thresholding, or early stopping.
+
+## PrismGuard evidence integrity
+
+The consolidated local evidence is bound to immutable payloads rather than
+copied training examples. Key bindings include:
+
+- DINOv3-L checkpoint SHA-256:
+  `45172f209c9583c40538afc26b60a07033e6fcc2e8c30228338e6b2e932e7941`.
+- DINO proxy evidence payload SHA-256:
+  `ec42269910c7182c541a1aa7dc7e4facbc48fed9b22694a218c370a610b4972a`.
+- Official corruption harness SHA-256:
+  `70a43a82d636dd34f8c6a6da3c968ed1b8b6bf1ae5ff85e01d5b6ce1780f84ee`.
+- Controlled solver report SHA-256:
+  `19e783ff31f9908572bf1862ee4f8ce32457b25fc93f4cf698446f409fc3720a`.
+- Forensic-cue validation SHA-256:
+  `b05fd94d592bcae7b078a530a8cfcc03d7d79931b4a246a8d769d77f9ac93a88`.
+- SH9 ablation report SHA-256:
+  `3507444309b3cf33480143fa27e7a60d8b34bbb9e9380ed3f78f33b310c74c29`.
+
+The PrismGuard machine-readable artifacts remain in the separate local
+evidence package and are summarized here without copying datasets, checkpoints,
+absolute home paths, or organizer demonstration items into this repository.
 
 ## Reproducibility notes
 
